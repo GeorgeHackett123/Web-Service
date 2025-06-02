@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>CesiumJS Viewer 2D — Dynamic View Cone (Virtual View)</title>
+<title>CesiumJS Viewer 2D — Dynamic View Cone (Follows 360 Pan Only)</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marzipano@0.10.1/dist/marzipano.js"></script>
@@ -260,12 +260,9 @@
                 }
 
                 function updateFrustumCone() {
-                  // Image direction (degrees)
-                  const imageYaw = parseFloat(picked.id.properties['Yaw_est'].getValue());
-                  // Current Marzipano yaw (in radians; convert to degrees)
+                  // Only use the virtual panorama yaw (not imageYaw!)
                   const panoYaw = Cesium.Math.toDegrees(view.yaw());
-                  // VIRTUAL: cone rotates as you pan panorama; +90 aligns "front" to North
-                  const combinedYaw = (imageYaw + panoYaw + 90 + 360) % 360;
+                  const combinedYaw = (panoYaw + 90 + 360) % 360;
                   const yaw = Cesium.Math.toRadians(combinedYaw);
 
                   const position = picked.id.position.getValue(Cesium.JulianDate.now());
