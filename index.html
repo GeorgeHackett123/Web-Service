@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>CesiumJS Viewer 2D — Dynamic View Cone (Follows 360 Pan Only)</title>
+<title>CesiumJS Viewer 2D — Dynamic View Cone (Follows 360 Pan with Real Orientation)</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marzipano@0.10.1/dist/marzipano.js"></script>
@@ -101,19 +101,19 @@
 </div>
 <div id="geojsonPopup"></div>
 <script type="module">
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MWVkZWM4Yi1hYzM2LTRmZDItOGVmZi1hMDliYzZjODA2NWMiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDg2MDYwMTZ9.IkBgYtVs-cpJykU4FRRGoHFUTaZoRsxYxslpmBnPM4o';
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MWVkZWM4Yi1hYzM2LTRmZDItOGVmZi1hMDliYzZjODA2NWMiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDg2MDYwMTZ9.IkBgYtVs-cpJykU4FRRGoHFUTaZoRsYxslpmBnPM4o';
 
     const extraGeojsons = [];
 
     const customColors = {
-  "layer_0.geojson": Cesium.Color.WHITE,
-  "layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
-  "layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
-  "layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
-  "layer_MATRÍCULA.geojson": Cesium.Color.fromBytes(0,191,255,255),
-  "layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
-  "layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98)
-};
+      "layer_0.geojson": Cesium.Color.WHITE,
+      "layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+      "layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+      "layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
+      "layer_MATRÍCULA.geojson": Cesium.Color.fromBytes(0,191,255,255),
+      "layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
+      "layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98)
+    };
 
     const geojsonColors = [
       Cesium.Color.YELLOW, Cesium.Color.ORANGE, Cesium.Color.RED, Cesium.Color.PURPLE,
@@ -260,9 +260,10 @@
                 }
 
                 function updateFrustumCone() {
-                  // Only use the virtual panorama yaw (not imageYaw!)
+                  // --- THIS IS THE CORRECT FORMULA ---
+                  const imageYaw = parseFloat(picked.id.properties['Yaw_est'].getValue());
                   const panoYaw = Cesium.Math.toDegrees(view.yaw());
-                  const combinedYaw = (panoYaw + 90 + 360) % 360;
+                  const combinedYaw = (imageYaw + panoYaw + 90 + 360) % 360;
                   const yaw = Cesium.Math.toRadians(combinedYaw);
 
                   const position = picked.id.position.getValue(Cesium.JulianDate.now());
