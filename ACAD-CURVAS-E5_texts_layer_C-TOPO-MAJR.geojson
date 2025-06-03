@@ -1,18 +1,457 @@
 {
-"type": "FeatureCollection",
-"name": "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
-"features": [
-{ "type": "Feature", "properties": { "fid": 1, "handle": 43, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "550.00", "angle": 25.2795401142622, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236919.741762078891043, 7414160.61858194321394, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 2, "handle": 45, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "550.00", "angle": 86.22218996203685, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236954.75602899628575, 7414190.02179813478142, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 3, "handle": 46, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "555.00", "angle": 12.648379629640885, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236939.711246499995468, 7414099.373765287920833, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 4, "handle": 47, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "560.00", "angle": 16.396962991760475, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 237064.026277105789632, 7414019.389194973744452, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 17, "handle": 60, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "550.00", "angle": 88.061505283695681, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236927.604932478599949, 7414169.908739412203431, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 18, "handle": 61, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "555.00", "angle": 61.439262026883334, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 237014.203092479991028, 7414155.021594734862447, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 19, "handle": 62, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "555.00", "angle": 29.508037906861322, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236984.634589411405614, 7414142.543760082684457, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 20, "handle": 63, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "555.00", "angle": 63.126830935299544, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236943.573011148313526, 7414128.754776258021593, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 31, "handle": 74, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "560.00", "angle": 108.73318855477601, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 237068.990901353303343, 7414027.092525050975382, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 32, "handle": 75, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "560.00", "angle": 107.01439907263941, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 237059.638930478598922, 7414055.841103344224393, 0.0 ] } },
-{ "type": "Feature", "properties": { "fid": 33, "handle": 76, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MAJR", "olinetype": "Continuous", "linetype": "", "color": "255,0,0,255", "ocolor": 10, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "560.00", "angle": 99.587874403599301, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 237051.452028167899698, 7414090.907388544641435, 0.0 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 1,
+        "handle": 43,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "550.00",
+        "angle": 25.2795401142622,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236919.7417620789,
+          7414160.618581943,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 2,
+        "handle": 45,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "550.00",
+        "angle": 86.22218996203685,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236954.7560289963,
+          7414190.021798135,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 3,
+        "handle": 46,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "555.00",
+        "angle": 12.648379629640885,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236939.7112465,
+          7414099.373765288,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 4,
+        "handle": 47,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "560.00",
+        "angle": 16.396962991760475,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          237064.0262771058,
+          7414019.389194974,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 17,
+        "handle": 60,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "550.00",
+        "angle": 88.06150528369568,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236927.6049324786,
+          7414169.908739412,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 18,
+        "handle": 61,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "555.00",
+        "angle": 61.439262026883334,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          237014.20309248,
+          7414155.021594735,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 19,
+        "handle": 62,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "555.00",
+        "angle": 29.508037906861322,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236984.6345894114,
+          7414142.543760083,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 20,
+        "handle": 63,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "555.00",
+        "angle": 63.126830935299544,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          236943.5730111483,
+          7414128.754776258,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 31,
+        "handle": 74,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "560.00",
+        "angle": 108.733188554776,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          237068.9909013533,
+          7414027.092525051,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 32,
+        "handle": 75,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "560.00",
+        "angle": 107.0143990726394,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          237059.6389304786,
+          7414055.841103344,
+          0.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 33,
+        "handle": 76,
+        "block": -1,
+        "etype": 19,
+        "space": 0,
+        "layer": "C-TOPO-MAJR",
+        "olinetype": "Continuous",
+        "linetype": "",
+        "color": "255,0,0,255",
+        "ocolor": 10,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -3,
+        "linewidth": 0.0,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "height": 0.508,
+        "text": "560.00",
+        "angle": 99.5878744035993,
+        "widthscale": 0.0,
+        "oblique": 0.0,
+        "style": "STANDARD",
+        "textgen": 5,
+        "alignh": 5,
+        "alignv": 1,
+        "interlin": 1.0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          237051.4520281679,
+          7414090.907388545,
+          0.0
+        ]
+      }
+    }
+  ]
 }

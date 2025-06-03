@@ -1,134 +1,4959 @@
 {
-"type": "FeatureCollection",
-"name": "ACAD-TALUDES-E5_lines_layer_TALUDE",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
-"features": [
-{ "type": "Feature", "properties": { "fid": 1, "handle": 29, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237030.645892410597298, 7414018.547949863597751, 0.0 ], [ 237030.703359778097365, 7414019.616932298056781, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 2, "handle": 30, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237029.447622676205356, 7414018.61236758902669, 0.0 ], [ 237029.56769880259526, 7414020.845979725942016, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 3, "handle": 31, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237028.249352941493271, 7414018.676785314455628, 0.0 ], [ 237028.310879408294568, 7414019.821273297071457, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 4, "handle": 32, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237027.058315220900113, 7414018.811644930392504, 0.0 ], [ 237027.395626367710065, 7414021.029858677648008, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 5, "handle": 33, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237025.871953352587298, 7414018.992048691958189, 0.0 ], [ 237026.032889479713049, 7414020.050385463051498, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 6, "handle": 34, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237024.685591484303586, 7414019.172452456317842, 0.0 ], [ 237024.998148513404885, 7414021.227879042737186, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 7, "handle": 35, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237023.499412839097204, 7414019.353993803262711, 0.0 ], [ 237023.671347753988812, 7414020.364864833652973, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 8, "handle": 36, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237022.3164027419989, 7414019.555207895115018, 0.0 ], [ 237022.660458426893456, 7414021.578034055419266, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 9, "handle": 37, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237021.133392644900596, 7414019.75642198510468, 0.0 ], [ 237021.318612336413935, 7414020.845399312674999, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 10, "handle": 38, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237019.950382548006019, 7414019.957636076956987, 0.0 ], [ 237020.35108129560831, 7414022.31348651368171, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 11, "handle": 39, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237018.767372450995026, 7414020.158850167877972, 0.0 ], [ 237018.982849802210694, 7414021.425723841413856, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 12, "handle": 40, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237017.628341516887303, 7414020.491254664026201, 0.0 ], [ 237018.833186564414063, 7414022.81437776517123, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 13, "handle": 41, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237016.56308538641315, 7414021.043730343692005, 0.0 ], [ 237017.139397381804883, 7414022.154946853406727, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 14, "handle": 42, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237015.497829255706165, 7414021.596206023357809, 0.0 ], [ 237016.575050569314044, 7414023.673254195600748, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 15, "handle": 43, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237014.482062514493009, 7414022.234414045698941, 0.0 ], [ 237015.021405324398074, 7414023.078439416363835, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 16, "handle": 44, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237013.470883733505616, 7414022.880569964647293, 0.0 ], [ 237014.424304773798212, 7414024.372589237056673, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 17, "handle": 45, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237012.42011853060103, 7414023.458502527326345, 0.0 ], [ 237012.803716062189778, 7414024.190091094002128, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 18, "handle": 46, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237011.3573502144136, 7414024.015748887322843, 0.0 ], [ 237012.070590416289633, 7414025.376024525612593, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 19, "handle": 47, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237010.268339676200412, 7414024.519536882638931, 0.0 ], [ 237010.565773926704424, 7414025.168517642654479, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 20, "handle": 48, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237009.177451837807894, 7414025.019500604830682, 0.0 ], [ 237009.724350182397757, 7414026.212798240594566, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 21, "handle": 49, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237008.097400617611129, 7414025.541791489347816, 0.0 ], [ 237008.374822950107045, 7414026.082586459815502, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 22, "handle": 50, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237007.02969309288892, 7414026.089514632709324, 0.0 ], [ 237007.567240380099975, 7414027.137385817244649, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 23, "handle": 51, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237005.961985568195814, 7414026.637237776070833, 0.0 ], [ 237006.222110522503499, 7414027.144313992932439, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 24, "handle": 52, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237004.875909542286536, 7414027.144099009223282, 0.0 ], [ 237005.256534853513585, 7414028.122723411768675, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 25, "handle": 53, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237003.757522660685936, 7414027.579082666896284, 0.0 ], [ 237003.757703903596848, 7414027.579548664391041, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 26, "handle": 54, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237072.800708879891317, 7414026.76320515666157, 0.0 ], [ 237070.249508521490498, 7414026.055722023360431, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 27, "handle": 55, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237073.121384344500257, 7414025.606845678761601, 0.0 ], [ 237068.177031465485925, 7414024.235703337937593, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 28, "handle": 56, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237073.442059809196508, 7414024.450486198998988, 0.0 ], [ 237070.820409674808616, 7414023.72346109058708, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 29, "handle": 57, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237073.699072940391488, 7414023.286925145424902, 0.0 ], [ 237068.487479440489551, 7414023.522814097814262, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 30, "handle": 58, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237073.644813441496808, 7414022.088152478449047, 0.0 ], [ 237070.467512002098374, 7414022.687666959129274, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 31, "handle": 59, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237068.580557373701595, 7414019.78003665804863, 0.0 ], [ 237068.011356790899299, 7414022.928260411135852, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 32, "handle": 60, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237067.399702562601306, 7414019.566537441685796, 0.0 ], [ 237067.107905233395286, 7414021.180455687455833, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 33, "handle": 61, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237066.218847751588328, 7414019.353038225322962, 0.0 ], [ 237065.620859113405459, 7414022.660487459972501, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 34, "handle": 62, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237065.036954964190954, 7414019.146758819930255, 0.0 ], [ 237064.854456825210946, 7414020.850477331317961, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 35, "handle": 63, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237063.843780769908335, 7414019.018949031829834, 0.0 ], [ 237063.482344857911812, 7414022.393150136806071, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 36, "handle": 64, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237062.650606575596612, 7414018.891139244660735, 0.0 ], [ 237062.471692268998595, 7414020.561401659622788, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 37, "handle": 65, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237061.457432380790124, 7414018.763329456560314, 0.0 ], [ 237061.103211085195653, 7414022.070178018882871, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 38, "handle": 66, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237060.264258186391089, 7414018.635519670322537, 0.0 ], [ 237060.088951206009369, 7414020.272105822339654, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 39, "handle": 67, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237059.071901244897163, 7414018.500918939709663, 0.0 ], [ 237058.639685444213683, 7414021.735749538987875, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 40, "handle": 68, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237057.882471417397028, 7414018.341995419003069, 0.0 ], [ 237057.666530301212333, 7414019.958161395974457, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 41, "handle": 69, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237056.693041589809582, 7414018.183071898296475, 0.0 ], [ 237056.262386853486532, 7414021.406218343414366, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 42, "handle": 70, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237055.503611762193032, 7414018.024148376658559, 0.0 ], [ 237055.289291616209084, 7414019.628182534128428, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 43, "handle": 71, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237054.31418193448917, 7414017.865224859677255, 0.0 ], [ 237053.887556551198941, 7414021.058215104974806, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 44, "handle": 72, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237053.124752107105451, 7414017.706301337108016, 0.0 ], [ 237052.912446639296832, 7414019.295257396064699, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 45, "handle": 73, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237051.935322279401589, 7414017.547377817332745, 0.0 ], [ 237051.512726163986372, 7414020.710211856290698, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 46, "handle": 74, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237050.745892451988766, 7414017.388454297557473, 0.0 ], [ 237050.535601619107183, 7414018.962332252413034, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 47, "handle": 75, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237049.553226449992508, 7414017.256046231836081, 0.0 ], [ 237049.204823290987406, 7414020.408557681366801, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 48, "handle": 76, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237048.360488277598051, 7414017.124229498207569, 0.0 ], [ 237048.186611401702976, 7414018.697545607574284, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 49, "handle": 77, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237047.167750105203595, 7414016.992412760853767, 0.0 ], [ 237046.820646617910825, 7414020.133165853098035, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 50, "handle": 78, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237045.975011932809139, 7414016.860596025362611, 0.0 ], [ 237045.80178508820245, 7414018.428032981231809, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 51, "handle": 79, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237044.782273760385578, 7414016.728779288940132, 0.0 ], [ 237044.436469271691749, 7414019.85777394566685, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 52, "handle": 80, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237043.589535587700084, 7414016.59696255158633, 0.0 ], [ 237043.417014851700515, 7414018.158010061830282, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 53, "handle": 81, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237042.391677501494996, 7414016.527157195843756, 0.0 ], [ 237042.223878278513439, 7414019.592557556927204, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 54, "handle": 82, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237041.193471331498586, 7414016.461567763239145, 0.0 ], [ 237041.111826331500197, 7414017.953086402267218, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 55, "handle": 83, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237039.99526516100741, 7414016.395978328771889, 0.0 ], [ 237039.836483348190086, 7414019.296652399003506, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 56, "handle": 84, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237038.797058990894584, 7414016.330388895235956, 0.0 ], [ 237038.719861872697948, 7414017.740649523213506, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 57, "handle": 85, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237037.598632489389274, 7414016.368601044639945, 0.0 ], [ 237037.733678873104509, 7414019.043685525655746, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 58, "handle": 86, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237036.400158674397971, 7414016.429103233851492, 0.0 ], [ 237036.462555180187337, 7414017.66510321944952, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 59, "handle": 87, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237035.200716617808212, 7414016.457868021912873, 0.0 ], [ 237035.224892969592474, 7414018.747747348621488, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 60, "handle": 88, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237034.000783487892477, 7414016.470536213368177, 0.0 ], [ 237034.011900013400009, 7414017.523465263657272, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 61, "handle": 91, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.319134903285885, 7414166.216302290558815, 0.0 ], [ 236926.737051687610801, 7414167.701138639822602, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 62, "handle": 92, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.295775630191201, 7414165.017691507004201, 0.0 ], [ 236934.451613045210252, 7414165.065779306925833, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 63, "handle": 93, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.280766774492804, 7414163.817785371094942, 0.0 ], [ 236927.430401486286428, 7414163.953495792113245, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 64, "handle": 94, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.265757918503368, 7414162.61787923425436, 0.0 ], [ 236934.422194545302773, 7414162.66595608368516, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 65, "handle": 95, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.250749062397517, 7414161.417973099276423, 0.0 ], [ 236927.904165171086788, 7414161.547402168624103, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 66, "handle": 96, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.252206609904533, 7414160.218097763136029, 0.0 ], [ 236934.399680414004251, 7414160.155493933707476, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 67, "handle": 97, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.271704153594328, 7414159.018256171606481, 0.0 ], [ 236928.418462882604217, 7414158.858140696771443, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 68, "handle": 98, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.291201697196811, 7414157.818414580076933, 0.0 ], [ 236934.40476260491414, 7414157.755259825848043, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 69, "handle": 99, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.332726821012329, 7414156.619492563419044, 0.0 ], [ 236929.127667225402547, 7414156.000025846064091, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 70, "handle": 100, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.413301330787363, 7414155.422200723551214, 0.0 ], [ 236934.448979155102279, 7414155.155416394583881, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 71, "handle": 101, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.493875840504188, 7414154.224908884614706, 0.0 ], [ 236929.714741895295447, 7414153.634097250178456, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 72, "handle": 102, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.574450350308325, 7414153.027617046609521, 0.0 ], [ 236934.515098702599062, 7414152.754433754831553, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 73, "handle": 103, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.642854101199191, 7414151.829781650565565, 0.0 ], [ 236930.208647929888684, 7414151.64364106208086, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 74, "handle": 104, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.6693312904099, 7414150.630073787644506, 0.0 ], [ 236934.550332235114183, 7414150.53916837554425, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 75, "handle": 105, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.695808479795232, 7414149.430365923792124, 0.0 ], [ 236930.971080586314201, 7414149.259890335611999, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 76, "handle": 106, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.722285669093253, 7414148.230658060871065, 0.0 ], [ 236934.562391458108323, 7414148.138850349001586, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 77, "handle": 107, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.750949663110077, 7414147.031011826358736, 0.0 ], [ 236931.781061144807609, 7414146.791969828307629, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 78, "handle": 108, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.792082470405148, 7414145.83171699475497, 0.0 ], [ 236934.582254126609769, 7414145.687327220104635, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 79, "handle": 109, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.833215277787531, 7414144.632422164082527, 0.0 ], [ 236932.519704041013028, 7414144.415891533717513, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 80, "handle": 110, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.874348085286329, 7414143.433127333410084, 0.0 ], [ 236934.608961925696349, 7414143.286835891194642, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 81, "handle": 111, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.920394358487101, 7414142.234040847048163, 0.0 ], [ 236933.153430020989617, 7414141.942720555700362, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 82, "handle": 112, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.980934345192509, 7414141.035568941384554, 0.0 ], [ 236934.64698680760921, 7414140.81664208881557, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 83, "handle": 113, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236939.041474332014332, 7414139.837097034789622, 0.0 ], [ 236933.761320944409817, 7414139.570373142138124, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 84, "handle": 114, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236939.081707207194995, 7414138.638606738299131, 0.0 ], [ 236934.68817930680234, 7414138.852565689012408, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 85, "handle": 115, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236939.02333809089032, 7414137.440027141943574, 0.0 ], [ 236934.280025369487703, 7414137.671020148321986, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 86, "handle": 116, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.964968975109514, 7414136.241447545588017, 0.0 ], [ 236935.693293392687337, 7414136.400773968547583, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 87, "handle": 117, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.90659985889215, 7414135.042867950163782, 0.0 ], [ 236935.016039920388721, 7414135.232336966320872, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 88, "handle": 118, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.784406125691021, 7414133.849326751194894, 0.0 ], [ 236936.367654461297207, 7414134.113542342558503, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 89, "handle": 119, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.653989514888963, 7414132.656434674747288, 0.0 ], [ 236935.603136015794007, 7414132.989974554628134, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 90, "handle": 120, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.52357290420332, 7414131.463542594574392, 0.0 ], [ 236936.946240130899241, 7414131.635988699272275, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 91, "handle": 121, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.485385165113257, 7414130.264623771421611, 0.0 ], [ 236936.22819757979596, 7414130.313407130539417, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 92, "handle": 122, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.459455159987556, 7414129.064903954975307, 0.0 ], [ 236937.542037652106956, 7414129.08473242726177, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 93, "handle": 123, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.496960947697517, 7414127.866353291086853, 0.0 ], [ 236936.75269222308998, 7414127.764255191199481, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 94, "handle": 124, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.567081192188198, 7414126.668403730727732, 0.0 ], [ 236937.944737202313263, 7414126.631976365111768, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 95, "handle": 125, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.63749040820403, 7414125.47047121077776, 0.0 ], [ 236937.130622594093438, 7414125.380951487459242, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 96, "handle": 126, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.708654676389415, 7414124.272583217360079, 0.0 ], [ 236937.977651466004318, 7414124.198238894343376, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 97, "handle": 127, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.774416230706265, 7414123.074443873018026, 0.0 ], [ 236937.384003779094201, 7414123.027650744654238, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 98, "handle": 128, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.814777242601849, 7414121.875122817233205, 0.0 ], [ 236938.092162083805306, 7414121.95723623316735, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 99, "handle": 129, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.803488322912017, 7414120.675533284433186, 0.0 ], [ 236937.924664794292767, 7414120.695965657941997, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 100, "handle": 130, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.77735641101026, 7414119.475901136174798, 0.0 ], [ 236938.775595611310564, 7414119.475772524252534, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 101, "handle": 131, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.864774087793194, 7414118.279089476913214, 0.0 ], [ 236938.653994696913287, 7414118.263693889603019, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 102, "handle": 140, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236953.487737257208209, 7414173.987594711594284, 0.0 ], [ 236953.136061927798437, 7414176.63076429720968, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 103, "handle": 141, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236952.298219758697087, 7414173.8293287307024, 0.0 ], [ 236951.591686226805905, 7414179.139590174891055, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 104, "handle": 142, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236951.108702260389691, 7414173.671062747947872, 0.0 ], [ 236950.753844056511298, 7414176.338154608383775, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 105, "handle": 143, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236949.919184761907673, 7414173.512796765193343, 0.0 ], [ 236949.206285638589179, 7414178.870902786962688, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 106, "handle": 144, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236948.732918320311001, 7414173.331807157024741, 0.0 ], [ 236948.320057337114122, 7414176.028191388584673, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 107, "handle": 145, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236947.546742516307859, 7414173.150184025987983, 0.0 ], [ 236946.713793245988199, 7414178.59015276003629, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 108, "handle": 146, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236946.36365614598617, 7414172.953710398636758, 0.0 ], [ 236945.645699140208308, 7414175.671342726796865, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 109, "handle": 147, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236945.203460442309733, 7414172.647204396314919, 0.0 ], [ 236943.722438791504828, 7414178.253211774863303, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 110, "handle": 148, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236944.043264738691505, 7414172.340698394924402, 0.0 ], [ 236943.280200106411939, 7414175.229073446244001, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 111, "handle": 149, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236942.883069034985965, 7414172.03419239167124, 0.0 ], [ 236941.311832137696911, 7414177.981685218401253, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 112, "handle": 150, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236941.722873331309529, 7414171.727686392143369, 0.0 ], [ 236940.91470107139321, 7414174.786804163828492, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 113, "handle": 151, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236940.570109297113959, 7414171.398035204038024, 0.0 ], [ 236938.201792925596237, 7414177.631375788711011, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 114, "handle": 152, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236939.448347925092094, 7414170.971829356625676, 0.0 ], [ 236937.412822281301487, 7414173.961329854093492, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 115, "handle": 153, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.788993066089461, 7414170.033299349248409, 0.0 ], [ 236926.188140981306788, 7414176.156094482168555, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 116, "handle": 154, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236938.732950020203134, 7414168.834608737379313, 0.0 ], [ 236932.581188101990847, 7414169.122220423072577, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 117, "handle": 155, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236948.209276125591714, 7414107.82882100623101, 0.0 ], [ 236945.438769122411031, 7414107.188959509134293, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 118, "handle": 156, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236948.479314952186542, 7414106.659599455073476, 0.0 ], [ 236943.096656693698606, 7414105.416449447162449, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 119, "handle": 157, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236948.749353778897785, 7414105.490377906709909, 0.0 ], [ 236946.137202519486891, 7414104.887089405208826, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 120, "handle": 158, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236949.019392605492612, 7414104.321156355552375, 0.0 ], [ 236943.933240338286851, 7414103.146480794996023, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 121, "handle": 159, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236949.295127165096346, 7414103.153269528411329, 0.0 ], [ 236946.822594683297211, 7414102.565493315458298, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 122, "handle": 160, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236949.572660740086576, 7414101.985804276540875, 0.0 ], [ 236944.750397891388275, 7414100.839439912699163, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 123, "handle": 161, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236949.850194315193221, 7414100.818339024670422, 0.0 ], [ 236947.4992484243121, 7414100.25946434866637, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 124, "handle": 162, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236950.127727890387177, 7414099.650873771868646, 0.0 ], [ 236945.546207175502786, 7414098.561739429831505, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 125, "handle": 163, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236950.377116972988006, 7414098.47720346879214, 0.0 ], [ 236948.135676367091946, 7414098.021421922370791, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 126, "handle": 164, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236950.616235563502414, 7414097.301268821582198, 0.0 ], [ 236946.227802190493094, 7414096.408911043778062, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "fid": 127, "handle": 165, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 236950.855354154191446, 7414096.125334173440933, 0.0 ], [ 236948.682227595912991, 7414095.683443816378713, 0.0 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "ACAD-TALUDES-E5_lines_layer_TALUDE",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 1,
+        "handle": 29,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237030.6458924106,
+            7414018.547949864,
+            0.0
+          ],
+          [
+            237030.7033597781,
+            7414019.616932298,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 2,
+        "handle": 30,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237029.4476226762,
+            7414018.612367589,
+            0.0
+          ],
+          [
+            237029.5676988026,
+            7414020.845979726,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 3,
+        "handle": 31,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237028.2493529415,
+            7414018.676785314,
+            0.0
+          ],
+          [
+            237028.3108794083,
+            7414019.821273297,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 4,
+        "handle": 32,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237027.0583152209,
+            7414018.81164493,
+            0.0
+          ],
+          [
+            237027.3956263677,
+            7414021.029858678,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5,
+        "handle": 33,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237025.8719533526,
+            7414018.992048692,
+            0.0
+          ],
+          [
+            237026.0328894797,
+            7414020.050385463,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 6,
+        "handle": 34,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237024.6855914843,
+            7414019.172452456,
+            0.0
+          ],
+          [
+            237024.9981485134,
+            7414021.227879043,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "handle": 35,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237023.4994128391,
+            7414019.353993803,
+            0.0
+          ],
+          [
+            237023.671347754,
+            7414020.364864834,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 8,
+        "handle": 36,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237022.316402742,
+            7414019.555207895,
+            0.0
+          ],
+          [
+            237022.6604584269,
+            7414021.578034055,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 9,
+        "handle": 37,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237021.1333926449,
+            7414019.756421985,
+            0.0
+          ],
+          [
+            237021.3186123364,
+            7414020.845399313,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 10,
+        "handle": 38,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237019.950382548,
+            7414019.957636077,
+            0.0
+          ],
+          [
+            237020.3510812956,
+            7414022.313486514,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 11,
+        "handle": 39,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237018.767372451,
+            7414020.158850168,
+            0.0
+          ],
+          [
+            237018.9828498022,
+            7414021.425723841,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 12,
+        "handle": 40,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237017.6283415169,
+            7414020.491254664,
+            0.0
+          ],
+          [
+            237018.8331865644,
+            7414022.814377765,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 13,
+        "handle": 41,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237016.5630853864,
+            7414021.043730344,
+            0.0
+          ],
+          [
+            237017.1393973818,
+            7414022.154946853,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 14,
+        "handle": 42,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237015.4978292557,
+            7414021.596206023,
+            0.0
+          ],
+          [
+            237016.5750505693,
+            7414023.673254196,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 15,
+        "handle": 43,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237014.4820625145,
+            7414022.234414046,
+            0.0
+          ],
+          [
+            237015.0214053244,
+            7414023.078439416,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 16,
+        "handle": 44,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237013.4708837335,
+            7414022.880569965,
+            0.0
+          ],
+          [
+            237014.4243047738,
+            7414024.372589237,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 17,
+        "handle": 45,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237012.4201185306,
+            7414023.458502527,
+            0.0
+          ],
+          [
+            237012.8037160622,
+            7414024.190091094,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 18,
+        "handle": 46,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237011.3573502144,
+            7414024.015748887,
+            0.0
+          ],
+          [
+            237012.0705904163,
+            7414025.376024526,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 19,
+        "handle": 47,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237010.2683396762,
+            7414024.519536883,
+            0.0
+          ],
+          [
+            237010.5657739267,
+            7414025.168517643,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 20,
+        "handle": 48,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237009.1774518378,
+            7414025.019500605,
+            0.0
+          ],
+          [
+            237009.7243501824,
+            7414026.212798241,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 21,
+        "handle": 49,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237008.0974006176,
+            7414025.541791489,
+            0.0
+          ],
+          [
+            237008.3748229501,
+            7414026.08258646,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 22,
+        "handle": 50,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237007.0296930929,
+            7414026.089514633,
+            0.0
+          ],
+          [
+            237007.5672403801,
+            7414027.137385817,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 23,
+        "handle": 51,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237005.9619855682,
+            7414026.637237776,
+            0.0
+          ],
+          [
+            237006.2221105225,
+            7414027.144313993,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 24,
+        "handle": 52,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237004.8759095423,
+            7414027.144099009,
+            0.0
+          ],
+          [
+            237005.2565348535,
+            7414028.122723412,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 25,
+        "handle": 53,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237003.7575226607,
+            7414027.579082667,
+            0.0
+          ],
+          [
+            237003.7577039036,
+            7414027.579548664,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 26,
+        "handle": 54,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237072.8007088799,
+            7414026.763205157,
+            0.0
+          ],
+          [
+            237070.2495085215,
+            7414026.055722023,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 27,
+        "handle": 55,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237073.1213843445,
+            7414025.606845679,
+            0.0
+          ],
+          [
+            237068.1770314655,
+            7414024.235703338,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 28,
+        "handle": 56,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237073.4420598092,
+            7414024.450486199,
+            0.0
+          ],
+          [
+            237070.8204096748,
+            7414023.723461091,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 29,
+        "handle": 57,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237073.6990729404,
+            7414023.286925145,
+            0.0
+          ],
+          [
+            237068.4874794405,
+            7414023.522814098,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 30,
+        "handle": 58,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237073.6448134415,
+            7414022.088152478,
+            0.0
+          ],
+          [
+            237070.4675120021,
+            7414022.687666959,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 31,
+        "handle": 59,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237068.5805573737,
+            7414019.780036658,
+            0.0
+          ],
+          [
+            237068.0113567909,
+            7414022.928260411,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 32,
+        "handle": 60,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237067.3997025626,
+            7414019.566537442,
+            0.0
+          ],
+          [
+            237067.1079052334,
+            7414021.180455687,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 33,
+        "handle": 61,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237066.2188477516,
+            7414019.353038225,
+            0.0
+          ],
+          [
+            237065.6208591134,
+            7414022.66048746,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 34,
+        "handle": 62,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237065.0369549642,
+            7414019.14675882,
+            0.0
+          ],
+          [
+            237064.8544568252,
+            7414020.850477331,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 35,
+        "handle": 63,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237063.8437807699,
+            7414019.018949032,
+            0.0
+          ],
+          [
+            237063.4823448579,
+            7414022.393150137,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 36,
+        "handle": 64,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237062.6506065756,
+            7414018.891139245,
+            0.0
+          ],
+          [
+            237062.471692269,
+            7414020.56140166,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 37,
+        "handle": 65,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237061.4574323808,
+            7414018.763329457,
+            0.0
+          ],
+          [
+            237061.1032110852,
+            7414022.070178019,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 38,
+        "handle": 66,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237060.2642581864,
+            7414018.63551967,
+            0.0
+          ],
+          [
+            237060.088951206,
+            7414020.272105822,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 39,
+        "handle": 67,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237059.0719012449,
+            7414018.50091894,
+            0.0
+          ],
+          [
+            237058.6396854442,
+            7414021.735749539,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 40,
+        "handle": 68,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237057.8824714174,
+            7414018.341995419,
+            0.0
+          ],
+          [
+            237057.6665303012,
+            7414019.958161396,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 41,
+        "handle": 69,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237056.6930415898,
+            7414018.183071898,
+            0.0
+          ],
+          [
+            237056.2623868535,
+            7414021.406218343,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 42,
+        "handle": 70,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237055.5036117622,
+            7414018.024148377,
+            0.0
+          ],
+          [
+            237055.2892916162,
+            7414019.628182534,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 43,
+        "handle": 71,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237054.3141819345,
+            7414017.86522486,
+            0.0
+          ],
+          [
+            237053.8875565512,
+            7414021.058215105,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 44,
+        "handle": 72,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237053.1247521071,
+            7414017.706301337,
+            0.0
+          ],
+          [
+            237052.9124466393,
+            7414019.295257396,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 45,
+        "handle": 73,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237051.9353222794,
+            7414017.547377817,
+            0.0
+          ],
+          [
+            237051.512726164,
+            7414020.710211856,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 46,
+        "handle": 74,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237050.745892452,
+            7414017.388454298,
+            0.0
+          ],
+          [
+            237050.5356016191,
+            7414018.962332252,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 47,
+        "handle": 75,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237049.55322645,
+            7414017.256046232,
+            0.0
+          ],
+          [
+            237049.204823291,
+            7414020.408557681,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 48,
+        "handle": 76,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237048.3604882776,
+            7414017.124229498,
+            0.0
+          ],
+          [
+            237048.1866114017,
+            7414018.697545608,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 49,
+        "handle": 77,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237047.1677501052,
+            7414016.992412761,
+            0.0
+          ],
+          [
+            237046.8206466179,
+            7414020.133165853,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 50,
+        "handle": 78,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237045.9750119328,
+            7414016.860596025,
+            0.0
+          ],
+          [
+            237045.8017850882,
+            7414018.428032981,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 51,
+        "handle": 79,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237044.7822737604,
+            7414016.728779289,
+            0.0
+          ],
+          [
+            237044.4364692717,
+            7414019.857773946,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 52,
+        "handle": 80,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237043.5895355877,
+            7414016.596962552,
+            0.0
+          ],
+          [
+            237043.4170148517,
+            7414018.158010062,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 53,
+        "handle": 81,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237042.3916775015,
+            7414016.527157196,
+            0.0
+          ],
+          [
+            237042.2238782785,
+            7414019.592557557,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 54,
+        "handle": 82,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237041.1934713315,
+            7414016.461567763,
+            0.0
+          ],
+          [
+            237041.1118263315,
+            7414017.953086402,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 55,
+        "handle": 83,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237039.995265161,
+            7414016.395978329,
+            0.0
+          ],
+          [
+            237039.8364833482,
+            7414019.296652399,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 56,
+        "handle": 84,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237038.7970589909,
+            7414016.330388895,
+            0.0
+          ],
+          [
+            237038.7198618727,
+            7414017.740649523,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 57,
+        "handle": 85,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237037.5986324894,
+            7414016.368601045,
+            0.0
+          ],
+          [
+            237037.7336788731,
+            7414019.043685526,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 58,
+        "handle": 86,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237036.4001586744,
+            7414016.429103234,
+            0.0
+          ],
+          [
+            237036.4625551802,
+            7414017.665103219,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 59,
+        "handle": 87,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237035.2007166178,
+            7414016.457868022,
+            0.0
+          ],
+          [
+            237035.2248929696,
+            7414018.747747349,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 60,
+        "handle": 88,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            237034.0007834879,
+            7414016.470536213,
+            0.0
+          ],
+          [
+            237034.0119000134,
+            7414017.523465264,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 61,
+        "handle": 91,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.3191349033,
+            7414166.216302291,
+            0.0
+          ],
+          [
+            236926.7370516876,
+            7414167.70113864,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 62,
+        "handle": 92,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2957756302,
+            7414165.017691507,
+            0.0
+          ],
+          [
+            236934.4516130452,
+            7414165.065779307,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 63,
+        "handle": 93,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2807667745,
+            7414163.817785371,
+            0.0
+          ],
+          [
+            236927.4304014863,
+            7414163.953495792,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 64,
+        "handle": 94,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2657579185,
+            7414162.617879234,
+            0.0
+          ],
+          [
+            236934.4221945453,
+            7414162.665956084,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 65,
+        "handle": 95,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2507490624,
+            7414161.417973099,
+            0.0
+          ],
+          [
+            236927.9041651711,
+            7414161.547402169,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 66,
+        "handle": 96,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2522066099,
+            7414160.218097763,
+            0.0
+          ],
+          [
+            236934.399680414,
+            7414160.155493934,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 67,
+        "handle": 97,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2717041536,
+            7414159.018256172,
+            0.0
+          ],
+          [
+            236928.4184628826,
+            7414158.858140697,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 68,
+        "handle": 98,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.2912016972,
+            7414157.81841458,
+            0.0
+          ],
+          [
+            236934.4047626049,
+            7414157.755259826,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 69,
+        "handle": 99,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.332726821,
+            7414156.619492563,
+            0.0
+          ],
+          [
+            236929.1276672254,
+            7414156.000025846,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 70,
+        "handle": 100,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.4133013308,
+            7414155.422200724,
+            0.0
+          ],
+          [
+            236934.4489791551,
+            7414155.155416395,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 71,
+        "handle": 101,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.4938758405,
+            7414154.224908885,
+            0.0
+          ],
+          [
+            236929.7147418953,
+            7414153.63409725,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 72,
+        "handle": 102,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.5744503503,
+            7414153.027617047,
+            0.0
+          ],
+          [
+            236934.5150987026,
+            7414152.754433755,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 73,
+        "handle": 103,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.6428541012,
+            7414151.829781651,
+            0.0
+          ],
+          [
+            236930.2086479299,
+            7414151.643641062,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 74,
+        "handle": 104,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.6693312904,
+            7414150.630073788,
+            0.0
+          ],
+          [
+            236934.5503322351,
+            7414150.539168376,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 75,
+        "handle": 105,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.6958084798,
+            7414149.430365924,
+            0.0
+          ],
+          [
+            236930.9710805863,
+            7414149.259890336,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 76,
+        "handle": 106,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7222856691,
+            7414148.230658061,
+            0.0
+          ],
+          [
+            236934.5623914581,
+            7414148.138850349,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 77,
+        "handle": 107,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7509496631,
+            7414147.031011826,
+            0.0
+          ],
+          [
+            236931.7810611448,
+            7414146.791969828,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 78,
+        "handle": 108,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7920824704,
+            7414145.831716995,
+            0.0
+          ],
+          [
+            236934.5822541266,
+            7414145.68732722,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 79,
+        "handle": 109,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.8332152778,
+            7414144.632422164,
+            0.0
+          ],
+          [
+            236932.519704041,
+            7414144.415891534,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 80,
+        "handle": 110,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.8743480853,
+            7414143.433127333,
+            0.0
+          ],
+          [
+            236934.6089619257,
+            7414143.286835891,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 81,
+        "handle": 111,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.9203943585,
+            7414142.234040847,
+            0.0
+          ],
+          [
+            236933.153430021,
+            7414141.942720556,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 82,
+        "handle": 112,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.9809343452,
+            7414141.035568941,
+            0.0
+          ],
+          [
+            236934.6469868076,
+            7414140.816642089,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 83,
+        "handle": 113,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236939.041474332,
+            7414139.837097035,
+            0.0
+          ],
+          [
+            236933.7613209444,
+            7414139.570373142,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 84,
+        "handle": 114,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236939.0817072072,
+            7414138.638606738,
+            0.0
+          ],
+          [
+            236934.6881793068,
+            7414138.852565689,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 85,
+        "handle": 115,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236939.0233380909,
+            7414137.440027142,
+            0.0
+          ],
+          [
+            236934.2800253695,
+            7414137.671020148,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 86,
+        "handle": 116,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.9649689751,
+            7414136.241447546,
+            0.0
+          ],
+          [
+            236935.6932933927,
+            7414136.400773969,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 87,
+        "handle": 117,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.9065998589,
+            7414135.04286795,
+            0.0
+          ],
+          [
+            236935.0160399204,
+            7414135.232336966,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 88,
+        "handle": 118,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7844061257,
+            7414133.849326751,
+            0.0
+          ],
+          [
+            236936.3676544613,
+            7414134.113542343,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 89,
+        "handle": 119,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.6539895149,
+            7414132.656434675,
+            0.0
+          ],
+          [
+            236935.6031360158,
+            7414132.989974555,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 90,
+        "handle": 120,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.5235729042,
+            7414131.463542595,
+            0.0
+          ],
+          [
+            236936.9462401309,
+            7414131.635988699,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 91,
+        "handle": 121,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.4853851651,
+            7414130.264623771,
+            0.0
+          ],
+          [
+            236936.2281975798,
+            7414130.313407131,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 92,
+        "handle": 122,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.45945516,
+            7414129.064903955,
+            0.0
+          ],
+          [
+            236937.5420376521,
+            7414129.084732427,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 93,
+        "handle": 123,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.4969609477,
+            7414127.866353291,
+            0.0
+          ],
+          [
+            236936.7526922231,
+            7414127.764255191,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 94,
+        "handle": 124,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.5670811922,
+            7414126.668403731,
+            0.0
+          ],
+          [
+            236937.9447372023,
+            7414126.631976365,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 95,
+        "handle": 125,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.6374904082,
+            7414125.470471211,
+            0.0
+          ],
+          [
+            236937.1306225941,
+            7414125.380951487,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 96,
+        "handle": 126,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7086546764,
+            7414124.272583217,
+            0.0
+          ],
+          [
+            236937.977651466,
+            7414124.198238894,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 97,
+        "handle": 127,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7744162307,
+            7414123.074443873,
+            0.0
+          ],
+          [
+            236937.3840037791,
+            7414123.027650745,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 98,
+        "handle": 128,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.8147772426,
+            7414121.875122817,
+            0.0
+          ],
+          [
+            236938.0921620838,
+            7414121.957236233,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 99,
+        "handle": 129,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.8034883229,
+            7414120.675533284,
+            0.0
+          ],
+          [
+            236937.9246647943,
+            7414120.695965658,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 100,
+        "handle": 130,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.777356411,
+            7414119.475901136,
+            0.0
+          ],
+          [
+            236938.7755956113,
+            7414119.475772524,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 101,
+        "handle": 131,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.8647740878,
+            7414118.279089477,
+            0.0
+          ],
+          [
+            236938.6539946969,
+            7414118.26369389,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 102,
+        "handle": 140,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236953.4877372572,
+            7414173.987594712,
+            0.0
+          ],
+          [
+            236953.1360619278,
+            7414176.630764297,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 103,
+        "handle": 141,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236952.2982197587,
+            7414173.829328731,
+            0.0
+          ],
+          [
+            236951.5916862268,
+            7414179.139590175,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 104,
+        "handle": 142,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236951.1087022604,
+            7414173.671062748,
+            0.0
+          ],
+          [
+            236950.7538440565,
+            7414176.338154608,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 105,
+        "handle": 143,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236949.9191847619,
+            7414173.512796765,
+            0.0
+          ],
+          [
+            236949.2062856386,
+            7414178.870902787,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 106,
+        "handle": 144,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236948.7329183203,
+            7414173.331807157,
+            0.0
+          ],
+          [
+            236948.3200573371,
+            7414176.028191389,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 107,
+        "handle": 145,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236947.5467425163,
+            7414173.150184026,
+            0.0
+          ],
+          [
+            236946.713793246,
+            7414178.59015276,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 108,
+        "handle": 146,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236946.363656146,
+            7414172.953710399,
+            0.0
+          ],
+          [
+            236945.6456991402,
+            7414175.671342727,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 109,
+        "handle": 147,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236945.2034604423,
+            7414172.647204396,
+            0.0
+          ],
+          [
+            236943.7224387915,
+            7414178.253211775,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 110,
+        "handle": 148,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236944.0432647387,
+            7414172.340698395,
+            0.0
+          ],
+          [
+            236943.2802001064,
+            7414175.229073446,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 111,
+        "handle": 149,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236942.883069035,
+            7414172.034192392,
+            0.0
+          ],
+          [
+            236941.3118321377,
+            7414177.981685218,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 112,
+        "handle": 150,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236941.7228733313,
+            7414171.727686392,
+            0.0
+          ],
+          [
+            236940.9147010714,
+            7414174.786804164,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 113,
+        "handle": 151,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236940.5701092971,
+            7414171.398035204,
+            0.0
+          ],
+          [
+            236938.2017929256,
+            7414177.631375789,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 114,
+        "handle": 152,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236939.4483479251,
+            7414170.971829357,
+            0.0
+          ],
+          [
+            236937.4128222813,
+            7414173.961329854,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 115,
+        "handle": 153,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7889930661,
+            7414170.033299349,
+            0.0
+          ],
+          [
+            236926.1881409813,
+            7414176.156094482,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 116,
+        "handle": 154,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 0.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236938.7329500202,
+            7414168.834608737,
+            0.0
+          ],
+          [
+            236932.581188102,
+            7414169.122220423,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 117,
+        "handle": 155,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236948.2092761256,
+            7414107.828821006,
+            0.0
+          ],
+          [
+            236945.4387691224,
+            7414107.188959509,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 118,
+        "handle": 156,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236948.4793149522,
+            7414106.659599455,
+            0.0
+          ],
+          [
+            236943.0966566937,
+            7414105.416449447,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 119,
+        "handle": 157,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236948.7493537789,
+            7414105.490377907,
+            0.0
+          ],
+          [
+            236946.1372025195,
+            7414104.887089405,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 120,
+        "handle": 158,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236949.0193926055,
+            7414104.321156356,
+            0.0
+          ],
+          [
+            236943.9332403383,
+            7414103.146480795,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 121,
+        "handle": 159,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236949.2951271651,
+            7414103.153269528,
+            0.0
+          ],
+          [
+            236946.8225946833,
+            7414102.565493315,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 122,
+        "handle": 160,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236949.5726607401,
+            7414101.985804277,
+            0.0
+          ],
+          [
+            236944.7503978914,
+            7414100.839439913,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 123,
+        "handle": 161,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236949.8501943152,
+            7414100.818339025,
+            0.0
+          ],
+          [
+            236947.4992484243,
+            7414100.259464349,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 124,
+        "handle": 162,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236950.1277278904,
+            7414099.650873772,
+            0.0
+          ],
+          [
+            236945.5462071755,
+            7414098.56173943,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 125,
+        "handle": 163,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236950.377116973,
+            7414098.477203469,
+            0.0
+          ],
+          [
+            236948.1356763671,
+            7414098.021421922,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 126,
+        "handle": 164,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236950.6162355635,
+            7414097.301268822,
+            0.0
+          ],
+          [
+            236946.2278021905,
+            7414096.408911044,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 127,
+        "handle": 165,
+        "block": -1,
+        "etype": 17,
+        "space": 0,
+        "layer": "TALUDE",
+        "olinetype": "BYLAYER",
+        "linetype": "",
+        "color": "204,178,102,254",
+        "ocolor": 256,
+        "color24": -1,
+        "transparency": 0,
+        "lweight": -1,
+        "linewidth": 0.13,
+        "ltscale": 1.0,
+        "visible": 1,
+        "thickness": 0.0,
+        "ext": "(3:0,0,1)",
+        "width": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            236950.8553541542,
+            7414096.125334173,
+            0.0
+          ],
+          [
+            236948.6822275959,
+            7414095.683443816,
+            0.0
+          ]
+        ]
+      }
+    }
+  ]
 }
