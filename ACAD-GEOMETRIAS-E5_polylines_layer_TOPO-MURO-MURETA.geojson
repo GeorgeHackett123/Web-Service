@@ -1,6 +1,7 @@
-﻿{
+{
 "type": "FeatureCollection",
 "name": "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
 "features": [
 { "type": "Feature", "properties": { "fid": 87, "handle": 119, "block": -1, "etype": 18, "space": 0, "layer": "TOPO-MURO-MURETA", "olinetype": "BYLAYER", "linetype": "", "color": "255,255,0,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "width": 0.0, "thickness": 0.0, "ext": "(3:0,0,0.1)" }, "geometry": { "type": "LineString", "coordinates": [ [ 236965.563116602686932, 7414086.028873534873128, 0.0 ], [ 236964.128153353201924, 7414085.584277248941362, 0.0 ], [ 236965.590783388906857, 7414080.700848834589124, 0.0 ], [ 236967.043362144206185, 7414081.115434965118766, 0.0 ], [ 236965.563116602686932, 7414086.028873534873128, 0.0 ] ] } },
 { "type": "Feature", "properties": { "fid": 88, "handle": 123, "block": -1, "etype": 18, "space": 0, "layer": "TOPO-MURO-MURETA", "olinetype": "BYLAYER", "linetype": "", "color": "255,255,0,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "width": 0.0, "thickness": 0.0, "ext": "(3:0,0,0.1)" }, "geometry": { "type": "LineString", "coordinates": [ [ 236965.469769535789965, 7414085.853385995142162, 0.0 ], [ 236964.302057790511753, 7414085.491592545062304, 0.0 ], [ 236965.685247113200603, 7414080.873400742188096, 0.0 ], [ 236966.86833526409464, 7414081.211070514284074, 0.0 ], [ 236965.469769535789965, 7414085.853385995142162, 0.0 ] ] } },

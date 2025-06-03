@@ -1,6 +1,7 @@
-﻿{
+{
 "type": "FeatureCollection",
 "name": "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
 "features": [
 { "type": "Feature", "properties": { "fid": 5, "handle": 48, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MINR", "olinetype": "Continuous", "linetype": "", "color": "76,0,0,255", "ocolor": 18, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "548.00", "angle": 77.44732832494185, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236902.329777877108427, 7414182.151045486330986, 0.0 ] } },
 { "type": "Feature", "properties": { "fid": 6, "handle": 49, "block": -1, "etype": 19, "space": 0, "layer": "C-TOPO-MINR", "olinetype": "Continuous", "linetype": "", "color": "76,0,0,255", "ocolor": 18, "color24": -1, "transparency": 0, "lweight": -3, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 0.508, "text": "549.00", "angle": -8.1534737137435531, "widthscale": 0.0, "oblique": 0.0, "style": "STANDARD", "textgen": 5, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236915.409985180885997, 7414175.060574470087886, 0.0 ] } },

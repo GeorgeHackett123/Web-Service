@@ -1,6 +1,7 @@
-﻿{
+{
 "type": "FeatureCollection",
 "name": "ACAD-TALUDES-E5_lines_layer_TALUDE",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
 "features": [
 { "type": "Feature", "properties": { "fid": 1, "handle": 29, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237030.645892410597298, 7414018.547949863597751, 0.0 ], [ 237030.703359778097365, 7414019.616932298056781, 0.0 ] ] } },
 { "type": "Feature", "properties": { "fid": 2, "handle": 30, "block": -1, "etype": 17, "space": 0, "layer": "TALUDE", "olinetype": "BYLAYER", "linetype": "", "color": "204,178,102,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.13, "ltscale": 0.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 237029.447622676205356, 7414018.61236758902669, 0.0 ], [ 237029.56769880259526, 7414020.845979725942016, 0.0 ] ] } },

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "ACAD-GEOMETRIAS-E5_texts_layer_MATRÃCULA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 7, "handle": 235, "block": -1, "etype": 19, "space": 0, "layer": "MATRÃCULA", "olinetype": "HIDDEN", "linetype": "", "color": "0,191,255,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 5.0, "visible": 1, "thickness": 0.0, "ext": "(3:0,0,1)", "height": 4.5, "text": "\\pi9.91375;ESTANCIA 5\\P\\pi5.32292;A= 30.070,04mÂ²", "angle": 0.0, "widthscale": 43.084400508534848, "oblique": 0.0, "style": "DPSP", "textgen": 1, "alignh": 5, "alignv": 1, "interlin": 1.0 }, "geometry": { "type": "Point", "coordinates": [ 236954.561019824905088, 7414161.745049706660211, 0.0 ] } }
+]
+}

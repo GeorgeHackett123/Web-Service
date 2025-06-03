@@ -1,6 +1,7 @@
-﻿{
+{
 "type": "FeatureCollection",
 "name": "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
 "features": [
 { "type": "Feature", "properties": { "fid": 1, "handle": 18, "block": -1, "etype": 18, "space": 0, "layer": "TOPO-ALVENARIA", "olinetype": "BYLAYER", "linetype": "", "color": "0,255,255,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "width": 0.0, "thickness": 0.0, "ext": "(3:0,0,0.1)" }, "geometry": { "type": "LineString", "coordinates": [ [ 237008.837995944195427, 7414149.564819370396435, 0.0 ], [ 237010.500807384290965, 7414150.80412969738245, 0.0 ], [ 237010.860714073991403, 7414150.321234536357224, 0.0 ], [ 237009.197902633604826, 7414149.081924206577241, 0.0 ], [ 237008.837995944195427, 7414149.564819370396435, 0.0 ] ] } },
 { "type": "Feature", "properties": { "fid": 2, "handle": 22, "block": -1, "etype": 18, "space": 0, "layer": "TOPO-ALVENARIA", "olinetype": "BYLAYER", "linetype": "", "color": "0,255,255,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "width": 0.0, "thickness": 0.0, "ext": "(3:0,0,0.1)" }, "geometry": { "type": "LineString", "coordinates": [ [ 237019.651480142114451, 7414163.20859154406935, 0.0 ], [ 237022.024564648192609, 7414168.329813558608294, 0.0 ], [ 237023.10338966519339, 7414167.829904959537089, 0.0 ], [ 237020.730305159202544, 7414162.7086829431355, 0.0 ], [ 237019.651480142114451, 7414163.20859154406935, 0.0 ] ] } },

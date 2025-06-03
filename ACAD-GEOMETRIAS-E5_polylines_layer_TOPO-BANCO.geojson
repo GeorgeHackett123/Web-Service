@@ -1,6 +1,7 @@
-﻿{
+{
 "type": "FeatureCollection",
 "name": "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::29183" } },
 "features": [
 { "type": "Feature", "properties": { "fid": 191, "handle": 304, "block": -1, "etype": 18, "space": 0, "layer": "TOPO-BANCO", "olinetype": "Continuous", "linetype": "", "color": "132,132,132,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "width": 0.0, "thickness": 0.0, "ext": "(3:0,0,0.1)" }, "geometry": { "type": "LineString", "coordinates": [ [ 237034.943083580292296, 7414064.230629337951541, 0.0 ], [ 237035.087786065007094, 7414063.715170790441334, 0.0 ], [ 237036.501451696502045, 7414064.109925153665245, 0.0 ], [ 237036.356749212485738, 7414064.625383698381484, 0.0 ], [ 237034.943083580292296, 7414064.230629337951541, 0.0 ] ] } },
 { "type": "Feature", "properties": { "fid": 192, "handle": 308, "block": -1, "etype": 18, "space": 0, "layer": "TOPO-BANCO", "olinetype": "Continuous", "linetype": "", "color": "132,132,132,254", "ocolor": 256, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "width": 0.0, "thickness": 0.0, "ext": "(3:0,0,0.1)" }, "geometry": { "type": "LineString", "coordinates": [ [ 237032.164677046792349, 7414070.983237278647721, 0.0 ], [ 237032.309706962289056, 7414070.522357884794474, 0.0 ], [ 237033.712613205687376, 7414070.966342190280557, 0.0 ], [ 237033.567583290307084, 7414071.427221585065126, 0.0 ], [ 237032.164677046792349, 7414070.983237278647721, 0.0 ] ] } },
