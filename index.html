@@ -103,24 +103,46 @@
 <script type="module">
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MWVkZWM4Yi1hYzM2LTRmZDItOGVmZi1hMDliYzZjODA2NWMiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDg2MDYwMTZ9.IkBgYtVs-cpJykU4FRRGoHFUTaZoRsxYxslpmBnPM4o';
 
-    const extraGeojsons = [];
-
+    const extraGeojsons = [
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson",
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson",
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson",
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRÃCULA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEÃ‡ÃƒO.geojson",
+  "ACAD-GEOMETRIAS-E5_texts_layer_MATRÃCULA.geojson",
+  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson",
+  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson"
+];
     const customColors = {
-  "layer_0.geojson": Cesium.Color.WHITE,
-  "layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
-  "layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
-  "layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
-  "layer_MATRÍCULA.geojson": Cesium.Color.fromBytes(0,191,255,255),
-  "layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
-  "layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98)
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRÃCULA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEÃ‡ÃƒO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_texts_layer_MATRÃCULA.geojson": Cesium.Color.WHITE,
+  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
+  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140)
 };
-
-    const geojsonColors = [
-      Cesium.Color.YELLOW, Cesium.Color.ORANGE, Cesium.Color.RED, Cesium.Color.PURPLE,
-      Cesium.Color.LIME, Cesium.Color.AQUA, Cesium.Color.BLUE, Cesium.Color.FUCHSIA,
-      Cesium.Color.MAGENTA, Cesium.Color.CYAN, Cesium.Color.OLIVE, Cesium.Color.NAVY,
-      Cesium.Color.MAROON, Cesium.Color.BROWN, Cesium.Color.GREEN
-    ];
 
     async function init() {
       const viewer = new Cesium.Viewer('cesiumContainer', {
@@ -175,7 +197,7 @@
         entity.popupLabel = labelText;
       }
 
-      // Load all GeoJSON overlays as data sources
+      // Load all GeoJSON overlays as data sources with dynamic color mapping
       const loadPromises = extraGeojsons.map((filename, idx) =>
         fetch(filename)
           .then(resp => {
@@ -184,11 +206,13 @@
           })
           .then(data => {
             reprojectGeojsonUTM23SToWGS84(data);
-            const color = customColors[filename] || geojsonColors[idx % geojsonColors.length];
+            const base = filename.split('/').pop();
+            let color = customColors[base];
+            if (!color) color = Cesium.Color.WHITE;
             return Cesium.GeoJsonDataSource.load(data, { 
               clampToGround: false,
               stroke: color,
-              fill: color.withAlpha(0.4),
+              fill: color.withAlpha ? color.withAlpha(0.4) : color,
               strokeWidth: 2 
             }).then(ds => {
                 viewer.dataSources.add(ds);
