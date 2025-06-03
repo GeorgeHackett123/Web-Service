@@ -1,156 +1,2985 @@
 {
-"type": "FeatureCollection",
-"name": "camera_points_final",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::31983" } },
-"features": [
-{ "type": "Feature", "properties": { "#Label": "1748630800.440979.jpg", "X/Easting": 318257.99414199998, "Y/Northing": 7439246.3762699999, "Z/Altitude": 815.385388, "Yaw_est": 11.201324, "Pitch_est": -8.404295, "Roll_est": -178.772684 }, "geometry": { "type": "Point", "coordinates": [ 318257.994141999981366, 7439246.37626999989152, 815.385388 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630806.446427.jpg", "X/Easting": 318257.88168499997, "Y/Northing": 7439246.379439, "Z/Altitude": 815.363224, "Yaw_est": 13.683893, "Pitch_est": -3.176063, "Roll_est": 179.697323 }, "geometry": { "type": "Point", "coordinates": [ 318257.881684999971185, 7439246.379439, 815.363224 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630807.447336.jpg", "X/Easting": 318257.34042899997, "Y/Northing": 7439246.1468869997, "Z/Altitude": 815.289632, "Yaw_est": 17.92331, "Pitch_est": 1.834923, "Roll_est": 177.502167 }, "geometry": { "type": "Point", "coordinates": [ 318257.340428999974392, 7439246.146886999718845, 815.289632 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630808.448244.jpg", "X/Easting": 318256.40533400001, "Y/Northing": 7439245.9466199996, "Z/Altitude": 815.220383, "Yaw_est": 4.57596, "Pitch_est": -3.714931, "Roll_est": 179.012593 }, "geometry": { "type": "Point", "coordinates": [ 318256.405334000010043, 7439245.946619999594986, 815.220383 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630809.449153.jpg", "X/Easting": 318255.18480699998, "Y/Northing": 7439245.8388430001, "Z/Altitude": 815.090992, "Yaw_est": 9.34775, "Pitch_est": -0.843859, "Roll_est": -178.415176 }, "geometry": { "type": "Point", "coordinates": [ 318255.184806999983266, 7439245.838843000121415, 815.090992 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630810.450060.jpg", "X/Easting": 318253.95990100002, "Y/Northing": 7439245.9226050004, "Z/Altitude": 814.996382, "Yaw_est": 4.20114, "Pitch_est": -7.315603, "Roll_est": -177.693423 }, "geometry": { "type": "Point", "coordinates": [ 318253.95990100002382, 7439245.922605000436306, 814.996382 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630811.450969.jpg", "X/Easting": 318252.61449499999, "Y/Northing": 7439245.770951, "Z/Altitude": 814.77084, "Yaw_est": 21.135229, "Pitch_est": -3.860091, "Roll_est": -179.036723 }, "geometry": { "type": "Point", "coordinates": [ 318252.614494999987073, 7439245.770951, 814.77084 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630812.451878.jpg", "X/Easting": 318251.26679000002, "Y/Northing": 7439245.7379240002, "Z/Altitude": 814.618465, "Yaw_est": 7.870405, "Pitch_est": -4.647332, "Roll_est": 178.570657 }, "geometry": { "type": "Point", "coordinates": [ 318251.26679000002332, 7439245.737924000248313, 814.618465 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630813.452785.jpg", "X/Easting": 318249.92413599999, "Y/Northing": 7439245.8300240003, "Z/Altitude": 814.401104, "Yaw_est": 8.608786, "Pitch_est": -9.321457, "Roll_est": -178.453463 }, "geometry": { "type": "Point", "coordinates": [ 318249.924135999986902, 7439245.830024000257254, 814.401104 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630814.453693.jpg", "X/Easting": 318248.61985399999, "Y/Northing": 7439245.9007160002, "Z/Altitude": 814.273472, "Yaw_est": 3.972831, "Pitch_est": -3.267129, "Roll_est": 178.562195 }, "geometry": { "type": "Point", "coordinates": [ 318248.619853999989573, 7439245.900716000236571, 814.273472 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630815.454601.jpg", "X/Easting": 318247.35748399998, "Y/Northing": 7439245.9494380001, "Z/Altitude": 814.141575, "Yaw_est": 359.406733, "Pitch_est": -5.307724, "Roll_est": 175.623214 }, "geometry": { "type": "Point", "coordinates": [ 318247.357483999978285, 7439245.949438, 814.141575 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630816.455510.jpg", "X/Easting": 318246.022528, "Y/Northing": 7439245.9278060002, "Z/Altitude": 813.976762, "Yaw_est": 359.504119, "Pitch_est": -3.702207, "Roll_est": 175.133032 }, "geometry": { "type": "Point", "coordinates": [ 318246.022528, 7439245.927806000225246, 813.976762 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630817.456417.jpg", "X/Easting": 318244.72578500002, "Y/Northing": 7439245.767244, "Z/Altitude": 813.802274, "Yaw_est": 10.48424, "Pitch_est": -2.386726, "Roll_est": -179.825238 }, "geometry": { "type": "Point", "coordinates": [ 318244.725785000016913, 7439245.767244, 813.802274 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630818.457327.jpg", "X/Easting": 318243.43696199998, "Y/Northing": 7439245.7035229998, "Z/Altitude": 813.562436, "Yaw_est": 7.803027, "Pitch_est": -5.426064, "Roll_est": 178.105038 }, "geometry": { "type": "Point", "coordinates": [ 318243.436961999977939, 7439245.703522999770939, 813.562436 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630819.458234.jpg", "X/Easting": 318242.06333500001, "Y/Northing": 7439245.5130639998, "Z/Altitude": 813.387466, "Yaw_est": 9.525902, "Pitch_est": -6.954391, "Roll_est": 178.182919 }, "geometry": { "type": "Point", "coordinates": [ 318242.063335000013467, 7439245.513063999824226, 813.387466 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630820.459142.jpg", "X/Easting": 318240.69927099999, "Y/Northing": 7439245.4221919999, "Z/Altitude": 813.251765, "Yaw_est": 9.202083, "Pitch_est": -3.518611, "Roll_est": 179.44088 }, "geometry": { "type": "Point", "coordinates": [ 318240.699271, 7439245.422191999852657, 813.251765 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630821.460051.jpg", "X/Easting": 318239.37139699998, "Y/Northing": 7439245.3866849998, "Z/Altitude": 813.073586, "Yaw_est": 14.393298, "Pitch_est": -5.642136, "Roll_est": -175.342775 }, "geometry": { "type": "Point", "coordinates": [ 318239.371396999980789, 7439245.386684999801219, 813.073586 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630822.460960.jpg", "X/Easting": 318237.953056, "Y/Northing": 7439245.4018670004, "Z/Altitude": 812.894704, "Yaw_est": 10.038552, "Pitch_est": -2.492086, "Roll_est": -177.937608 }, "geometry": { "type": "Point", "coordinates": [ 318237.953056, 7439245.401867000386119, 812.894704 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630823.461867.jpg", "X/Easting": 318236.468498, "Y/Northing": 7439245.2860979997, "Z/Altitude": 812.669155, "Yaw_est": 10.963068, "Pitch_est": 1.066673, "Roll_est": -177.429425 }, "geometry": { "type": "Point", "coordinates": [ 318236.468498, 7439245.286097999662161, 812.669155 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630824.462775.jpg", "X/Easting": 318235.05011399998, "Y/Northing": 7439245.3402960002, "Z/Altitude": 812.487494, "Yaw_est": 10.422932, "Pitch_est": -5.475326, "Roll_est": -177.526859 }, "geometry": { "type": "Point", "coordinates": [ 318235.050113999983296, 7439245.340296000242233, 812.487494 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630825.463684.jpg", "X/Easting": 318233.65568099997, "Y/Northing": 7439245.4094719999, "Z/Altitude": 812.290534, "Yaw_est": 7.937108, "Pitch_est": -2.813342, "Roll_est": -177.317893 }, "geometry": { "type": "Point", "coordinates": [ 318233.65568099997472, 7439245.409471999853849, 812.290534 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630826.464592.jpg", "X/Easting": 318232.32850800001, "Y/Northing": 7439245.5106579997, "Z/Altitude": 812.135453, "Yaw_est": 8.944081, "Pitch_est": 2.15866, "Roll_est": -179.302261 }, "geometry": { "type": "Point", "coordinates": [ 318232.328508, 7439245.510657999664545, 812.135453 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630827.465500.jpg", "X/Easting": 318231.01578700001, "Y/Northing": 7439245.2728000004, "Z/Altitude": 811.923137, "Yaw_est": 28.455687, "Pitch_est": 1.665167, "Roll_est": -177.445141 }, "geometry": { "type": "Point", "coordinates": [ 318231.015787000011187, 7439245.27280000038445, 811.923137 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630828.466408.jpg", "X/Easting": 318229.72648299998, "Y/Northing": 7439244.9398320001, "Z/Altitude": 811.804814, "Yaw_est": 31.605432, "Pitch_est": -4.326374, "Roll_est": -179.576096 }, "geometry": { "type": "Point", "coordinates": [ 318229.726482999976724, 7439244.939832, 811.804814 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630829.467316.jpg", "X/Easting": 318228.31677799998, "Y/Northing": 7439244.6326949997, "Z/Altitude": 811.658658, "Yaw_est": 25.178895, "Pitch_est": -0.185592, "Roll_est": 178.953275 }, "geometry": { "type": "Point", "coordinates": [ 318228.316777999978513, 7439244.632694999687374, 811.658658 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630830.468225.jpg", "X/Easting": 318226.98253799998, "Y/Northing": 7439244.284461, "Z/Altitude": 811.478598, "Yaw_est": 28.623694, "Pitch_est": -3.79322, "Roll_est": 176.037337 }, "geometry": { "type": "Point", "coordinates": [ 318226.982537999982014, 7439244.284461, 811.478598 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630831.469134.jpg", "X/Easting": 318225.64037400001, "Y/Northing": 7439243.6245619999, "Z/Altitude": 811.261989, "Yaw_est": 37.856366, "Pitch_est": -0.48196, "Roll_est": 179.010894 }, "geometry": { "type": "Point", "coordinates": [ 318225.640374, 7439243.624562, 811.261989 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630832.470040.jpg", "X/Easting": 318224.311583, "Y/Northing": 7439243.0136559997, "Z/Altitude": 811.108454, "Yaw_est": 32.1326, "Pitch_est": -3.735751, "Roll_est": 176.261868 }, "geometry": { "type": "Point", "coordinates": [ 318224.311583, 7439243.013655999675393, 811.108454 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630833.470950.jpg", "X/Easting": 318222.93422400003, "Y/Northing": 7439242.4282609997, "Z/Altitude": 810.925708, "Yaw_est": 34.338177, "Pitch_est": -2.88116, "Roll_est": 178.08915 }, "geometry": { "type": "Point", "coordinates": [ 318222.934224000026006, 7439242.428260999731719, 810.925708 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630834.471858.jpg", "X/Easting": 318221.62222399999, "Y/Northing": 7439241.7565670004, "Z/Altitude": 810.762704, "Yaw_est": 39.359874, "Pitch_est": -3.397017, "Roll_est": -179.548289 }, "geometry": { "type": "Point", "coordinates": [ 318221.622224, 7439241.756567000411451, 810.762704 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630835.472765.jpg", "X/Easting": 318220.30652300001, "Y/Northing": 7439241.0180989997, "Z/Altitude": 810.569578, "Yaw_est": 34.893948, "Pitch_est": -3.180162, "Roll_est": 178.292222 }, "geometry": { "type": "Point", "coordinates": [ 318220.306523, 7439241.018098999746144, 810.569578 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630836.473673.jpg", "X/Easting": 318219.07784300001, "Y/Northing": 7439240.2623439999, "Z/Altitude": 810.385561, "Yaw_est": 33.300364, "Pitch_est": -2.963614, "Roll_est": 177.937426 }, "geometry": { "type": "Point", "coordinates": [ 318219.077843, 7439240.262344, 810.385561 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630837.474581.jpg", "X/Easting": 318217.95627199998, "Y/Northing": 7439239.3075449998, "Z/Altitude": 810.219856, "Yaw_est": 40.519184, "Pitch_est": -2.018397, "Roll_est": -179.818632 }, "geometry": { "type": "Point", "coordinates": [ 318217.956271999981254, 7439239.307544999755919, 810.219856 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630838.475491.jpg", "X/Easting": 318216.87409599999, "Y/Northing": 7439238.2809969997, "Z/Altitude": 810.060035, "Yaw_est": 46.818176, "Pitch_est": -2.996943, "Roll_est": -178.38677 }, "geometry": { "type": "Point", "coordinates": [ 318216.874095999985002, 7439238.280996999703348, 810.060035 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630839.476400.jpg", "X/Easting": 318215.78669799998, "Y/Northing": 7439237.2668789998, "Z/Altitude": 809.884258, "Yaw_est": 49.341044, "Pitch_est": -2.351885, "Roll_est": -178.55454 }, "geometry": { "type": "Point", "coordinates": [ 318215.786697999981698, 7439237.266878999769688, 809.884258 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630840.477306.jpg", "X/Easting": 318214.892536, "Y/Northing": 7439236.0921569997, "Z/Altitude": 809.744153, "Yaw_est": 56.690883, "Pitch_est": -3.20386, "Roll_est": -179.772706 }, "geometry": { "type": "Point", "coordinates": [ 318214.892536, 7439236.092156999744475, 809.744153 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630841.478214.jpg", "X/Easting": 318214.114543, "Y/Northing": 7439234.8756809998, "Z/Altitude": 809.626184, "Yaw_est": 62.900255, "Pitch_est": -3.059364, "Roll_est": 179.559435 }, "geometry": { "type": "Point", "coordinates": [ 318214.114543, 7439234.875680999830365, 809.626184 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630842.479124.jpg", "X/Easting": 318213.41771200002, "Y/Northing": 7439233.6170239998, "Z/Altitude": 809.518407, "Yaw_est": 66.845343, "Pitch_est": -5.082511, "Roll_est": 177.912538 }, "geometry": { "type": "Point", "coordinates": [ 318213.417712000024039, 7439233.617023999802768, 809.518407 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630843.480030.jpg", "X/Easting": 318212.75692100002, "Y/Northing": 7439232.3016980002, "Z/Altitude": 809.414543, "Yaw_est": 67.966491, "Pitch_est": -4.691156, "Roll_est": 177.448728 }, "geometry": { "type": "Point", "coordinates": [ 318212.756921000021975, 7439232.30169800017029, 809.414543 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630844.480940.jpg", "X/Easting": 318212.11614499998, "Y/Northing": 7439230.9728950001, "Z/Altitude": 809.27921, "Yaw_est": 72.911752, "Pitch_est": -0.986081, "Roll_est": 178.419118 }, "geometry": { "type": "Point", "coordinates": [ 318212.116144999978133, 7439230.972895000129938, 809.27921 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630845.481846.jpg", "X/Easting": 318211.63459600002, "Y/Northing": 7439229.589892, "Z/Altitude": 809.220297, "Yaw_est": 77.072401, "Pitch_est": 1.034542, "Roll_est": 179.74646 }, "geometry": { "type": "Point", "coordinates": [ 318211.634596000018064, 7439229.589892, 809.220297 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630846.482757.jpg", "X/Easting": 318211.24415099999, "Y/Northing": 7439228.1950070001, "Z/Altitude": 809.184105, "Yaw_est": 84.94425, "Pitch_est": 1.698183, "Roll_est": -179.061742 }, "geometry": { "type": "Point", "coordinates": [ 318211.244151, 7439228.195007000118494, 809.184105 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630847.483663.jpg", "X/Easting": 318210.92524000001, "Y/Northing": 7439226.771311, "Z/Altitude": 809.140282, "Yaw_est": 88.190612, "Pitch_est": 2.120423, "Roll_est": 178.19295 }, "geometry": { "type": "Point", "coordinates": [ 318210.925240000011399, 7439226.771311, 809.140282 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630848.484571.jpg", "X/Easting": 318210.87794600002, "Y/Northing": 7439225.2511729999, "Z/Altitude": 809.12354, "Yaw_est": 97.731514, "Pitch_est": 1.809648, "Roll_est": 179.328803 }, "geometry": { "type": "Point", "coordinates": [ 318210.877946000022348, 7439225.251172999851406, 809.12354 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630849.485480.jpg", "X/Easting": 318210.83691900002, "Y/Northing": 7439223.7691710005, "Z/Altitude": 809.119315, "Yaw_est": 95.301072, "Pitch_est": 0.554509, "Roll_est": -179.147996 }, "geometry": { "type": "Point", "coordinates": [ 318210.836919000023045, 7439223.7691710004583, 809.119315 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630850.486388.jpg", "X/Easting": 318210.85598300002, "Y/Northing": 7439222.2814499997, "Z/Altitude": 809.103722, "Yaw_est": 100.007837, "Pitch_est": -0.352258, "Roll_est": 178.65412 }, "geometry": { "type": "Point", "coordinates": [ 318210.85598300001584, 7439222.281449999660254, 809.103722 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630851.487297.jpg", "X/Easting": 318211.04055099998, "Y/Northing": 7439220.7825570004, "Z/Altitude": 809.11012, "Yaw_est": 100.911922, "Pitch_est": -2.795649, "Roll_est": 178.34789 }, "geometry": { "type": "Point", "coordinates": [ 318211.04055099998368, 7439220.782557000406086, 809.11012 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630852.488204.jpg", "X/Easting": 318211.26923699997, "Y/Northing": 7439219.317489, "Z/Altitude": 809.095228, "Yaw_est": 106.577834, "Pitch_est": -0.73627, "Roll_est": 179.933478 }, "geometry": { "type": "Point", "coordinates": [ 318211.269236999971326, 7439219.317489, 809.095228 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630853.489113.jpg", "X/Easting": 318211.70519100002, "Y/Northing": 7439217.8939270005, "Z/Altitude": 809.074805, "Yaw_est": 113.289125, "Pitch_est": -0.610439, "Roll_est": 179.597339 }, "geometry": { "type": "Point", "coordinates": [ 318211.705191000015475, 7439217.893927000463009, 809.074805 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630854.490021.jpg", "X/Easting": 318212.24422699999, "Y/Northing": 7439216.4868179997, "Z/Altitude": 809.125085, "Yaw_est": 114.082503, "Pitch_est": 3.181065, "Roll_est": 179.339628 }, "geometry": { "type": "Point", "coordinates": [ 318212.244226999988314, 7439216.486817999742925, 809.125085 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630855.490929.jpg", "X/Easting": 318212.86756799999, "Y/Northing": 7439215.1490839999, "Z/Altitude": 809.212992, "Yaw_est": 118.399875, "Pitch_est": 0.269902, "Roll_est": 178.392079 }, "geometry": { "type": "Point", "coordinates": [ 318212.867567999986932, 7439215.149084, 809.212992 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630856.491838.jpg", "X/Easting": 318213.67319300002, "Y/Northing": 7439213.8775289999, "Z/Altitude": 809.287964, "Yaw_est": 129.33652, "Pitch_est": 1.84008, "Roll_est": 178.502135 }, "geometry": { "type": "Point", "coordinates": [ 318213.673193000024185, 7439213.877529, 809.287964 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630857.492747.jpg", "X/Easting": 318214.56128199998, "Y/Northing": 7439212.7035600003, "Z/Altitude": 809.350847, "Yaw_est": 133.350026, "Pitch_est": -1.290204, "Roll_est": 178.784432 }, "geometry": { "type": "Point", "coordinates": [ 318214.561281999980565, 7439212.703560000285506, 809.350847 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630858.493654.jpg", "X/Easting": 318215.59814999998, "Y/Northing": 7439211.6357549997, "Z/Altitude": 809.401291, "Yaw_est": 140.726891, "Pitch_est": -0.852312, "Roll_est": 179.259564 }, "geometry": { "type": "Point", "coordinates": [ 318215.598149999976158, 7439211.635754999704659, 809.401291 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630859.494562.jpg", "X/Easting": 318216.58916899998, "Y/Northing": 7439210.5520320004, "Z/Altitude": 809.431065, "Yaw_est": 136.112777, "Pitch_est": -2.571784, "Roll_est": 178.949482 }, "geometry": { "type": "Point", "coordinates": [ 318216.589168999984395, 7439210.552032000385225, 809.431065 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630860.495471.jpg", "X/Easting": 318217.61967400002, "Y/Northing": 7439209.4326210003, "Z/Altitude": 809.467779, "Yaw_est": 144.553033, "Pitch_est": 0.753378, "Roll_est": 178.116933 }, "geometry": { "type": "Point", "coordinates": [ 318217.619674000015948, 7439209.43262100033462, 809.467779 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630861.496379.jpg", "X/Easting": 318218.61593799997, "Y/Northing": 7439208.4563849997, "Z/Altitude": 809.570159, "Yaw_est": 150.496148, "Pitch_est": -0.678465, "Roll_est": 178.743143 }, "geometry": { "type": "Point", "coordinates": [ 318218.615937999973539, 7439208.456384999677539, 809.570159 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630862.497287.jpg", "X/Easting": 318219.72605699999, "Y/Northing": 7439207.6197549999, "Z/Altitude": 809.673039, "Yaw_est": 152.935663, "Pitch_est": -0.643259, "Roll_est": 177.093196 }, "geometry": { "type": "Point", "coordinates": [ 318219.726057, 7439207.619754999876022, 809.673039 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630863.498195.jpg", "X/Easting": 318220.79157900001, "Y/Northing": 7439206.7124810005, "Z/Altitude": 809.710413, "Yaw_est": 148.25233, "Pitch_est": -0.014763, "Roll_est": 177.148121 }, "geometry": { "type": "Point", "coordinates": [ 318220.791579000011552, 7439206.712481000460684, 809.710413 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630864.499103.jpg", "X/Easting": 318221.94873900001, "Y/Northing": 7439206.0486270003, "Z/Altitude": 809.769859, "Yaw_est": 157.688467, "Pitch_est": 1.880958, "Roll_est": 179.673694 }, "geometry": { "type": "Point", "coordinates": [ 318221.948739000014029, 7439206.048627000302076, 809.769859 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630865.500013.jpg", "X/Easting": 318223.21324399998, "Y/Northing": 7439205.5289589996, "Z/Altitude": 809.9103, "Yaw_est": 157.398212, "Pitch_est": -0.865721, "Roll_est": 179.554021 }, "geometry": { "type": "Point", "coordinates": [ 318223.213243999984115, 7439205.528958999551833, 809.9103 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630866.500920.jpg", "X/Easting": 318224.47005100001, "Y/Northing": 7439204.9797029998, "Z/Altitude": 810.017673, "Yaw_est": 164.25461, "Pitch_est": -2.799218, "Roll_est": 179.023976 }, "geometry": { "type": "Point", "coordinates": [ 318224.470051000011154, 7439204.979702999815345, 810.017673 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630867.501828.jpg", "X/Easting": 318225.74839299999, "Y/Northing": 7439204.5375070004, "Z/Altitude": 810.066156, "Yaw_est": 174.4589, "Pitch_est": -4.152974, "Roll_est": 178.630774 }, "geometry": { "type": "Point", "coordinates": [ 318225.748392999987118, 7439204.537507000379264, 810.066156 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630868.502736.jpg", "X/Easting": 318227.12084400002, "Y/Northing": 7439204.2648329996, "Z/Altitude": 810.192334, "Yaw_est": 182.430557, "Pitch_est": -0.858035, "Roll_est": 178.392693 }, "geometry": { "type": "Point", "coordinates": [ 318227.120844000019133, 7439204.264832999557257, 810.192334 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630869.503644.jpg", "X/Easting": 318228.43109299999, "Y/Northing": 7439204.1082049999, "Z/Altitude": 810.367492, "Yaw_est": 188.114041, "Pitch_est": -3.751251, "Roll_est": 179.723111 }, "geometry": { "type": "Point", "coordinates": [ 318228.431093, 7439204.108205, 810.367492 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630870.504553.jpg", "X/Easting": 318229.79927000002, "Y/Northing": 7439204.0123859998, "Z/Altitude": 810.462286, "Yaw_est": 188.047911, "Pitch_est": -3.511094, "Roll_est": 179.374317 }, "geometry": { "type": "Point", "coordinates": [ 318229.799270000017714, 7439204.012385999783874, 810.462286 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630871.505461.jpg", "X/Easting": 318231.15616299998, "Y/Northing": 7439203.9337130003, "Z/Altitude": 810.539923, "Yaw_est": 188.441302, "Pitch_est": -0.105688, "Roll_est": 177.786201 }, "geometry": { "type": "Point", "coordinates": [ 318231.156162999977823, 7439203.933713000267744, 810.539923 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630872.506368.jpg", "X/Easting": 318232.499503, "Y/Northing": 7439203.9384399997, "Z/Altitude": 810.711387, "Yaw_est": 195.763973, "Pitch_est": -1.770541, "Roll_est": 179.685005 }, "geometry": { "type": "Point", "coordinates": [ 318232.499503, 7439203.938439999707043, 810.711387 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630873.507279.jpg", "X/Easting": 318233.83039399999, "Y/Northing": 7439204.2055639997, "Z/Altitude": 810.855993, "Yaw_est": 207.16988, "Pitch_est": -2.924909, "Roll_est": -179.271379 }, "geometry": { "type": "Point", "coordinates": [ 318233.83039399998961, 7439204.205563999712467, 810.855993 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630874.508185.jpg", "X/Easting": 318235.11688300001, "Y/Northing": 7439204.5913509997, "Z/Altitude": 810.94698, "Yaw_est": 212.082517, "Pitch_est": -3.224586, "Roll_est": 179.673512 }, "geometry": { "type": "Point", "coordinates": [ 318235.116883, 7439204.59135099966079, 810.94698 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630875.509093.jpg", "X/Easting": 318236.33253199997, "Y/Northing": 7439205.0741889998, "Z/Altitude": 811.085074, "Yaw_est": 217.546139, "Pitch_est": -0.187681, "Roll_est": 178.386757 }, "geometry": { "type": "Point", "coordinates": [ 318236.332531999971252, 7439205.074188999831676, 811.085074 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630876.510001.jpg", "X/Easting": 318237.50941699999, "Y/Northing": 7439205.7242970001, "Z/Altitude": 811.256722, "Yaw_est": 224.308408, "Pitch_est": -1.544938, "Roll_est": 177.033209 }, "geometry": { "type": "Point", "coordinates": [ 318237.509417, 7439205.724297, 811.256722 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630877.510911.jpg", "X/Easting": 318238.72887400002, "Y/Northing": 7439206.3807929996, "Z/Altitude": 811.34043, "Yaw_est": 218.550765, "Pitch_est": 0.12607, "Roll_est": 178.717046 }, "geometry": { "type": "Point", "coordinates": [ 318238.728874000022188, 7439206.380792999640107, 811.34043 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630878.511818.jpg", "X/Easting": 318239.89184699999, "Y/Northing": 7439207.1125999996, "Z/Altitude": 811.467734, "Yaw_est": 219.93407, "Pitch_est": 2.765489, "Roll_est": 179.288922 }, "geometry": { "type": "Point", "coordinates": [ 318239.891847, 7439207.112599999643862, 811.467734 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630879.512726.jpg", "X/Easting": 318240.94852899999, "Y/Northing": 7439207.9396200003, "Z/Altitude": 811.68538, "Yaw_est": 221.1168, "Pitch_est": -0.213305, "Roll_est": 179.831756 }, "geometry": { "type": "Point", "coordinates": [ 318240.948528999986593, 7439207.939620000310242, 811.68538 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630880.513634.jpg", "X/Easting": 318242.05143799999, "Y/Northing": 7439208.8138859998, "Z/Altitude": 811.805614, "Yaw_est": 226.25628, "Pitch_est": 1.59536, "Roll_est": -179.297369 }, "geometry": { "type": "Point", "coordinates": [ 318242.051438, 7439208.813885999843478, 811.805614 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630881.514543.jpg", "X/Easting": 318243.13184799999, "Y/Northing": 7439209.6244649999, "Z/Altitude": 811.93854, "Yaw_est": 226.916497, "Pitch_est": -1.921473, "Roll_est": 179.040876 }, "geometry": { "type": "Point", "coordinates": [ 318243.131847999989986, 7439209.624464999884367, 811.93854 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630882.515450.jpg", "X/Easting": 318244.20800400001, "Y/Northing": 7439210.506794, "Z/Altitude": 812.135667, "Yaw_est": 230.460877, "Pitch_est": 0.619564, "Roll_est": 179.528688 }, "geometry": { "type": "Point", "coordinates": [ 318244.208004000014625, 7439210.506794, 812.135667 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630883.516358.jpg", "X/Easting": 318245.29716299998, "Y/Northing": 7439211.3787629995, "Z/Altitude": 812.290162, "Yaw_est": 230.024679, "Pitch_est": -2.517037, "Roll_est": 178.343753 }, "geometry": { "type": "Point", "coordinates": [ 318245.297162999981083, 7439211.378762999549508, 812.290162 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630884.517267.jpg", "X/Easting": 318246.382675, "Y/Northing": 7439212.3275950002, "Z/Altitude": 812.367874, "Yaw_est": 227.935716, "Pitch_est": 2.239037, "Roll_est": 177.096885 }, "geometry": { "type": "Point", "coordinates": [ 318246.382675, 7439212.32759500015527, 812.367874 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630885.518176.jpg", "X/Easting": 318247.36822800001, "Y/Northing": 7439213.2640930004, "Z/Altitude": 812.537353, "Yaw_est": 227.445352, "Pitch_est": 0.583395, "Roll_est": 178.558362 }, "geometry": { "type": "Point", "coordinates": [ 318247.368228, 7439213.26409300044179, 812.537353 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630886.519083.jpg", "X/Easting": 318248.34967700002, "Y/Northing": 7439214.3000469999, "Z/Altitude": 812.75558, "Yaw_est": 232.632591, "Pitch_est": -2.261283, "Roll_est": -178.678157 }, "geometry": { "type": "Point", "coordinates": [ 318248.349677000020165, 7439214.300047, 812.75558 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630887.519991.jpg", "X/Easting": 318249.32106400002, "Y/Northing": 7439215.3531060005, "Z/Altitude": 812.885919, "Yaw_est": 234.988338, "Pitch_est": -1.883013, "Roll_est": -179.160669 }, "geometry": { "type": "Point", "coordinates": [ 318249.321064000017941, 7439215.353106000460684, 812.885919 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630888.520900.jpg", "X/Easting": 318250.29962200002, "Y/Northing": 7439216.400502, "Z/Altitude": 812.992223, "Yaw_est": 238.435374, "Pitch_est": -2.987611, "Roll_est": 178.45568 }, "geometry": { "type": "Point", "coordinates": [ 318250.299622000020463, 7439216.400502, 812.992223 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630889.521808.jpg", "X/Easting": 318251.31658599997, "Y/Northing": 7439217.4400119996, "Z/Altitude": 813.1446, "Yaw_est": 235.716576, "Pitch_est": 1.111672, "Roll_est": 178.332673 }, "geometry": { "type": "Point", "coordinates": [ 318251.316585999971721, 7439217.440011999569833, 813.1446 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630890.522717.jpg", "X/Easting": 318252.33058200002, "Y/Northing": 7439218.4917390002, "Z/Altitude": 813.351928, "Yaw_est": 238.851357, "Pitch_est": -0.112878, "Roll_est": 178.176383 }, "geometry": { "type": "Point", "coordinates": [ 318252.330582000024151, 7439218.491739000193775, 813.351928 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630891.523624.jpg", "X/Easting": 318253.23883, "Y/Northing": 7439219.605618, "Z/Altitude": 813.508299, "Yaw_est": 238.841967, "Pitch_est": -1.203444, "Roll_est": 178.586824 }, "geometry": { "type": "Point", "coordinates": [ 318253.238829999987502, 7439219.605618, 813.508299 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630892.524533.jpg", "X/Easting": 318254.06488299998, "Y/Northing": 7439220.6192399999, "Z/Altitude": 813.60207, "Yaw_est": 226.353286, "Pitch_est": -1.974376, "Roll_est": 176.624916 }, "geometry": { "type": "Point", "coordinates": [ 318254.064882999984547, 7439220.61924, 813.60207 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630893.525441.jpg", "X/Easting": 318254.998998, "Y/Northing": 7439221.6705299998, "Z/Altitude": 813.725513, "Yaw_est": 224.604708, "Pitch_est": 4.134266, "Roll_est": 177.50744 }, "geometry": { "type": "Point", "coordinates": [ 318254.998998, 7439221.670529999770224, 813.725513 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630894.526349.jpg", "X/Easting": 318255.86585100001, "Y/Northing": 7439222.7767479997, "Z/Altitude": 813.895591, "Yaw_est": 225.796356, "Pitch_est": 2.726787, "Roll_est": 177.418752 }, "geometry": { "type": "Point", "coordinates": [ 318255.865851, 7439222.776747999712825, 813.895591 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630895.527257.jpg", "X/Easting": 318256.778315, "Y/Northing": 7439223.8598840004, "Z/Altitude": 814.086676, "Yaw_est": 227.847119, "Pitch_est": 1.359825, "Roll_est": 179.177721 }, "geometry": { "type": "Point", "coordinates": [ 318256.778315, 7439223.859884000383317, 814.086676 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630896.528166.jpg", "X/Easting": 318257.71161900001, "Y/Northing": 7439224.9798210002, "Z/Altitude": 814.214538, "Yaw_est": 231.619998, "Pitch_est": 1.855281, "Roll_est": 177.432746 }, "geometry": { "type": "Point", "coordinates": [ 318257.711619, 7439224.979821000248194, 814.214538 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630897.529073.jpg", "X/Easting": 318258.58650600002, "Y/Northing": 7439226.0478710001, "Z/Altitude": 814.343838, "Yaw_est": 229.721721, "Pitch_est": -2.600716, "Roll_est": 178.562065 }, "geometry": { "type": "Point", "coordinates": [ 318258.586506000021473, 7439226.047871000133455, 814.343838 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630898.529982.jpg", "X/Easting": 318259.453079, "Y/Northing": 7439227.1603979999, "Z/Altitude": 814.466623, "Yaw_est": 232.324776, "Pitch_est": 0.401116, "Roll_est": 177.92566 }, "geometry": { "type": "Point", "coordinates": [ 318259.453079, 7439227.160398, 814.466623 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630899.530890.jpg", "X/Easting": 318260.345287, "Y/Northing": 7439228.2338920003, "Z/Altitude": 814.657365, "Yaw_est": 233.348835, "Pitch_est": 0.084273, "Roll_est": 177.76874 }, "geometry": { "type": "Point", "coordinates": [ 318260.345287, 7439228.233892000280321, 814.657365 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630900.531798.jpg", "X/Easting": 318261.27208099997, "Y/Northing": 7439229.2885400001, "Z/Altitude": 814.810142, "Yaw_est": 229.991069, "Pitch_est": -0.398404, "Roll_est": 174.414177 }, "geometry": { "type": "Point", "coordinates": [ 318261.272080999973696, 7439229.28854, 814.810142 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630901.532706.jpg", "X/Easting": 318262.21188900003, "Y/Northing": 7439230.3960779998, "Z/Altitude": 814.929223, "Yaw_est": 229.815634, "Pitch_est": 2.442442, "Roll_est": 177.597233 }, "geometry": { "type": "Point", "coordinates": [ 318262.21188900002744, 7439230.396077999845147, 814.929223 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630902.533614.jpg", "X/Easting": 318263.05809599999, "Y/Northing": 7439231.4519619998, "Z/Altitude": 815.056042, "Yaw_est": 227.467264, "Pitch_est": 4.470761, "Roll_est": 176.418607 }, "geometry": { "type": "Point", "coordinates": [ 318263.058096, 7439231.451961999759078, 815.056042 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630903.534523.jpg", "X/Easting": 318263.95206600003, "Y/Northing": 7439232.4737950005, "Z/Altitude": 815.272183, "Yaw_est": 221.57489, "Pitch_est": 1.053072, "Roll_est": 177.786098 }, "geometry": { "type": "Point", "coordinates": [ 318263.952066000027116, 7439232.473795000463724, 815.272183 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630904.535432.jpg", "X/Easting": 318264.89443500002, "Y/Northing": 7439233.5464080004, "Z/Altitude": 815.473084, "Yaw_est": 225.837959, "Pitch_est": 0.485845, "Roll_est": 179.039212 }, "geometry": { "type": "Point", "coordinates": [ 318264.894435000023805, 7439233.546408000402153, 815.473084 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630905.536339.jpg", "X/Easting": 318265.8629, "Y/Northing": 7439234.5792859998, "Z/Altitude": 815.596924, "Yaw_est": 224.365557, "Pitch_est": -0.21049, "Roll_est": 179.567146 }, "geometry": { "type": "Point", "coordinates": [ 318265.8629, 7439234.579285999760032, 815.596924 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630906.537248.jpg", "X/Easting": 318266.839867, "Y/Northing": 7439235.536661, "Z/Altitude": 815.705732, "Yaw_est": 227.464109, "Pitch_est": 1.760191, "Roll_est": 177.486405 }, "geometry": { "type": "Point", "coordinates": [ 318266.839867, 7439235.536661, 815.705732 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630907.538156.jpg", "X/Easting": 318267.79831699998, "Y/Northing": 7439236.5540399998, "Z/Altitude": 815.92009, "Yaw_est": 229.31376, "Pitch_est": 2.564698, "Roll_est": 177.313969 }, "geometry": { "type": "Point", "coordinates": [ 318267.798316999978852, 7439236.554039999842644, 815.92009 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630908.539064.jpg", "X/Easting": 318268.90677399997, "Y/Northing": 7439237.511469, "Z/Altitude": 816.132878, "Yaw_est": 222.679653, "Pitch_est": 2.632978, "Roll_est": 176.523548 }, "geometry": { "type": "Point", "coordinates": [ 318268.906773999973666, 7439237.511469, 816.132878 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630909.539972.jpg", "X/Easting": 318269.895204, "Y/Northing": 7439238.4307190003, "Z/Altitude": 816.28796, "Yaw_est": 228.30696, "Pitch_est": 0.453381, "Roll_est": 179.176004 }, "geometry": { "type": "Point", "coordinates": [ 318269.895204, 7439238.430719000287354, 816.28796 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630910.540881.jpg", "X/Easting": 318270.87822200003, "Y/Northing": 7439239.2618979998, "Z/Altitude": 816.371224, "Yaw_est": 223.246835, "Pitch_est": 2.894687, "Roll_est": 178.743343 }, "geometry": { "type": "Point", "coordinates": [ 318270.878222000028472, 7439239.261897999793291, 816.371224 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630911.541788.jpg", "X/Easting": 318271.77648, "Y/Northing": 7439240.2056679996, "Z/Altitude": 816.603245, "Yaw_est": 226.234731, "Pitch_est": 0.154373, "Roll_est": 178.324595 }, "geometry": { "type": "Point", "coordinates": [ 318271.77648, 7439240.205667999573052, 816.603245 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630912.542698.jpg", "X/Easting": 318272.68326299998, "Y/Northing": 7439241.167746, "Z/Altitude": 816.803233, "Yaw_est": 229.161368, "Pitch_est": -1.995954, "Roll_est": 178.798444 }, "geometry": { "type": "Point", "coordinates": [ 318272.683262999984436, 7439241.167746, 816.803233 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630913.543605.jpg", "X/Easting": 318273.57930600003, "Y/Northing": 7439242.0049980003, "Z/Altitude": 816.891461, "Yaw_est": 230.009476, "Pitch_est": 1.850243, "Roll_est": 176.881714 }, "geometry": { "type": "Point", "coordinates": [ 318273.579306000028737, 7439242.004998000338674, 816.891461 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630914.544513.jpg", "X/Easting": 318274.47220600001, "Y/Northing": 7439242.8122230005, "Z/Altitude": 817.103713, "Yaw_est": 232.880654, "Pitch_est": 3.880981, "Roll_est": 177.288737 }, "geometry": { "type": "Point", "coordinates": [ 318274.472206, 7439242.812223000451922, 817.103713 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630915.545421.jpg", "X/Easting": 318275.36977799999, "Y/Northing": 7439243.7788899997, "Z/Altitude": 817.247754, "Yaw_est": 231.515188, "Pitch_est": 7.138375, "Roll_est": 175.438969 }, "geometry": { "type": "Point", "coordinates": [ 318275.369778, 7439243.778889999724925, 817.247754 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630916.546331.jpg", "X/Easting": 318276.254885, "Y/Northing": 7439244.7210170003, "Z/Altitude": 817.385227, "Yaw_est": 226.344949, "Pitch_est": 2.709518, "Roll_est": 177.007465 }, "geometry": { "type": "Point", "coordinates": [ 318276.254885, 7439244.721017000265419, 817.385227 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630917.547237.jpg", "X/Easting": 318277.11396500003, "Y/Northing": 7439245.6543199997, "Z/Altitude": 817.543056, "Yaw_est": 225.390432, "Pitch_est": 3.460765, "Roll_est": 176.161839 }, "geometry": { "type": "Point", "coordinates": [ 318277.113965000025928, 7439245.654319999739528, 817.543056 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630918.548146.jpg", "X/Easting": 318278.02927, "Y/Northing": 7439246.6261649998, "Z/Altitude": 817.758927, "Yaw_est": 226.360679, "Pitch_est": 4.624502, "Roll_est": -179.537213 }, "geometry": { "type": "Point", "coordinates": [ 318278.02927, 7439246.62616499979049, 817.758927 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630919.549055.jpg", "X/Easting": 318279.06406300003, "Y/Northing": 7439247.4004189996, "Z/Altitude": 817.925005, "Yaw_est": 224.316802, "Pitch_est": 0.529675, "Roll_est": 179.044969 }, "geometry": { "type": "Point", "coordinates": [ 318279.06406300002709, 7439247.400418999604881, 817.925005 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630920.549963.jpg", "X/Easting": 318279.971425, "Y/Northing": 7439248.1485620001, "Z/Altitude": 817.991573, "Yaw_est": 236.701583, "Pitch_est": 2.194255, "Roll_est": 177.113266 }, "geometry": { "type": "Point", "coordinates": [ 318279.971425, 7439248.148562000133097, 817.991573 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630921.550871.jpg", "X/Easting": 318280.66079400002, "Y/Northing": 7439249.0648060003, "Z/Altitude": 818.188041, "Yaw_est": 244.034641, "Pitch_est": 1.127067, "Roll_est": 178.700188 }, "geometry": { "type": "Point", "coordinates": [ 318280.660794000024907, 7439249.064806000329554, 818.188041 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630922.551779.jpg", "X/Easting": 318281.079585, "Y/Northing": 7439250.1404320002, "Z/Altitude": 818.292546, "Yaw_est": 258.957147, "Pitch_est": 0.560356, "Roll_est": 177.576528 }, "geometry": { "type": "Point", "coordinates": [ 318281.079585, 7439250.140432000160217, 818.292546 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630923.552686.jpg", "X/Easting": 318281.10054399999, "Y/Northing": 7439251.2343239998, "Z/Altitude": 818.417581, "Yaw_est": 285.866367, "Pitch_est": 3.593802, "Roll_est": 179.202691 }, "geometry": { "type": "Point", "coordinates": [ 318281.100543999986257, 7439251.234323999844491, 818.417581 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630924.553596.jpg", "X/Easting": 318280.762002, "Y/Northing": 7439252.2969819997, "Z/Altitude": 818.58186, "Yaw_est": 308.411836, "Pitch_est": -2.657197, "Roll_est": 178.604533 }, "geometry": { "type": "Point", "coordinates": [ 318280.762002, 7439252.296981999650598, 818.58186 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630925.554504.jpg", "X/Easting": 318280.03383700002, "Y/Northing": 7439253.2439379999, "Z/Altitude": 818.573818, "Yaw_est": 321.222566, "Pitch_est": -8.047233, "Roll_est": 179.683197 }, "geometry": { "type": "Point", "coordinates": [ 318280.033837000024505, 7439253.243938, 818.573818 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630926.555411.jpg", "X/Easting": 318279.002438, "Y/Northing": 7439254.0103709996, "Z/Altitude": 818.533299, "Yaw_est": 331.081951, "Pitch_est": -10.588247, "Roll_est": -178.278844 }, "geometry": { "type": "Point", "coordinates": [ 318279.002438, 7439254.010370999574661, 818.533299 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630927.556320.jpg", "X/Easting": 318277.75029400003, "Y/Northing": 7439254.5289960001, "Z/Altitude": 818.456102, "Yaw_est": 355.307655, "Pitch_est": -8.102477, "Roll_est": -178.61626 }, "geometry": { "type": "Point", "coordinates": [ 318277.75029400002677, 7439254.528996, 818.456102 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630928.557229.jpg", "X/Easting": 318276.36520300002, "Y/Northing": 7439254.5953529999, "Z/Altitude": 818.297236, "Yaw_est": 13.038046, "Pitch_est": -4.054264, "Roll_est": -178.62007 }, "geometry": { "type": "Point", "coordinates": [ 318276.36520300002303, 7439254.595352999866009, 818.297236 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630929.558136.jpg", "X/Easting": 318275.02422800002, "Y/Northing": 7439254.2437659996, "Z/Altitude": 818.023612, "Yaw_est": 29.360915, "Pitch_est": -3.37975, "Roll_est": 179.726877 }, "geometry": { "type": "Point", "coordinates": [ 318275.024228000023868, 7439254.243765999563038, 818.023612 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630930.559044.jpg", "X/Easting": 318273.63508099999, "Y/Northing": 7439253.7218939997, "Z/Altitude": 817.763687, "Yaw_est": 28.814435, "Pitch_est": -4.907285, "Roll_est": -179.405466 }, "geometry": { "type": "Point", "coordinates": [ 318273.635080999985803, 7439253.72189399972558, 817.763687 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630931.559953.jpg", "X/Easting": 318272.29139799997, "Y/Northing": 7439253.0078739999, "Z/Altitude": 817.504746, "Yaw_est": 35.166454, "Pitch_est": -8.790895, "Roll_est": -179.880643 }, "geometry": { "type": "Point", "coordinates": [ 318272.291397999972105, 7439253.007873999886215, 817.504746 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630932.560862.jpg", "X/Easting": 318270.944127, "Y/Northing": 7439252.2415239997, "Z/Altitude": 817.259203, "Yaw_est": 31.819609, "Pitch_est": -7.119398, "Roll_est": 179.671777 }, "geometry": { "type": "Point", "coordinates": [ 318270.944127, 7439252.241523999720812, 817.259203 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630933.561769.jpg", "X/Easting": 318269.62482000003, "Y/Northing": 7439251.5670630001, "Z/Altitude": 817.034086, "Yaw_est": 26.222064, "Pitch_est": -8.523761, "Roll_est": 178.362736 }, "geometry": { "type": "Point", "coordinates": [ 318269.624820000026375, 7439251.567063, 817.034086 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630934.562678.jpg", "X/Easting": 318268.27798999997, "Y/Northing": 7439251.02991, "Z/Altitude": 816.797975, "Yaw_est": 27.588804, "Pitch_est": -7.41001, "Roll_est": 177.542225 }, "geometry": { "type": "Point", "coordinates": [ 318268.277989999973215, 7439251.02991, 816.797975 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630935.563590.jpg", "X/Easting": 318266.96492599999, "Y/Northing": 7439250.4901099997, "Z/Altitude": 816.604955, "Yaw_est": 28.628151, "Pitch_est": -4.641851, "Roll_est": 178.166038 }, "geometry": { "type": "Point", "coordinates": [ 318266.964925999986008, 7439250.490109999664128, 816.604955 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630936.564495.jpg", "X/Easting": 318265.68572800001, "Y/Northing": 7439249.8903000001, "Z/Altitude": 816.440054, "Yaw_est": 24.4905, "Pitch_est": -3.128362, "Roll_est": 179.284748 }, "geometry": { "type": "Point", "coordinates": [ 318265.685728000011295, 7439249.8903, 816.440054 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630937.565402.jpg", "X/Easting": 318264.23278999998, "Y/Northing": 7439249.3925449997, "Z/Altitude": 816.255879, "Yaw_est": 19.759919, "Pitch_est": -1.860105, "Roll_est": 178.355871 }, "geometry": { "type": "Point", "coordinates": [ 318264.232789999980014, 7439249.392544999718666, 816.255879 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630938.566310.jpg", "X/Easting": 318262.78378699999, "Y/Northing": 7439248.9082789999, "Z/Altitude": 816.050932, "Yaw_est": 22.571531, "Pitch_est": -5.270717, "Roll_est": 176.853864 }, "geometry": { "type": "Point", "coordinates": [ 318262.783787, 7439248.908278999850154, 816.050932 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630939.567218.jpg", "X/Easting": 318261.41157400003, "Y/Northing": 7439248.3076649997, "Z/Altitude": 815.800168, "Yaw_est": 25.293802, "Pitch_est": -4.711124, "Roll_est": -179.136051 }, "geometry": { "type": "Point", "coordinates": [ 318261.411574000027031, 7439248.307664999738336, 815.800168 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630940.568129.jpg", "X/Easting": 318259.98204700003, "Y/Northing": 7439247.8130890001, "Z/Altitude": 815.604062, "Yaw_est": 19.908991, "Pitch_est": -7.380197, "Roll_est": -178.768463 }, "geometry": { "type": "Point", "coordinates": [ 318259.982047000026796, 7439247.813089, 815.604062 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630941.569035.jpg", "X/Easting": 318258.41672600002, "Y/Northing": 7439247.3466250002, "Z/Altitude": 815.393364, "Yaw_est": 24.464417, "Pitch_est": 0.711641, "Roll_est": 178.899294 }, "geometry": { "type": "Point", "coordinates": [ 318258.416726000024937, 7439247.346625000238419, 815.393364 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630942.569943.jpg", "X/Easting": 318256.97434700001, "Y/Northing": 7439247.1421320001, "Z/Altitude": 815.206856, "Yaw_est": 15.660265, "Pitch_est": -6.229523, "Roll_est": -178.408506 }, "geometry": { "type": "Point", "coordinates": [ 318256.974347000010312, 7439247.142132, 815.206856 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630943.570853.jpg", "X/Easting": 318255.58146399999, "Y/Northing": 7439246.6839020001, "Z/Altitude": 815.087407, "Yaw_est": 26.277309, "Pitch_est": -5.789995, "Roll_est": 177.435813 }, "geometry": { "type": "Point", "coordinates": [ 318255.581463999988046, 7439246.683902, 815.087407 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630944.571760.jpg", "X/Easting": 318254.21604700002, "Y/Northing": 7439246.3241659999, "Z/Altitude": 814.989647, "Yaw_est": 5.697959, "Pitch_est": -3.405837, "Roll_est": -179.894608 }, "geometry": { "type": "Point", "coordinates": [ 318254.216047000023536, 7439246.324165999889374, 814.989647 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630945.572668.jpg", "X/Easting": 318252.84785299998, "Y/Northing": 7439246.1524949996, "Z/Altitude": 814.860789, "Yaw_est": 8.214436, "Pitch_est": -6.419883, "Roll_est": -177.451279 }, "geometry": { "type": "Point", "coordinates": [ 318252.847852999984752, 7439246.152494999580085, 814.860789 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630946.573576.jpg", "X/Easting": 318251.435237, "Y/Northing": 7439246.0911450004, "Z/Altitude": 814.683683, "Yaw_est": 10.368249, "Pitch_est": -7.21564, "Roll_est": -177.969999 }, "geometry": { "type": "Point", "coordinates": [ 318251.435237, 7439246.091145000420511, 814.683683 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630947.574485.jpg", "X/Easting": 318250.46617600002, "Y/Northing": 7439246.1346779997, "Z/Altitude": 814.537412, "Yaw_est": 9.717269, "Pitch_est": -11.315949, "Roll_est": 178.751668 }, "geometry": { "type": "Point", "coordinates": [ 318250.466176000016276, 7439246.134677999652922, 814.537412 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630948.575393.jpg", "X/Easting": 318250.83242400002, "Y/Northing": 7439246.0563080003, "Z/Altitude": 814.606293, "Yaw_est": 349.358245, "Pitch_est": -11.107546, "Roll_est": -178.923948 }, "geometry": { "type": "Point", "coordinates": [ 318250.832424000022002, 7439246.056308000348508, 814.606293 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630949.576301.jpg", "X/Easting": 318251.56430700002, "Y/Northing": 7439246.1021649996, "Z/Altitude": 814.642308, "Yaw_est": 354.826407, "Pitch_est": 0.320052, "Roll_est": -178.224037 }, "geometry": { "type": "Point", "coordinates": [ 318251.564307000022382, 7439246.102164999581873, 814.642308 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630950.577209.jpg", "X/Easting": 318252.41656500002, "Y/Northing": 7439246.1855279999, "Z/Altitude": 814.774855, "Yaw_est": 2.837816, "Pitch_est": -6.479286, "Roll_est": -175.740336 }, "geometry": { "type": "Point", "coordinates": [ 318252.416565000021365, 7439246.18552799988538, 814.774855 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630951.578118.jpg", "X/Easting": 318253.27968799998, "Y/Northing": 7439246.1823439999, "Z/Altitude": 814.890809, "Yaw_est": 11.921825, "Pitch_est": -2.436362, "Roll_est": -176.738711 }, "geometry": { "type": "Point", "coordinates": [ 318253.279687999980524, 7439246.18234399985522, 814.890809 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630952.579026.jpg", "X/Easting": 318253.93503599998, "Y/Northing": 7439246.3074479997, "Z/Altitude": 814.974061, "Yaw_est": 17.345835, "Pitch_est": 3.142915, "Roll_est": -176.699271 }, "geometry": { "type": "Point", "coordinates": [ 318253.935035999980755, 7439246.307447999715805, 814.974061 ] } },
-{ "type": "Feature", "properties": { "#Label": "1748630954.580842.jpg", "X/Easting": 318254.54851599998, "Y/Northing": 7439246.6072610002, "Z/Altitude": 815.064716, "Yaw_est": 12.518258, "Pitch_est": -8.601363, "Roll_est": 179.502269 }, "geometry": { "type": "Point", "coordinates": [ 318254.548515999980737, 7439246.607261000201106, 815.064716 ] } }
-]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775126,
+          -23.145681,
+          815.385388
+        ]
+      },
+      "properties": {
+        "#Label": "1748630800.440979.jpg",
+        "X/Easting": 318257.994142,
+        "Y/Northing": 7439246.37627,
+        "Z/Altitude": 815.385388,
+        "Yaw_est": 11.201324,
+        "Pitch_est": -8.404295,
+        "Roll_est": -178.772684
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775127,
+          -23.145681,
+          815.363224
+        ]
+      },
+      "properties": {
+        "#Label": "1748630806.446427.jpg",
+        "X/Easting": 318257.881685,
+        "Y/Northing": 7439246.379439,
+        "Z/Altitude": 815.363224,
+        "Yaw_est": 13.683893000000012,
+        "Pitch_est": -3.176063,
+        "Roll_est": 179.697323
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775132,
+          -23.145683,
+          815.289632
+        ]
+      },
+      "properties": {
+        "#Label": "1748630807.447336.jpg",
+        "X/Easting": 318257.340429,
+        "Y/Northing": 7439246.146887,
+        "Z/Altitude": 815.289632,
+        "Yaw_est": 17.923310000000015,
+        "Pitch_est": 1.834923,
+        "Roll_est": 177.502167
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775141,
+          -23.145685,
+          815.220383
+        ]
+      },
+      "properties": {
+        "#Label": "1748630808.448244.jpg",
+        "X/Easting": 318256.405334,
+        "Y/Northing": 7439245.94662,
+        "Z/Altitude": 815.220383,
+        "Yaw_est": 4.575960000000009,
+        "Pitch_est": -3.714931,
+        "Roll_est": 179.012593
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775153,
+          -23.145686,
+          815.090992
+        ]
+      },
+      "properties": {
+        "#Label": "1748630809.449153.jpg",
+        "X/Easting": 318255.184807,
+        "Y/Northing": 7439245.838843,
+        "Z/Altitude": 815.090992,
+        "Yaw_est": 9.34775000000002,
+        "Pitch_est": -0.843859,
+        "Roll_est": -178.415176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775165,
+          -23.145685,
+          814.996382
+        ]
+      },
+      "properties": {
+        "#Label": "1748630810.450060.jpg",
+        "X/Easting": 318253.959901,
+        "Y/Northing": 7439245.922605,
+        "Z/Altitude": 814.996382,
+        "Yaw_est": 4.201140000000009,
+        "Pitch_est": -7.315603,
+        "Roll_est": -177.693423
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775178,
+          -23.145686,
+          814.77084
+        ]
+      },
+      "properties": {
+        "#Label": "1748630811.450969.jpg",
+        "X/Easting": 318252.614495,
+        "Y/Northing": 7439245.770951,
+        "Z/Altitude": 814.77084,
+        "Yaw_est": 21.13522899999998,
+        "Pitch_est": -3.860091,
+        "Roll_est": -179.036723
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775191,
+          -23.145686,
+          814.618465
+        ]
+      },
+      "properties": {
+        "#Label": "1748630812.451878.jpg",
+        "X/Easting": 318251.26679,
+        "Y/Northing": 7439245.737924,
+        "Z/Altitude": 814.618465,
+        "Yaw_est": 7.870405000000005,
+        "Pitch_est": -4.647332,
+        "Roll_est": 178.570657
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775205,
+          -23.145685,
+          814.401104
+        ]
+      },
+      "properties": {
+        "#Label": "1748630813.452785.jpg",
+        "X/Easting": 318249.924136,
+        "Y/Northing": 7439245.830024,
+        "Z/Altitude": 814.401104,
+        "Yaw_est": 8.60878600000001,
+        "Pitch_est": -9.321457,
+        "Roll_est": -178.453463
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775217,
+          -23.145684,
+          814.273472
+        ]
+      },
+      "properties": {
+        "#Label": "1748630814.453693.jpg",
+        "X/Easting": 318248.619854,
+        "Y/Northing": 7439245.900716,
+        "Z/Altitude": 814.273472,
+        "Yaw_est": 3.972831000000042,
+        "Pitch_est": -3.267129,
+        "Roll_est": 178.562195
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77523,
+          -23.145684,
+          814.141575
+        ]
+      },
+      "properties": {
+        "#Label": "1748630815.454601.jpg",
+        "X/Easting": 318247.357484,
+        "Y/Northing": 7439245.949438,
+        "Z/Altitude": 814.141575,
+        "Yaw_est": 359.40673300000003,
+        "Pitch_est": -5.307724,
+        "Roll_est": 175.623214
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775243,
+          -23.145684,
+          813.976762
+        ]
+      },
+      "properties": {
+        "#Label": "1748630816.455510.jpg",
+        "X/Easting": 318246.022528,
+        "Y/Northing": 7439245.927806,
+        "Z/Altitude": 813.976762,
+        "Yaw_est": 359.50411899999995,
+        "Pitch_est": -3.702207,
+        "Roll_est": 175.133032
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775255,
+          -23.145685,
+          813.802274
+        ]
+      },
+      "properties": {
+        "#Label": "1748630817.456417.jpg",
+        "X/Easting": 318244.725785,
+        "Y/Northing": 7439245.767244,
+        "Z/Altitude": 813.802274,
+        "Yaw_est": 10.48424,
+        "Pitch_est": -2.386726,
+        "Roll_est": -179.825238
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775268,
+          -23.145685,
+          813.562436
+        ]
+      },
+      "properties": {
+        "#Label": "1748630818.457327.jpg",
+        "X/Easting": 318243.436962,
+        "Y/Northing": 7439245.703523,
+        "Z/Altitude": 813.562436,
+        "Yaw_est": 7.803026999999986,
+        "Pitch_est": -5.426064,
+        "Roll_est": 178.105038
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775281,
+          -23.145687,
+          813.387466
+        ]
+      },
+      "properties": {
+        "#Label": "1748630819.458234.jpg",
+        "X/Easting": 318242.063335,
+        "Y/Northing": 7439245.513064,
+        "Z/Altitude": 813.387466,
+        "Yaw_est": 9.525901999999974,
+        "Pitch_est": -6.954391,
+        "Roll_est": 178.182919
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775295,
+          -23.145688,
+          813.251765
+        ]
+      },
+      "properties": {
+        "#Label": "1748630820.459142.jpg",
+        "X/Easting": 318240.699271,
+        "Y/Northing": 7439245.422192,
+        "Z/Altitude": 813.251765,
+        "Yaw_est": 9.202083000000016,
+        "Pitch_est": -3.518611,
+        "Roll_est": 179.44088
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775308,
+          -23.145688,
+          813.073586
+        ]
+      },
+      "properties": {
+        "#Label": "1748630821.460051.jpg",
+        "X/Easting": 318239.371397,
+        "Y/Northing": 7439245.386685,
+        "Z/Altitude": 813.073586,
+        "Yaw_est": 14.39329799999996,
+        "Pitch_est": -5.642136,
+        "Roll_est": -175.342775
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775321,
+          -23.145688,
+          812.894704
+        ]
+      },
+      "properties": {
+        "#Label": "1748630822.460960.jpg",
+        "X/Easting": 318237.953056,
+        "Y/Northing": 7439245.401867,
+        "Z/Altitude": 812.894704,
+        "Yaw_est": 10.03855199999998,
+        "Pitch_est": -2.492086,
+        "Roll_est": -177.937608
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775336,
+          -23.145688,
+          812.669155
+        ]
+      },
+      "properties": {
+        "#Label": "1748630823.461867.jpg",
+        "X/Easting": 318236.468498,
+        "Y/Northing": 7439245.286098,
+        "Z/Altitude": 812.669155,
+        "Yaw_est": 10.96306800000002,
+        "Pitch_est": 1.066673,
+        "Roll_est": -177.429425
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77535,
+          -23.145688,
+          812.487494
+        ]
+      },
+      "properties": {
+        "#Label": "1748630824.462775.jpg",
+        "X/Easting": 318235.050114,
+        "Y/Northing": 7439245.340296,
+        "Z/Altitude": 812.487494,
+        "Yaw_est": 10.422932000000005,
+        "Pitch_est": -5.475326,
+        "Roll_est": -177.526859
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775363,
+          -23.145687,
+          812.290534
+        ]
+      },
+      "properties": {
+        "#Label": "1748630825.463684.jpg",
+        "X/Easting": 318233.655681,
+        "Y/Northing": 7439245.409472,
+        "Z/Altitude": 812.290534,
+        "Yaw_est": 7.9371079999999665,
+        "Pitch_est": -2.813342,
+        "Roll_est": -177.317893
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775376,
+          -23.145686,
+          812.135453
+        ]
+      },
+      "properties": {
+        "#Label": "1748630826.464592.jpg",
+        "X/Easting": 318232.328508,
+        "Y/Northing": 7439245.510658,
+        "Z/Altitude": 812.135453,
+        "Yaw_est": 8.944080999999983,
+        "Pitch_est": 2.15866,
+        "Roll_est": -179.302261
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775389,
+          -23.145688,
+          811.923137
+        ]
+      },
+      "properties": {
+        "#Label": "1748630827.465500.jpg",
+        "X/Easting": 318231.015787,
+        "Y/Northing": 7439245.2728,
+        "Z/Altitude": 811.923137,
+        "Yaw_est": 28.45568700000001,
+        "Pitch_est": 1.665167,
+        "Roll_est": -177.445141
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775402,
+          -23.145691,
+          811.804814
+        ]
+      },
+      "properties": {
+        "#Label": "1748630828.466408.jpg",
+        "X/Easting": 318229.726483,
+        "Y/Northing": 7439244.939832,
+        "Z/Altitude": 811.804814,
+        "Yaw_est": 31.605432000000008,
+        "Pitch_est": -4.326374,
+        "Roll_est": -179.576096
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775416,
+          -23.145693,
+          811.658658
+        ]
+      },
+      "properties": {
+        "#Label": "1748630829.467316.jpg",
+        "X/Easting": 318228.316778,
+        "Y/Northing": 7439244.632695,
+        "Z/Altitude": 811.658658,
+        "Yaw_est": 25.17889500000001,
+        "Pitch_est": -0.185592,
+        "Roll_est": 178.953275
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775429,
+          -23.145696,
+          811.478598
+        ]
+      },
+      "properties": {
+        "#Label": "1748630830.468225.jpg",
+        "X/Easting": 318226.982538,
+        "Y/Northing": 7439244.284461,
+        "Z/Altitude": 811.478598,
+        "Yaw_est": 28.623694,
+        "Pitch_est": -3.79322,
+        "Roll_est": 176.037337
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775442,
+          -23.145702,
+          811.261989
+        ]
+      },
+      "properties": {
+        "#Label": "1748630831.469134.jpg",
+        "X/Easting": 318225.640374,
+        "Y/Northing": 7439243.624562,
+        "Z/Altitude": 811.261989,
+        "Yaw_est": 37.85636599999998,
+        "Pitch_est": -0.48196,
+        "Roll_est": 179.010894
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775455,
+          -23.145708,
+          811.108454
+        ]
+      },
+      "properties": {
+        "#Label": "1748630832.470040.jpg",
+        "X/Easting": 318224.311583,
+        "Y/Northing": 7439243.013656,
+        "Z/Altitude": 811.108454,
+        "Yaw_est": 32.132600000000025,
+        "Pitch_est": -3.735751,
+        "Roll_est": 176.261868
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775468,
+          -23.145713,
+          810.925708
+        ]
+      },
+      "properties": {
+        "#Label": "1748630833.470950.jpg",
+        "X/Easting": 318222.934224,
+        "Y/Northing": 7439242.428261,
+        "Z/Altitude": 810.925708,
+        "Yaw_est": 34.33817699999997,
+        "Pitch_est": -2.88116,
+        "Roll_est": 178.08915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775481,
+          -23.145719,
+          810.762704
+        ]
+      },
+      "properties": {
+        "#Label": "1748630834.471858.jpg",
+        "X/Easting": 318221.622224,
+        "Y/Northing": 7439241.756567,
+        "Z/Altitude": 810.762704,
+        "Yaw_est": 39.35987399999999,
+        "Pitch_est": -3.397017,
+        "Roll_est": -179.548289
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775494,
+          -23.145725,
+          810.569578
+        ]
+      },
+      "properties": {
+        "#Label": "1748630835.472765.jpg",
+        "X/Easting": 318220.306523,
+        "Y/Northing": 7439241.018099,
+        "Z/Altitude": 810.569578,
+        "Yaw_est": 34.89394800000002,
+        "Pitch_est": -3.180162,
+        "Roll_est": 178.292222
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775506,
+          -23.145732,
+          810.385561
+        ]
+      },
+      "properties": {
+        "#Label": "1748630836.473673.jpg",
+        "X/Easting": 318219.077843,
+        "Y/Northing": 7439240.262344,
+        "Z/Altitude": 810.385561,
+        "Yaw_est": 33.300364,
+        "Pitch_est": -2.963614,
+        "Roll_est": 177.937426
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775517,
+          -23.14574,
+          810.219856
+        ]
+      },
+      "properties": {
+        "#Label": "1748630837.474581.jpg",
+        "X/Easting": 318217.956272,
+        "Y/Northing": 7439239.307545,
+        "Z/Altitude": 810.219856,
+        "Yaw_est": 40.519184,
+        "Pitch_est": -2.018397,
+        "Roll_est": -179.818632
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775528,
+          -23.14575,
+          810.060035
+        ]
+      },
+      "properties": {
+        "#Label": "1748630838.475491.jpg",
+        "X/Easting": 318216.874096,
+        "Y/Northing": 7439238.280997,
+        "Z/Altitude": 810.060035,
+        "Yaw_est": 46.818176,
+        "Pitch_est": -2.996943,
+        "Roll_est": -178.38677
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775539,
+          -23.145759,
+          809.884258
+        ]
+      },
+      "properties": {
+        "#Label": "1748630839.476400.jpg",
+        "X/Easting": 318215.786698,
+        "Y/Northing": 7439237.266879,
+        "Z/Altitude": 809.884258,
+        "Yaw_est": 49.34104400000001,
+        "Pitch_est": -2.351885,
+        "Roll_est": -178.55454
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775548,
+          -23.145769,
+          809.744153
+        ]
+      },
+      "properties": {
+        "#Label": "1748630840.477306.jpg",
+        "X/Easting": 318214.892536,
+        "Y/Northing": 7439236.092157,
+        "Z/Altitude": 809.744153,
+        "Yaw_est": 56.69088299999999,
+        "Pitch_est": -3.20386,
+        "Roll_est": -179.772706
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775555,
+          -23.14578,
+          809.626184
+        ]
+      },
+      "properties": {
+        "#Label": "1748630841.478214.jpg",
+        "X/Easting": 318214.114543,
+        "Y/Northing": 7439234.875681,
+        "Z/Altitude": 809.626184,
+        "Yaw_est": 62.900255000000016,
+        "Pitch_est": -3.059364,
+        "Roll_est": 179.559435
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775562,
+          -23.145791,
+          809.518407
+        ]
+      },
+      "properties": {
+        "#Label": "1748630842.479124.jpg",
+        "X/Easting": 318213.417712,
+        "Y/Northing": 7439233.617024,
+        "Z/Altitude": 809.518407,
+        "Yaw_est": 66.84534300000001,
+        "Pitch_est": -5.082511,
+        "Roll_est": 177.912538
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775569,
+          -23.145803,
+          809.414543
+        ]
+      },
+      "properties": {
+        "#Label": "1748630843.480030.jpg",
+        "X/Easting": 318212.756921,
+        "Y/Northing": 7439232.301698,
+        "Z/Altitude": 809.414543,
+        "Yaw_est": 67.96649100000002,
+        "Pitch_est": -4.691156,
+        "Roll_est": 177.448728
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775575,
+          -23.145815,
+          809.27921
+        ]
+      },
+      "properties": {
+        "#Label": "1748630844.480940.jpg",
+        "X/Easting": 318212.116145,
+        "Y/Northing": 7439230.972895,
+        "Z/Altitude": 809.27921,
+        "Yaw_est": 72.91175199999998,
+        "Pitch_est": -0.986081,
+        "Roll_est": 178.419118
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77558,
+          -23.145827,
+          809.220297
+        ]
+      },
+      "properties": {
+        "#Label": "1748630845.481846.jpg",
+        "X/Easting": 318211.634596,
+        "Y/Northing": 7439229.589892,
+        "Z/Altitude": 809.220297,
+        "Yaw_est": 77.07240100000001,
+        "Pitch_est": 1.034542,
+        "Roll_est": 179.74646
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775584,
+          -23.14584,
+          809.184105
+        ]
+      },
+      "properties": {
+        "#Label": "1748630846.482757.jpg",
+        "X/Easting": 318211.244151,
+        "Y/Northing": 7439228.195007,
+        "Z/Altitude": 809.184105,
+        "Yaw_est": 84.94425000000001,
+        "Pitch_est": 1.698183,
+        "Roll_est": -179.061742
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775588,
+          -23.145853,
+          809.140282
+        ]
+      },
+      "properties": {
+        "#Label": "1748630847.483663.jpg",
+        "X/Easting": 318210.92524,
+        "Y/Northing": 7439226.771311,
+        "Z/Altitude": 809.140282,
+        "Yaw_est": 88.19061199999999,
+        "Pitch_est": 2.120423,
+        "Roll_est": 178.19295
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775588,
+          -23.145867,
+          809.12354
+        ]
+      },
+      "properties": {
+        "#Label": "1748630848.484571.jpg",
+        "X/Easting": 318210.877946,
+        "Y/Northing": 7439225.251173,
+        "Z/Altitude": 809.12354,
+        "Yaw_est": 97.731514,
+        "Pitch_est": 1.809648,
+        "Roll_est": 179.328803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775589,
+          -23.14588,
+          809.119315
+        ]
+      },
+      "properties": {
+        "#Label": "1748630849.485480.jpg",
+        "X/Easting": 318210.836919,
+        "Y/Northing": 7439223.769171,
+        "Z/Altitude": 809.119315,
+        "Yaw_est": 95.30107199999998,
+        "Pitch_est": 0.554509,
+        "Roll_est": -179.147996
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775589,
+          -23.145893,
+          809.103722
+        ]
+      },
+      "properties": {
+        "#Label": "1748630850.486388.jpg",
+        "X/Easting": 318210.855983,
+        "Y/Northing": 7439222.28145,
+        "Z/Altitude": 809.103722,
+        "Yaw_est": 100.007837,
+        "Pitch_est": -0.352258,
+        "Roll_est": 178.65412
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775587,
+          -23.145907,
+          809.11012
+        ]
+      },
+      "properties": {
+        "#Label": "1748630851.487297.jpg",
+        "X/Easting": 318211.040551,
+        "Y/Northing": 7439220.782557,
+        "Z/Altitude": 809.11012,
+        "Yaw_est": 100.911922,
+        "Pitch_est": -2.795649,
+        "Roll_est": 178.34789
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775585,
+          -23.14592,
+          809.095228
+        ]
+      },
+      "properties": {
+        "#Label": "1748630852.488204.jpg",
+        "X/Easting": 318211.269237,
+        "Y/Northing": 7439219.317489,
+        "Z/Altitude": 809.095228,
+        "Yaw_est": 106.577834,
+        "Pitch_est": -0.73627,
+        "Roll_est": 179.933478
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775581,
+          -23.145933,
+          809.074805
+        ]
+      },
+      "properties": {
+        "#Label": "1748630853.489113.jpg",
+        "X/Easting": 318211.705191,
+        "Y/Northing": 7439217.893927,
+        "Z/Altitude": 809.074805,
+        "Yaw_est": 113.289125,
+        "Pitch_est": -0.610439,
+        "Roll_est": 179.597339
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775576,
+          -23.145946,
+          809.125085
+        ]
+      },
+      "properties": {
+        "#Label": "1748630854.490021.jpg",
+        "X/Easting": 318212.244227,
+        "Y/Northing": 7439216.486818,
+        "Z/Altitude": 809.125085,
+        "Yaw_est": 114.08250299999996,
+        "Pitch_est": 3.181065,
+        "Roll_est": 179.339628
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77557,
+          -23.145958,
+          809.212992
+        ]
+      },
+      "properties": {
+        "#Label": "1748630855.490929.jpg",
+        "X/Easting": 318212.867568,
+        "Y/Northing": 7439215.149084,
+        "Z/Altitude": 809.212992,
+        "Yaw_est": 118.399875,
+        "Pitch_est": 0.269902,
+        "Roll_est": 178.392079
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775562,
+          -23.14597,
+          809.287964
+        ]
+      },
+      "properties": {
+        "#Label": "1748630856.491838.jpg",
+        "X/Easting": 318213.673193,
+        "Y/Northing": 7439213.877529,
+        "Z/Altitude": 809.287964,
+        "Yaw_est": 129.33652,
+        "Pitch_est": 1.84008,
+        "Roll_est": 178.502135
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775554,
+          -23.14598,
+          809.350847
+        ]
+      },
+      "properties": {
+        "#Label": "1748630857.492747.jpg",
+        "X/Easting": 318214.561282,
+        "Y/Northing": 7439212.70356,
+        "Z/Altitude": 809.350847,
+        "Yaw_est": 133.350026,
+        "Pitch_est": -1.290204,
+        "Roll_est": 178.784432
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775544,
+          -23.14599,
+          809.401291
+        ]
+      },
+      "properties": {
+        "#Label": "1748630858.493654.jpg",
+        "X/Easting": 318215.59815,
+        "Y/Northing": 7439211.635755,
+        "Z/Altitude": 809.401291,
+        "Yaw_est": 140.72689100000002,
+        "Pitch_est": -0.852312,
+        "Roll_est": 179.259564
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775534,
+          -23.146,
+          809.431065
+        ]
+      },
+      "properties": {
+        "#Label": "1748630859.494562.jpg",
+        "X/Easting": 318216.589169,
+        "Y/Northing": 7439210.552032,
+        "Z/Altitude": 809.431065,
+        "Yaw_est": 136.112777,
+        "Pitch_est": -2.571784,
+        "Roll_est": 178.949482
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775524,
+          -23.14601,
+          809.467779
+        ]
+      },
+      "properties": {
+        "#Label": "1748630860.495471.jpg",
+        "X/Easting": 318217.619674,
+        "Y/Northing": 7439209.432621,
+        "Z/Altitude": 809.467779,
+        "Yaw_est": 144.55303300000003,
+        "Pitch_est": 0.753378,
+        "Roll_est": 178.116933
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775515,
+          -23.146019,
+          809.570159
+        ]
+      },
+      "properties": {
+        "#Label": "1748630861.496379.jpg",
+        "X/Easting": 318218.615938,
+        "Y/Northing": 7439208.456385,
+        "Z/Altitude": 809.570159,
+        "Yaw_est": 150.496148,
+        "Pitch_est": -0.678465,
+        "Roll_est": 178.743143
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775504,
+          -23.146027,
+          809.673039
+        ]
+      },
+      "properties": {
+        "#Label": "1748630862.497287.jpg",
+        "X/Easting": 318219.726057,
+        "Y/Northing": 7439207.619755,
+        "Z/Altitude": 809.673039,
+        "Yaw_est": 152.93566299999998,
+        "Pitch_est": -0.643259,
+        "Roll_est": 177.093196
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775494,
+          -23.146035,
+          809.710413
+        ]
+      },
+      "properties": {
+        "#Label": "1748630863.498195.jpg",
+        "X/Easting": 318220.791579,
+        "Y/Northing": 7439206.712481,
+        "Z/Altitude": 809.710413,
+        "Yaw_est": 148.25233000000003,
+        "Pitch_est": -0.014763,
+        "Roll_est": 177.148121
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775482,
+          -23.146041,
+          809.769859
+        ]
+      },
+      "properties": {
+        "#Label": "1748630864.499103.jpg",
+        "X/Easting": 318221.948739,
+        "Y/Northing": 7439206.048627,
+        "Z/Altitude": 809.769859,
+        "Yaw_est": 157.68846699999995,
+        "Pitch_est": 1.880958,
+        "Roll_est": 179.673694
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77547,
+          -23.146046,
+          809.9103
+        ]
+      },
+      "properties": {
+        "#Label": "1748630865.500013.jpg",
+        "X/Easting": 318223.213244,
+        "Y/Northing": 7439205.528959,
+        "Z/Altitude": 809.9103,
+        "Yaw_est": 157.39821200000006,
+        "Pitch_est": -0.865721,
+        "Roll_est": 179.554021
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775458,
+          -23.146051,
+          810.017673
+        ]
+      },
+      "properties": {
+        "#Label": "1748630866.500920.jpg",
+        "X/Easting": 318224.470051,
+        "Y/Northing": 7439204.979703,
+        "Z/Altitude": 810.017673,
+        "Yaw_est": 164.25460999999996,
+        "Pitch_est": -2.799218,
+        "Roll_est": 179.023976
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775445,
+          -23.146055,
+          810.066156
+        ]
+      },
+      "properties": {
+        "#Label": "1748630867.501828.jpg",
+        "X/Easting": 318225.748393,
+        "Y/Northing": 7439204.537507,
+        "Z/Altitude": 810.066156,
+        "Yaw_est": 174.45889999999997,
+        "Pitch_est": -4.152974,
+        "Roll_est": 178.630774
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775432,
+          -23.146058,
+          810.192334
+        ]
+      },
+      "properties": {
+        "#Label": "1748630868.502736.jpg",
+        "X/Easting": 318227.120844,
+        "Y/Northing": 7439204.264833,
+        "Z/Altitude": 810.192334,
+        "Yaw_est": 182.430557,
+        "Pitch_est": -0.858035,
+        "Roll_est": 178.392693
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775419,
+          -23.146059,
+          810.367492
+        ]
+      },
+      "properties": {
+        "#Label": "1748630869.503644.jpg",
+        "X/Easting": 318228.431093,
+        "Y/Northing": 7439204.108205,
+        "Z/Altitude": 810.367492,
+        "Yaw_est": 188.11404100000004,
+        "Pitch_est": -3.751251,
+        "Roll_est": 179.723111
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775406,
+          -23.14606,
+          810.462286
+        ]
+      },
+      "properties": {
+        "#Label": "1748630870.504553.jpg",
+        "X/Easting": 318229.79927,
+        "Y/Northing": 7439204.012386,
+        "Z/Altitude": 810.462286,
+        "Yaw_est": 188.047911,
+        "Pitch_est": -3.511094,
+        "Roll_est": 179.374317
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775393,
+          -23.146061,
+          810.539923
+        ]
+      },
+      "properties": {
+        "#Label": "1748630871.505461.jpg",
+        "X/Easting": 318231.156163,
+        "Y/Northing": 7439203.933713,
+        "Z/Altitude": 810.539923,
+        "Yaw_est": 188.44130199999995,
+        "Pitch_est": -0.105688,
+        "Roll_est": 177.786201
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77538,
+          -23.146061,
+          810.711387
+        ]
+      },
+      "properties": {
+        "#Label": "1748630872.506368.jpg",
+        "X/Easting": 318232.499503,
+        "Y/Northing": 7439203.93844,
+        "Z/Altitude": 810.711387,
+        "Yaw_est": 195.763973,
+        "Pitch_est": -1.770541,
+        "Roll_est": 179.685005
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775367,
+          -23.146059,
+          810.855993
+        ]
+      },
+      "properties": {
+        "#Label": "1748630873.507279.jpg",
+        "X/Easting": 318233.830394,
+        "Y/Northing": 7439204.205564,
+        "Z/Altitude": 810.855993,
+        "Yaw_est": 207.16988000000003,
+        "Pitch_est": -2.924909,
+        "Roll_est": -179.271379
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775354,
+          -23.146056,
+          810.94698
+        ]
+      },
+      "properties": {
+        "#Label": "1748630874.508185.jpg",
+        "X/Easting": 318235.116883,
+        "Y/Northing": 7439204.591351,
+        "Z/Altitude": 810.94698,
+        "Yaw_est": 212.08251700000005,
+        "Pitch_est": -3.224586,
+        "Roll_est": 179.673512
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775342,
+          -23.146052,
+          811.085074
+        ]
+      },
+      "properties": {
+        "#Label": "1748630875.509093.jpg",
+        "X/Easting": 318236.332532,
+        "Y/Northing": 7439205.074189,
+        "Z/Altitude": 811.085074,
+        "Yaw_est": 217.54613900000004,
+        "Pitch_est": -0.187681,
+        "Roll_est": 178.386757
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77533,
+          -23.146046,
+          811.256722
+        ]
+      },
+      "properties": {
+        "#Label": "1748630876.510001.jpg",
+        "X/Easting": 318237.509417,
+        "Y/Northing": 7439205.724297,
+        "Z/Altitude": 811.256722,
+        "Yaw_est": 224.308408,
+        "Pitch_est": -1.544938,
+        "Roll_est": 177.033209
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775319,
+          -23.14604,
+          811.34043
+        ]
+      },
+      "properties": {
+        "#Label": "1748630877.510911.jpg",
+        "X/Easting": 318238.728874,
+        "Y/Northing": 7439206.380793,
+        "Z/Altitude": 811.34043,
+        "Yaw_est": 218.550765,
+        "Pitch_est": 0.12607,
+        "Roll_est": 178.717046
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775307,
+          -23.146033,
+          811.467734
+        ]
+      },
+      "properties": {
+        "#Label": "1748630878.511818.jpg",
+        "X/Easting": 318239.891847,
+        "Y/Northing": 7439207.1126,
+        "Z/Altitude": 811.467734,
+        "Yaw_est": 219.93407,
+        "Pitch_est": 2.765489,
+        "Roll_est": 179.288922
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775297,
+          -23.146026,
+          811.68538
+        ]
+      },
+      "properties": {
+        "#Label": "1748630879.512726.jpg",
+        "X/Easting": 318240.948529,
+        "Y/Northing": 7439207.93962,
+        "Z/Altitude": 811.68538,
+        "Yaw_est": 221.1168,
+        "Pitch_est": -0.213305,
+        "Roll_est": 179.831756
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775286,
+          -23.146018,
+          811.805614
+        ]
+      },
+      "properties": {
+        "#Label": "1748630880.513634.jpg",
+        "X/Easting": 318242.051438,
+        "Y/Northing": 7439208.813886,
+        "Z/Altitude": 811.805614,
+        "Yaw_est": 226.2562800000001,
+        "Pitch_est": 1.59536,
+        "Roll_est": -179.297369
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775275,
+          -23.146011,
+          811.93854
+        ]
+      },
+      "properties": {
+        "#Label": "1748630881.514543.jpg",
+        "X/Easting": 318243.131848,
+        "Y/Northing": 7439209.624465,
+        "Z/Altitude": 811.93854,
+        "Yaw_est": 226.91649699999996,
+        "Pitch_est": -1.921473,
+        "Roll_est": 179.040876
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775265,
+          -23.146003,
+          812.135667
+        ]
+      },
+      "properties": {
+        "#Label": "1748630882.515450.jpg",
+        "X/Easting": 318244.208004,
+        "Y/Northing": 7439210.506794,
+        "Z/Altitude": 812.135667,
+        "Yaw_est": 230.460877,
+        "Pitch_est": 0.619564,
+        "Roll_est": 179.528688
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775254,
+          -23.145996,
+          812.290162
+        ]
+      },
+      "properties": {
+        "#Label": "1748630883.516358.jpg",
+        "X/Easting": 318245.297163,
+        "Y/Northing": 7439211.378763,
+        "Z/Altitude": 812.290162,
+        "Yaw_est": 230.024679,
+        "Pitch_est": -2.517037,
+        "Roll_est": 178.343753
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775243,
+          -23.145987,
+          812.367874
+        ]
+      },
+      "properties": {
+        "#Label": "1748630884.517267.jpg",
+        "X/Easting": 318246.382675,
+        "Y/Northing": 7439212.327595,
+        "Z/Altitude": 812.367874,
+        "Yaw_est": 227.935716,
+        "Pitch_est": 2.239037,
+        "Roll_est": 177.096885
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775233,
+          -23.145979,
+          812.537353
+        ]
+      },
+      "properties": {
+        "#Label": "1748630885.518176.jpg",
+        "X/Easting": 318247.368228,
+        "Y/Northing": 7439213.264093,
+        "Z/Altitude": 812.537353,
+        "Yaw_est": 227.445352,
+        "Pitch_est": 0.583395,
+        "Roll_est": 178.558362
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775224,
+          -23.14597,
+          812.75558
+        ]
+      },
+      "properties": {
+        "#Label": "1748630886.519083.jpg",
+        "X/Easting": 318248.349677,
+        "Y/Northing": 7439214.300047,
+        "Z/Altitude": 812.75558,
+        "Yaw_est": 232.63259100000005,
+        "Pitch_est": -2.261283,
+        "Roll_est": -178.678157
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775214,
+          -23.14596,
+          812.885919
+        ]
+      },
+      "properties": {
+        "#Label": "1748630887.519991.jpg",
+        "X/Easting": 318249.321064,
+        "Y/Northing": 7439215.353106,
+        "Z/Altitude": 812.885919,
+        "Yaw_est": 234.988338,
+        "Pitch_est": -1.883013,
+        "Roll_est": -179.160669
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775204,
+          -23.145951,
+          812.992223
+        ]
+      },
+      "properties": {
+        "#Label": "1748630888.520900.jpg",
+        "X/Easting": 318250.299622,
+        "Y/Northing": 7439216.400502,
+        "Z/Altitude": 812.992223,
+        "Yaw_est": 238.435374,
+        "Pitch_est": -2.987611,
+        "Roll_est": 178.45568
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775194,
+          -23.145941,
+          813.1446
+        ]
+      },
+      "properties": {
+        "#Label": "1748630889.521808.jpg",
+        "X/Easting": 318251.316586,
+        "Y/Northing": 7439217.440012,
+        "Z/Altitude": 813.1446,
+        "Yaw_est": 235.71657600000003,
+        "Pitch_est": 1.111672,
+        "Roll_est": 178.332673
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775184,
+          -23.145932,
+          813.351928
+        ]
+      },
+      "properties": {
+        "#Label": "1748630890.522717.jpg",
+        "X/Easting": 318252.330582,
+        "Y/Northing": 7439218.491739,
+        "Z/Altitude": 813.351928,
+        "Yaw_est": 238.851357,
+        "Pitch_est": -0.112878,
+        "Roll_est": 178.176383
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775175,
+          -23.145922,
+          813.508299
+        ]
+      },
+      "properties": {
+        "#Label": "1748630891.523624.jpg",
+        "X/Easting": 318253.23883,
+        "Y/Northing": 7439219.605618,
+        "Z/Altitude": 813.508299,
+        "Yaw_est": 238.84196700000007,
+        "Pitch_est": -1.203444,
+        "Roll_est": 178.586824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775167,
+          -23.145913,
+          813.60207
+        ]
+      },
+      "properties": {
+        "#Label": "1748630892.524533.jpg",
+        "X/Easting": 318254.064883,
+        "Y/Northing": 7439220.61924,
+        "Z/Altitude": 813.60207,
+        "Yaw_est": 226.35328600000005,
+        "Pitch_est": -1.974376,
+        "Roll_est": 176.624916
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775158,
+          -23.145904,
+          813.725513
+        ]
+      },
+      "properties": {
+        "#Label": "1748630893.525441.jpg",
+        "X/Easting": 318254.998998,
+        "Y/Northing": 7439221.67053,
+        "Z/Altitude": 813.725513,
+        "Yaw_est": 224.60470800000007,
+        "Pitch_est": 4.134266,
+        "Roll_est": 177.50744
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775149,
+          -23.145894,
+          813.895591
+        ]
+      },
+      "properties": {
+        "#Label": "1748630894.526349.jpg",
+        "X/Easting": 318255.865851,
+        "Y/Northing": 7439222.776748,
+        "Z/Altitude": 813.895591,
+        "Yaw_est": 225.7963560000001,
+        "Pitch_est": 2.726787,
+        "Roll_est": 177.418752
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77514,
+          -23.145884,
+          814.086676
+        ]
+      },
+      "properties": {
+        "#Label": "1748630895.527257.jpg",
+        "X/Easting": 318256.778315,
+        "Y/Northing": 7439223.859884,
+        "Z/Altitude": 814.086676,
+        "Yaw_est": 227.847119,
+        "Pitch_est": 1.359825,
+        "Roll_est": 179.177721
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775131,
+          -23.145874,
+          814.214538
+        ]
+      },
+      "properties": {
+        "#Label": "1748630896.528166.jpg",
+        "X/Easting": 318257.711619,
+        "Y/Northing": 7439224.979821,
+        "Z/Altitude": 814.214538,
+        "Yaw_est": 231.619998,
+        "Pitch_est": 1.855281,
+        "Roll_est": 177.432746
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775122,
+          -23.145865,
+          814.343838
+        ]
+      },
+      "properties": {
+        "#Label": "1748630897.529073.jpg",
+        "X/Easting": 318258.586506,
+        "Y/Northing": 7439226.047871,
+        "Z/Altitude": 814.343838,
+        "Yaw_est": 229.721721,
+        "Pitch_est": -2.600716,
+        "Roll_est": 178.562065
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775114,
+          -23.145855,
+          814.466623
+        ]
+      },
+      "properties": {
+        "#Label": "1748630898.529982.jpg",
+        "X/Easting": 318259.453079,
+        "Y/Northing": 7439227.160398,
+        "Z/Altitude": 814.466623,
+        "Yaw_est": 232.32477599999996,
+        "Pitch_est": 0.401116,
+        "Roll_est": 177.92566
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775105,
+          -23.145845,
+          814.657365
+        ]
+      },
+      "properties": {
+        "#Label": "1748630899.530890.jpg",
+        "X/Easting": 318260.345287,
+        "Y/Northing": 7439228.233892,
+        "Z/Altitude": 814.657365,
+        "Yaw_est": 233.348835,
+        "Pitch_est": 0.084273,
+        "Roll_est": 177.76874
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775096,
+          -23.145836,
+          814.810142
+        ]
+      },
+      "properties": {
+        "#Label": "1748630900.531798.jpg",
+        "X/Easting": 318261.272081,
+        "Y/Northing": 7439229.28854,
+        "Z/Altitude": 814.810142,
+        "Yaw_est": 229.99106900000004,
+        "Pitch_est": -0.398404,
+        "Roll_est": 174.414177
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775086,
+          -23.145826,
+          814.929223
+        ]
+      },
+      "properties": {
+        "#Label": "1748630901.532706.jpg",
+        "X/Easting": 318262.211889,
+        "Y/Northing": 7439230.396078,
+        "Z/Altitude": 814.929223,
+        "Yaw_est": 229.81563400000005,
+        "Pitch_est": 2.442442,
+        "Roll_est": 177.597233
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775078,
+          -23.145816,
+          815.056042
+        ]
+      },
+      "properties": {
+        "#Label": "1748630902.533614.jpg",
+        "X/Easting": 318263.058096,
+        "Y/Northing": 7439231.451962,
+        "Z/Altitude": 815.056042,
+        "Yaw_est": 227.467264,
+        "Pitch_est": 4.470761,
+        "Roll_est": 176.418607
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775069,
+          -23.145807,
+          815.272183
+        ]
+      },
+      "properties": {
+        "#Label": "1748630903.534523.jpg",
+        "X/Easting": 318263.952066,
+        "Y/Northing": 7439232.473795,
+        "Z/Altitude": 815.272183,
+        "Yaw_est": 221.57489,
+        "Pitch_est": 1.053072,
+        "Roll_est": 177.786098
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77506,
+          -23.145798,
+          815.473084
+        ]
+      },
+      "properties": {
+        "#Label": "1748630904.535432.jpg",
+        "X/Easting": 318264.894435,
+        "Y/Northing": 7439233.546408,
+        "Z/Altitude": 815.473084,
+        "Yaw_est": 225.837959,
+        "Pitch_est": 0.485845,
+        "Roll_est": 179.039212
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77505,
+          -23.145788,
+          815.596924
+        ]
+      },
+      "properties": {
+        "#Label": "1748630905.536339.jpg",
+        "X/Easting": 318265.8629,
+        "Y/Northing": 7439234.579286,
+        "Z/Altitude": 815.596924,
+        "Yaw_est": 224.365557,
+        "Pitch_est": -0.21049,
+        "Roll_est": 179.567146
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775041,
+          -23.14578,
+          815.705732
+        ]
+      },
+      "properties": {
+        "#Label": "1748630906.537248.jpg",
+        "X/Easting": 318266.839867,
+        "Y/Northing": 7439235.536661,
+        "Z/Altitude": 815.705732,
+        "Yaw_est": 227.464109,
+        "Pitch_est": 1.760191,
+        "Roll_est": 177.486405
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775031,
+          -23.145771,
+          815.92009
+        ]
+      },
+      "properties": {
+        "#Label": "1748630907.538156.jpg",
+        "X/Easting": 318267.798317,
+        "Y/Northing": 7439236.55404,
+        "Z/Altitude": 815.92009,
+        "Yaw_est": 229.31376,
+        "Pitch_est": 2.564698,
+        "Roll_est": 177.313969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77502,
+          -23.145762,
+          816.132878
+        ]
+      },
+      "properties": {
+        "#Label": "1748630908.539064.jpg",
+        "X/Easting": 318268.906774,
+        "Y/Northing": 7439237.511469,
+        "Z/Altitude": 816.132878,
+        "Yaw_est": 222.67965300000003,
+        "Pitch_est": 2.632978,
+        "Roll_est": 176.523548
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77501,
+          -23.145754,
+          816.28796
+        ]
+      },
+      "properties": {
+        "#Label": "1748630909.539972.jpg",
+        "X/Easting": 318269.895204,
+        "Y/Northing": 7439238.430719,
+        "Z/Altitude": 816.28796,
+        "Yaw_est": 228.30696,
+        "Pitch_est": 0.453381,
+        "Roll_est": 179.176004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775001,
+          -23.145747,
+          816.371224
+        ]
+      },
+      "properties": {
+        "#Label": "1748630910.540881.jpg",
+        "X/Easting": 318270.878222,
+        "Y/Northing": 7439239.261898,
+        "Z/Altitude": 816.371224,
+        "Yaw_est": 223.24683500000003,
+        "Pitch_est": 2.894687,
+        "Roll_est": 178.743343
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774992,
+          -23.145738,
+          816.603245
+        ]
+      },
+      "properties": {
+        "#Label": "1748630911.541788.jpg",
+        "X/Easting": 318271.77648,
+        "Y/Northing": 7439240.205668,
+        "Z/Altitude": 816.603245,
+        "Yaw_est": 226.234731,
+        "Pitch_est": 0.154373,
+        "Roll_est": 178.324595
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774983,
+          -23.14573,
+          816.803233
+        ]
+      },
+      "properties": {
+        "#Label": "1748630912.542698.jpg",
+        "X/Easting": 318272.683263,
+        "Y/Northing": 7439241.167746,
+        "Z/Altitude": 816.803233,
+        "Yaw_est": 229.16136800000004,
+        "Pitch_est": -1.995954,
+        "Roll_est": 178.798444
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774974,
+          -23.145722,
+          816.891461
+        ]
+      },
+      "properties": {
+        "#Label": "1748630913.543605.jpg",
+        "X/Easting": 318273.579306,
+        "Y/Northing": 7439242.004998,
+        "Z/Altitude": 816.891461,
+        "Yaw_est": 230.00947599999995,
+        "Pitch_est": 1.850243,
+        "Roll_est": 176.881714
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774965,
+          -23.145715,
+          817.103713
+        ]
+      },
+      "properties": {
+        "#Label": "1748630914.544513.jpg",
+        "X/Easting": 318274.472206,
+        "Y/Northing": 7439242.812223,
+        "Z/Altitude": 817.103713,
+        "Yaw_est": 232.88065400000005,
+        "Pitch_est": 3.880981,
+        "Roll_est": 177.288737
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774956,
+          -23.145706,
+          817.247754
+        ]
+      },
+      "properties": {
+        "#Label": "1748630915.545421.jpg",
+        "X/Easting": 318275.369778,
+        "Y/Northing": 7439243.77889,
+        "Z/Altitude": 817.247754,
+        "Yaw_est": 231.515188,
+        "Pitch_est": 7.138375,
+        "Roll_est": 175.438969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774948,
+          -23.145698,
+          817.385227
+        ]
+      },
+      "properties": {
+        "#Label": "1748630916.546331.jpg",
+        "X/Easting": 318276.254885,
+        "Y/Northing": 7439244.721017,
+        "Z/Altitude": 817.385227,
+        "Yaw_est": 226.34494900000004,
+        "Pitch_est": 2.709518,
+        "Roll_est": 177.007465
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774939,
+          -23.14569,
+          817.543056
+        ]
+      },
+      "properties": {
+        "#Label": "1748630917.547237.jpg",
+        "X/Easting": 318277.113965,
+        "Y/Northing": 7439245.65432,
+        "Z/Altitude": 817.543056,
+        "Yaw_est": 225.39043200000003,
+        "Pitch_est": 3.460765,
+        "Roll_est": 176.161839
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77493,
+          -23.145681,
+          817.758927
+        ]
+      },
+      "properties": {
+        "#Label": "1748630918.548146.jpg",
+        "X/Easting": 318278.02927,
+        "Y/Northing": 7439246.626165,
+        "Z/Altitude": 817.758927,
+        "Yaw_est": 226.360679,
+        "Pitch_est": 4.624502,
+        "Roll_est": -179.537213
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77492,
+          -23.145674,
+          817.925005
+        ]
+      },
+      "properties": {
+        "#Label": "1748630919.549055.jpg",
+        "X/Easting": 318279.064063,
+        "Y/Northing": 7439247.400419,
+        "Z/Altitude": 817.925005,
+        "Yaw_est": 224.31680200000005,
+        "Pitch_est": 0.529675,
+        "Roll_est": 179.044969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774911,
+          -23.145667,
+          817.991573
+        ]
+      },
+      "properties": {
+        "#Label": "1748630920.549963.jpg",
+        "X/Easting": 318279.971425,
+        "Y/Northing": 7439248.148562,
+        "Z/Altitude": 817.991573,
+        "Yaw_est": 236.70158300000003,
+        "Pitch_est": 2.194255,
+        "Roll_est": 177.113266
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774904,
+          -23.145659,
+          818.188041
+        ]
+      },
+      "properties": {
+        "#Label": "1748630921.550871.jpg",
+        "X/Easting": 318280.660794,
+        "Y/Northing": 7439249.064806,
+        "Z/Altitude": 818.188041,
+        "Yaw_est": 244.034641,
+        "Pitch_est": 1.127067,
+        "Roll_est": 178.700188
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.7749,
+          -23.14565,
+          818.292546
+        ]
+      },
+      "properties": {
+        "#Label": "1748630922.551779.jpg",
+        "X/Easting": 318281.079585,
+        "Y/Northing": 7439250.140432,
+        "Z/Altitude": 818.292546,
+        "Yaw_est": 258.9571470000001,
+        "Pitch_est": 0.560356,
+        "Roll_est": 177.576528
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774899,
+          -23.14564,
+          818.417581
+        ]
+      },
+      "properties": {
+        "#Label": "1748630923.552686.jpg",
+        "X/Easting": 318281.100544,
+        "Y/Northing": 7439251.234324,
+        "Z/Altitude": 818.417581,
+        "Yaw_est": 285.866367,
+        "Pitch_est": 3.593802,
+        "Roll_est": 179.202691
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774903,
+          -23.14563,
+          818.58186
+        ]
+      },
+      "properties": {
+        "#Label": "1748630924.553596.jpg",
+        "X/Easting": 318280.762002,
+        "Y/Northing": 7439252.296982,
+        "Z/Altitude": 818.58186,
+        "Yaw_est": 308.411836,
+        "Pitch_est": -2.657197,
+        "Roll_est": 178.604533
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77491,
+          -23.145621,
+          818.573818
+        ]
+      },
+      "properties": {
+        "#Label": "1748630925.554504.jpg",
+        "X/Easting": 318280.033837,
+        "Y/Northing": 7439253.243938,
+        "Z/Altitude": 818.573818,
+        "Yaw_est": 321.22256600000003,
+        "Pitch_est": -8.047233,
+        "Roll_est": 179.683197
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77492,
+          -23.145614,
+          818.533299
+        ]
+      },
+      "properties": {
+        "#Label": "1748630926.555411.jpg",
+        "X/Easting": 318279.002438,
+        "Y/Northing": 7439254.010371,
+        "Z/Altitude": 818.533299,
+        "Yaw_est": 331.081951,
+        "Pitch_est": -10.588247,
+        "Roll_est": -178.278844
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774932,
+          -23.14561,
+          818.456102
+        ]
+      },
+      "properties": {
+        "#Label": "1748630927.556320.jpg",
+        "X/Easting": 318277.750294,
+        "Y/Northing": 7439254.528996,
+        "Z/Altitude": 818.456102,
+        "Yaw_est": 355.30765500000007,
+        "Pitch_est": -8.102477,
+        "Roll_est": -178.61626
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774945,
+          -23.145609,
+          818.297236
+        ]
+      },
+      "properties": {
+        "#Label": "1748630928.557229.jpg",
+        "X/Easting": 318276.365203,
+        "Y/Northing": 7439254.595353,
+        "Z/Altitude": 818.297236,
+        "Yaw_est": 13.038046000000008,
+        "Pitch_est": -4.054264,
+        "Roll_est": -178.62007
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774958,
+          -23.145612,
+          818.023612
+        ]
+      },
+      "properties": {
+        "#Label": "1748630929.558136.jpg",
+        "X/Easting": 318275.024228,
+        "Y/Northing": 7439254.243766,
+        "Z/Altitude": 818.023612,
+        "Yaw_est": 29.360914999999977,
+        "Pitch_est": -3.37975,
+        "Roll_est": 179.726877
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774972,
+          -23.145616,
+          817.763687
+        ]
+      },
+      "properties": {
+        "#Label": "1748630930.559044.jpg",
+        "X/Easting": 318273.635081,
+        "Y/Northing": 7439253.721894,
+        "Z/Altitude": 817.763687,
+        "Yaw_est": 28.814435000000003,
+        "Pitch_est": -4.907285,
+        "Roll_est": -179.405466
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774985,
+          -23.145623,
+          817.504746
+        ]
+      },
+      "properties": {
+        "#Label": "1748630931.559953.jpg",
+        "X/Easting": 318272.291398,
+        "Y/Northing": 7439253.007874,
+        "Z/Altitude": 817.504746,
+        "Yaw_est": 35.16645399999999,
+        "Pitch_est": -8.790895,
+        "Roll_est": -179.880643
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.774999,
+          -23.145629,
+          817.259203
+        ]
+      },
+      "properties": {
+        "#Label": "1748630932.560862.jpg",
+        "X/Easting": 318270.944127,
+        "Y/Northing": 7439252.241524,
+        "Z/Altitude": 817.259203,
+        "Yaw_est": 31.81960900000001,
+        "Pitch_est": -7.119398,
+        "Roll_est": 179.671777
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775011,
+          -23.145635,
+          817.034086
+        ]
+      },
+      "properties": {
+        "#Label": "1748630933.561769.jpg",
+        "X/Easting": 318269.62482,
+        "Y/Northing": 7439251.567063,
+        "Z/Altitude": 817.034086,
+        "Yaw_est": 26.22206399999999,
+        "Pitch_est": -8.523761,
+        "Roll_est": 178.362736
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775025,
+          -23.14564,
+          816.797975
+        ]
+      },
+      "properties": {
+        "#Label": "1748630934.562678.jpg",
+        "X/Easting": 318268.27799,
+        "Y/Northing": 7439251.02991,
+        "Z/Altitude": 816.797975,
+        "Yaw_est": 27.588803999999985,
+        "Pitch_est": -7.41001,
+        "Roll_est": 177.542225
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775038,
+          -23.145645,
+          816.604955
+        ]
+      },
+      "properties": {
+        "#Label": "1748630935.563590.jpg",
+        "X/Easting": 318266.964926,
+        "Y/Northing": 7439250.49011,
+        "Z/Altitude": 816.604955,
+        "Yaw_est": 28.628151000000003,
+        "Pitch_est": -4.641851,
+        "Roll_est": 178.166038
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77505,
+          -23.14565,
+          816.440054
+        ]
+      },
+      "properties": {
+        "#Label": "1748630936.564495.jpg",
+        "X/Easting": 318265.685728,
+        "Y/Northing": 7439249.8903,
+        "Z/Altitude": 816.440054,
+        "Yaw_est": 24.4905,
+        "Pitch_est": -3.128362,
+        "Roll_est": 179.284748
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775064,
+          -23.145654,
+          816.255879
+        ]
+      },
+      "properties": {
+        "#Label": "1748630937.565402.jpg",
+        "X/Easting": 318264.23279,
+        "Y/Northing": 7439249.392545,
+        "Z/Altitude": 816.255879,
+        "Yaw_est": 19.759918999999968,
+        "Pitch_est": -1.860105,
+        "Roll_est": 178.355871
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775079,
+          -23.145659,
+          816.050932
+        ]
+      },
+      "properties": {
+        "#Label": "1748630938.566310.jpg",
+        "X/Easting": 318262.783787,
+        "Y/Northing": 7439248.908279,
+        "Z/Altitude": 816.050932,
+        "Yaw_est": 22.571530999999997,
+        "Pitch_est": -5.270717,
+        "Roll_est": 176.853864
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775092,
+          -23.145664,
+          815.800168
+        ]
+      },
+      "properties": {
+        "#Label": "1748630939.567218.jpg",
+        "X/Easting": 318261.411574,
+        "Y/Northing": 7439248.307665,
+        "Z/Altitude": 815.800168,
+        "Yaw_est": 25.293802000000028,
+        "Pitch_est": -4.711124,
+        "Roll_est": -179.136051
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775106,
+          -23.145668,
+          815.604062
+        ]
+      },
+      "properties": {
+        "#Label": "1748630940.568129.jpg",
+        "X/Easting": 318259.982047,
+        "Y/Northing": 7439247.813089,
+        "Z/Altitude": 815.604062,
+        "Yaw_est": 19.90899100000001,
+        "Pitch_est": -7.380197,
+        "Roll_est": -178.768463
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775121,
+          -23.145672,
+          815.393364
+        ]
+      },
+      "properties": {
+        "#Label": "1748630941.569035.jpg",
+        "X/Easting": 318258.416726,
+        "Y/Northing": 7439247.346625,
+        "Z/Altitude": 815.393364,
+        "Yaw_est": 24.464417000000022,
+        "Pitch_est": 0.711641,
+        "Roll_est": 178.899294
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775136,
+          -23.145674,
+          815.206856
+        ]
+      },
+      "properties": {
+        "#Label": "1748630942.569943.jpg",
+        "X/Easting": 318256.974347,
+        "Y/Northing": 7439247.142132,
+        "Z/Altitude": 815.206856,
+        "Yaw_est": 15.66026499999998,
+        "Pitch_est": -6.229523,
+        "Roll_est": -178.408506
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775149,
+          -23.145678,
+          815.087407
+        ]
+      },
+      "properties": {
+        "#Label": "1748630943.570853.jpg",
+        "X/Easting": 318255.581464,
+        "Y/Northing": 7439246.683902,
+        "Z/Altitude": 815.087407,
+        "Yaw_est": 26.277309,
+        "Pitch_est": -5.789995,
+        "Roll_est": 177.435813
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775163,
+          -23.145681,
+          814.989647
+        ]
+      },
+      "properties": {
+        "#Label": "1748630944.571760.jpg",
+        "X/Easting": 318254.216047,
+        "Y/Northing": 7439246.324166,
+        "Z/Altitude": 814.989647,
+        "Yaw_est": 5.697958999999969,
+        "Pitch_est": -3.405837,
+        "Roll_est": -179.894608
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775176,
+          -23.145682,
+          814.860789
+        ]
+      },
+      "properties": {
+        "#Label": "1748630945.572668.jpg",
+        "X/Easting": 318252.847853,
+        "Y/Northing": 7439246.152495,
+        "Z/Altitude": 814.860789,
+        "Yaw_est": 8.214435999999978,
+        "Pitch_est": -6.419883,
+        "Roll_est": -177.451279
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77519,
+          -23.145683,
+          814.683683
+        ]
+      },
+      "properties": {
+        "#Label": "1748630946.573576.jpg",
+        "X/Easting": 318251.435237,
+        "Y/Northing": 7439246.091145,
+        "Z/Altitude": 814.683683,
+        "Yaw_est": 10.368248999999992,
+        "Pitch_est": -7.21564,
+        "Roll_est": -177.969999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775199,
+          -23.145682,
+          814.537412
+        ]
+      },
+      "properties": {
+        "#Label": "1748630947.574485.jpg",
+        "X/Easting": 318250.466176,
+        "Y/Northing": 7439246.134678,
+        "Z/Altitude": 814.537412,
+        "Yaw_est": 9.717268999999987,
+        "Pitch_est": -11.315949,
+        "Roll_est": 178.751668
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775196,
+          -23.145683,
+          814.606293
+        ]
+      },
+      "properties": {
+        "#Label": "1748630948.575393.jpg",
+        "X/Easting": 318250.832424,
+        "Y/Northing": 7439246.056308,
+        "Z/Altitude": 814.606293,
+        "Yaw_est": 349.358245,
+        "Pitch_est": -11.107546,
+        "Roll_est": -178.923948
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775188,
+          -23.145683,
+          814.642308
+        ]
+      },
+      "properties": {
+        "#Label": "1748630949.576301.jpg",
+        "X/Easting": 318251.564307,
+        "Y/Northing": 7439246.102165,
+        "Z/Altitude": 814.642308,
+        "Yaw_est": 354.826407,
+        "Pitch_est": 0.320052,
+        "Roll_est": -178.224037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.77518,
+          -23.145682,
+          814.774855
+        ]
+      },
+      "properties": {
+        "#Label": "1748630950.577209.jpg",
+        "X/Easting": 318252.416565,
+        "Y/Northing": 7439246.185528,
+        "Z/Altitude": 814.774855,
+        "Yaw_est": 2.8378159999999752,
+        "Pitch_est": -6.479286,
+        "Roll_est": -175.740336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775172,
+          -23.145682,
+          814.890809
+        ]
+      },
+      "properties": {
+        "#Label": "1748630951.578118.jpg",
+        "X/Easting": 318253.279688,
+        "Y/Northing": 7439246.182344,
+        "Z/Altitude": 814.890809,
+        "Yaw_est": 11.921825000000013,
+        "Pitch_est": -2.436362,
+        "Roll_est": -176.738711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775165,
+          -23.145681,
+          814.974061
+        ]
+      },
+      "properties": {
+        "#Label": "1748630952.579026.jpg",
+        "X/Easting": 318253.935036,
+        "Y/Northing": 7439246.307448,
+        "Z/Altitude": 814.974061,
+        "Yaw_est": 17.345834999999965,
+        "Pitch_est": 3.142915,
+        "Roll_est": -176.699271
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.775159,
+          -23.145679,
+          815.064716
+        ]
+      },
+      "properties": {
+        "#Label": "1748630954.580842.jpg",
+        "X/Easting": 318254.548516,
+        "Y/Northing": 7439246.607261,
+        "Z/Altitude": 815.064716,
+        "Yaw_est": 12.518258000000005,
+        "Pitch_est": -8.601363,
+        "Roll_est": 179.502269
+      }
+    }
+  ]
 }
