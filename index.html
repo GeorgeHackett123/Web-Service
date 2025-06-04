@@ -216,7 +216,10 @@
               clampToGround: false,
               stroke: color,
               fill: color.withAlpha ? color.withAlpha(0.4) : color,
-              strokeWidth: 2 
+              strokeWidth: 2,
+              markerSize: 0,
+              markerSymbol: '',
+              markerColor: Cesium.Color.TRANSPARENT
             }).then(ds => {
                 viewer.dataSources.add(ds);
             });
