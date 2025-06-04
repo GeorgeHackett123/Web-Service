@@ -207,7 +207,7 @@
             return resp.json();
           })
           .then(data => {
-            reprojectGeojsonUTM23SToWGS84(data);
+            autoReprojectIfNeeded(data);
             const base = filename.split('/').pop();
             let color = customColors[base];
             if (!color) color = Cesium.Color.WHITE;
@@ -431,6 +431,27 @@
           selectedGeoJsonLabel = null;
         }
       }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+
+      // --- AUTO-DETECT UTM AND REPROJECT IF NEEDED ---
+      function isLikelyUTM(coord) {
+        // UTM Easting typically >100,000, Northing >1,000,000 (Brazil)
+        return Math.abs(coord[0]) > 1000 && Math.abs(coord[1]) > 1000000;
+      }
+
+      function autoReprojectIfNeeded(geojson) {
+        let sample;
+        if (geojson.type === "FeatureCollection" && geojson.features.length) {
+          const geom = geojson.features[0].geometry;
+          if (geom.type === "Point") sample = geom.coordinates;
+          else if (geom.type === "LineString" || geom.type === "MultiPoint") sample = geom.coordinates[0];
+          else if (geom.type === "Polygon" || geom.type === "MultiLineString") sample = geom.coordinates[0][0];
+          else if (geom.type === "MultiPolygon") sample = geom.coordinates[0][0][0];
+        }
+        if (sample && isLikelyUTM(sample)) {
+          reprojectGeojsonUTM23SToWGS84(geojson);
+        }
+        // else, do nothing (assume WGS84)
+      }
 
       // -- UTM Zone 23S Reprojection Functions --
       function utm23sToWgs84(coords) {
