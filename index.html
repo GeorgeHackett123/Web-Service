@@ -158,8 +158,12 @@
       viewer.scene.morphTo2D(0);
 
       const geojsonUrl = 'camera_points_final.geojson';
+      // THIS LINE DISABLES BLUE BUBBLES
       const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
-        clampToGround: false
+        clampToGround: false,
+        markerSize: 0,
+        markerSymbol: '',
+        markerColor: Cesium.Color.TRANSPARENT
       });
 
       viewer.dataSources.add(dataSource);
@@ -170,7 +174,6 @@
       for (let i = 0; i < entities.length; i++) {
         const entity = entities[i];
         const labelText = entity.properties?.['#Label'];
-        if (entity.billboard) delete entity.billboard; // ABSOLUTELY REMOVE BILLBOARD PROPERTY
         const heading = entity.properties?.['Yaw_est'];
         const imageURL = `images/${labelText}`;
 
