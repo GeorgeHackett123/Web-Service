@@ -280,7 +280,7 @@
                 function updateFrustumCone() {
                   const rawYaw = parseFloat(picked.id.properties['Yaw_est'].getValue());
                   const viewerYaw = Cesium.Math.toDegrees(view.yaw());
-                  // EXPLICIT 180° FLIP
+                  // 180° FLIP
                   const yaw = Cesium.Math.toRadians((rawYaw + viewerYaw + 75) % 360) + Math.PI;
                   const length = 10.0;
                   const halfFov = Cesium.Math.toRadians(22.5);
