@@ -435,7 +435,7 @@
       // -- UTM Zone 23S Reprojection Functions --
       function utm23sToWgs84(coords) {
         let [lon, lat] = proj4(
-          "+proj=utm +zone=23 +south +datum=SIRGAS2000 +units=m +no_defs",
+          "+proj=utm +zone=23 +south +datum=SAD69 +units=m +no_defs",
           "WGS84",
           [coords[0], coords[1]]
         );
