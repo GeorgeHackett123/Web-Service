@@ -170,7 +170,7 @@
       for (let i = 0; i < entities.length; i++) {
         const entity = entities[i];
         const labelText = entity.properties?.['#Label'];
-        entity.billboard = undefined;
+        delete entity.billboard; // <-- REMOVE BILLBOARD ICONS COMPLETELY
         const heading = entity.properties?.['Yaw_est'];
         const imageURL = `images/${labelText}`;
 
