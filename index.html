@@ -158,7 +158,6 @@
       viewer.scene.morphTo2D(0);
 
       const geojsonUrl = 'camera_points_final.geojson';
-      // THIS LINE DISABLES BLUE BUBBLES ON CAMERA POINTS
       const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
         clampToGround: false,
         markerSize: 0,
@@ -221,11 +220,6 @@
               markerSymbol: '',
               markerColor: Cesium.Color.TRANSPARENT
             }).then(ds => {
-                // --- REMOVE ANY BILLBOARDS FROM LOADED OVERLAY ENTITIES ---
-                const ents = ds.entities.values;
-                for (let i = 0; i < ents.length; i++) {
-                  if (ents[i].billboard) delete ents[i].billboard;
-                }
                 viewer.dataSources.add(ds);
             });
           })
