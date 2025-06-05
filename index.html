@@ -48,6 +48,9 @@
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://www.marzipano.net/demos/vendor/marzipano.js"></script>
 <script>
+// Set Ion access token (to be replaced by build_cesium_index.py)
+Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5ZWY0NjAyOC02MTBkLTQ0YTAtOTA0MS0yYzc5ZDQ4Yjk3YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMTc5MDJ9.v7o2lZsQ9Lq9mIZwdO3ub-UjWboNXvYADOi_rlHMrLM";
+
 // Initialize Cesium viewer
 const viewer = new Cesium.Viewer('cesiumContainer', {
     timeline: false,
