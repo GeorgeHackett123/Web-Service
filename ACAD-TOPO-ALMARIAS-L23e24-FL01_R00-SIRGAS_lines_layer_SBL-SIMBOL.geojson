@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "ACAD-TOPO-ALMARIAS-L23e24-FL01_R00-SIRGAS_lines_layer_SBL-SIMBOL",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32723" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 2388, "handle": 63548, "block": -1, "etype": 17, "space": 0, "layer": "SBL-SIMBOLOGIA", "olinetype": "BYLAYER", "linetype": "", "color": "0,0,0,255", "ocolor": 7, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": null, "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 1037.123786942785955, 262.406431107781827, 0.0 ], [ 1035.939620891847881, 263.693855443969369, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "fid": 2389, "handle": 63549, "block": -1, "etype": 17, "space": 0, "layer": "SBL-SIMBOLOGIA", "olinetype": "BYLAYER", "linetype": "", "color": "0,0,0,255", "ocolor": 7, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": null, "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 1035.939620891847881, 263.693855443969369, 0.0 ], [ 1033.048515434129513, 267.835126359015703, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "fid": 2390, "handle": 63550, "block": -1, "etype": 17, "space": 0, "layer": "SBL-SIMBOLOGIA", "olinetype": "BYLAYER", "linetype": "", "color": "0,0,0,255", "ocolor": 7, "color24": -1, "transparency": 0, "lweight": -1, "linewidth": 0.0, "ltscale": 1.0, "visible": 1, "thickness": 0.0, "ext": null, "width": null }, "geometry": { "type": "LineString", "coordinates": [ [ 1034.372353643615497, 264.946476557292044, 0.0 ], [ 1034.407182550319703, 262.823979682289064, 0.0 ] ] } }
+]
+}
