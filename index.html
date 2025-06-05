@@ -48,29 +48,52 @@
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://www.marzipano.net/demos/vendor/marzipano.js"></script>
 <script>
-// ---------- (Assume loading of geojson and camera points already done above this point) ----------
+// Initialize Cesium viewer
+const viewer = new Cesium.Viewer('cesiumContainer', {
+    timeline: false,
+    animation: false,
+    baseLayerPicker: false,
+    geocoder: false,
+    homeButton: false,
+    sceneModePicker: false,
+    navigationHelpButton: false,
+    infoBox: false,
+    selectionIndicator: false,
+    scene3DOnly: true,
+    shouldAnimate: false,
+});
 
-// Example for adding a viewcone, update this block wherever you generate the cones:
+// Example camera point features (replace with your own GeoJSON load)
+const features = [
+    // Example data (replace with your features)
+    // {
+    //     geometry: { coordinates: [longitude, latitude, altitude] },
+    //     properties: { Yaw_est: 45, Pitch_est: 0, Roll_est: 0 }
+    // }
+];
+
+// Example: Load features dynamically if you have a GeoJSON file
+// Cesium.GeoJsonDataSource.load('camera_points.geojson').then(function(dataSource) {
+//     viewer.dataSources.add(dataSource);
+//     // Optionally loop through and create cones manually if you want full control
+// });
+
+// Function to add a single camera view cone entity
 function addCameraCone(feature) {
-    // Compute the heading (yaw) - flip 180°:
-    const heading = Cesium.Math.toRadians(feature.properties.Yaw_est + 180);
+    // Flip the heading 180°: subtract 180°
+    const heading = Cesium.Math.toRadians((feature.properties.Yaw_est || 0) - 180);
     const pitch = Cesium.Math.toRadians(feature.properties.Pitch_est || 0);
     const roll = Cesium.Math.toRadians(feature.properties.Roll_est || 0);
 
-    // Your position logic (replace with your real code):
-    const position = Cesium.Cartesian3.fromDegrees(
-        feature.geometry.coordinates[0],
-        feature.geometry.coordinates[1],
-        feature.geometry.coordinates[2]
-    );
+    const coords = feature.geometry.coordinates;
+    const position = Cesium.Cartesian3.fromDegrees(coords[0], coords[1], coords[2]);
 
-    // Example orientation
     const orientation = Cesium.Transforms.headingPitchRollQuaternion(
         position,
         new Cesium.HeadingPitchRoll(heading, pitch, roll)
     );
 
-    // Add the cone (replace with your real logic):
+    // Add a cone (using cylinder as a view cone)
     viewer.entities.add({
         name: "View Cone",
         position: position,
@@ -86,9 +109,12 @@ function addCameraCone(feature) {
     });
 }
 
-// ---------- The rest of your Cesium and Marzipano code remains unchanged ----------
+// EXAMPLE: Loop to add cones (replace with your own feature loading logic)
+for (const feature of features) {
+    addCameraCone(feature);
+}
 
-/* Marzipano popup with 180° flip (yaw: Math.PI) */
+// ------------------ MARZIPANO POPUP -------------------
 function showMarzipanoPopup(imageUrl, title) {
     document.getElementById('marzipanoModal').style.display = 'flex';
     // Destroy previous viewer
@@ -118,7 +144,8 @@ document.getElementById('marzipanoClose').onclick = function () {
     }
 };
 
-// (rest of your script unchanged)
+// Example to open a popup (replace with your triggers)
+// showMarzipanoPopup('images/your_image.jpg', 'Sample Title');
 </script>
 </body>
 </html>
