@@ -48,48 +48,10 @@
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://www.marzipano.net/demos/vendor/marzipano.js"></script>
 <script>
-// Set Cesium Ion token (injected by your build script)
-Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5ZWY0NjAyOC02MTBkLTQ0YTAtOTA0MS0yYzc5ZDQ4Yjk3YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMTc5MDJ9.v7o2lZsQ9Lq9mIZwdO3ub-UjWboNXvYADOi_rlHMrLM";
-
-// ---------- (Assume loading of geojson and camera points already done above this point) ----------
-
-// Example for adding a viewcone, update this block wherever you generate the cones:
-function addCameraCone(feature) {
-    // Compute the heading (yaw) - flip 180°:
-    const heading = Cesium.Math.toRadians((feature.properties.Yaw_est || 0) + 180);
-    const pitch = Cesium.Math.toRadians(feature.properties.Pitch_est || 0);
-    const roll = Cesium.Math.toRadians(feature.properties.Roll_est || 0);
-
-    // Your position logic (replace with your real code):
-    const position = Cesium.Cartesian3.fromDegrees(
-        feature.geometry.coordinates[0],
-        feature.geometry.coordinates[1],
-        feature.geometry.coordinates[2]
-    );
-
-    // Example orientation
-    const orientation = Cesium.Transforms.headingPitchRollQuaternion(
-        position,
-        new Cesium.HeadingPitchRoll(heading, pitch, roll)
-    );
-
-    // Add the cone (replace with your real logic):
-    viewer.entities.add({
-        name: "View Cone",
-        position: position,
-        orientation: orientation,
-        cylinder: {
-            length: 20.0,
-            topRadius: 0.1,
-            bottomRadius: 3.0,
-            material: Cesium.Color.YELLOW.withAlpha(0.2),
-            outline: true,
-            outlineColor: Cesium.Color.YELLOW
-        }
-    });
-}
-
-// ---------- The rest of your Cesium and Marzipano code remains unchanged ----------
+/* -------------- Your Cesium + Overlay/Camera logic here -------------- */
+/* ... your previous code to load Cesium viewer, overlays, popups ...    */
+/* (Not shown here, to keep focus on Marzipano logic as per your request)*/
+/* --------------------------------------------------------------------- */
 
 /* Marzipano popup with 180° flip (yaw: Math.PI) */
 function showMarzipanoPopup(imageUrl, title) {
@@ -121,7 +83,8 @@ document.getElementById('marzipanoClose').onclick = function () {
     }
 };
 
-// (rest of your script unchanged)
+// Example: To trigger the popup with a given image and title, call:
+// showMarzipanoPopup('images/your_image.jpg', 'Sample Title');
 </script>
 </body>
 </html>
