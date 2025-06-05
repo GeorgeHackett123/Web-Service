@@ -48,33 +48,126 @@
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://www.marzipano.net/demos/vendor/marzipano.js"></script>
 <script>
-/* -------------- Your Cesium + Overlay/Camera logic here -------------- */
-/* ... your previous code to load Cesium viewer, overlays, popups ...    */
-/* (Not shown here, to keep focus on Marzipano logic as per your request)*/
-/* --------------------------------------------------------------------- */
+// Set Cesium Ion token
+Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5ZWY0NjAyOC02MTBkLTQ0YTAtOTA0MS0yYzc5ZDQ4Yjk3YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMTc5MDJ9.v7o2lZsQ9Lq9mIZwdO3ub-UjWboNXvYADOi_rlHMrLM";
 
-/* Marzipano popup with 180° flip (yaw: Math.PI) */
+// -- Create the Cesium Viewer --
+const viewer = new Cesium.Viewer('cesiumContainer', {
+    timeline: false,
+    animation: false,
+    baseLayerPicker: false,
+    geocoder: false,
+    homeButton: false,
+    sceneModePicker: false,
+    navigationHelpButton: false,
+    infoBox: false,
+    selectionIndicator: false,
+    scene3DOnly: true,
+    shouldAnimate: false,
+});
+
+// -- Load overlays --
+const overlayFiles = [
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson",
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson",
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson",
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson",
+  "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson",
+  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson",
+  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson"
+];
+const overlayColors = {
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
+  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
+  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140)
+};
+
+// Load overlays as GeoJSON
+overlayFiles.forEach(filename => {
+    Cesium.GeoJsonDataSource.load(filename, {
+        clampToGround: true
+    }).then(function(dataSource) {
+        viewer.dataSources.add(dataSource);
+        // Set custom color if you wish using overlayColors[filename]
+    });
+});
+
+// -- Load and draw camera points (viewcones) --
+fetch('camera_points_final.geojson')
+    .then(response => response.json())
+    .then(data => {
+        data.features.forEach(feature => addCameraCone(feature));
+    });
+
+function addCameraCone(feature) {
+    // Flip heading 180 degrees
+    const heading = Cesium.Math.toRadians((feature.properties.Yaw_est || 0) + 180);
+    const pitch = Cesium.Math.toRadians(feature.properties.Pitch_est || 0);
+    const roll = Cesium.Math.toRadians(feature.properties.Roll_est || 0);
+
+    const coords = feature.geometry.coordinates;
+    const position = Cesium.Cartesian3.fromDegrees(coords[0], coords[1], coords[2]);
+
+    const orientation = Cesium.Transforms.headingPitchRollQuaternion(
+        position,
+        new Cesium.HeadingPitchRoll(heading, pitch, roll)
+    );
+
+    viewer.entities.add({
+        name: feature.properties['#Label'] || 'View Cone',
+        position: position,
+        orientation: orientation,
+        cylinder: {
+            length: 20.0,
+            topRadius: 0.1,
+            bottomRadius: 3.0,
+            material: Cesium.Color.YELLOW.withAlpha(0.2),
+            outline: true,
+            outlineColor: Cesium.Color.YELLOW
+        }
+    });
+}
+
+// -- Marzipano popup logic remains unchanged --
 function showMarzipanoPopup(imageUrl, title) {
     document.getElementById('marzipanoModal').style.display = 'flex';
-    // Destroy previous viewer
-    if (window.panoViewer) {
-        window.panoViewer.destroy();
-    }
-    // Create Marzipano viewer
+    if (window.panoViewer) window.panoViewer.destroy();
     window.panoViewer = new Marzipano.Viewer(document.getElementById('marzipanoPano'), { stageType: 'webgl' });
 
     const source = Marzipano.ImageUrlSource.fromString(imageUrl);
     const geometry = new Marzipano.EquirectGeometry([{ width: 1536 }]);
     const limiter = Marzipano.RectilinearView.limit.traditional(1024, 100 * Math.PI / 180);
-
-    // Flip 360 image by 180°
     const view = new Marzipano.RectilinearView({ yaw: Math.PI }, limiter);
-
     const scene = window.panoViewer.createScene({ source, geometry, view });
     scene.switchTo();
     document.getElementById('marzipanoTitle').innerText = title || '';
 }
-
 document.getElementById('marzipanoClose').onclick = function () {
     document.getElementById('marzipanoModal').style.display = 'none';
     if (window.panoViewer) {
@@ -82,9 +175,6 @@ document.getElementById('marzipanoClose').onclick = function () {
         window.panoViewer = null;
     }
 };
-
-// Example: To trigger the popup with a given image and title, call:
-// showMarzipanoPopup('images/your_image.jpg', 'Sample Title');
 </script>
 </body>
 </html>
