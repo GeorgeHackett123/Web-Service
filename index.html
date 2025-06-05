@@ -101,10 +101,48 @@
 </div>
 <div id="geojsonPopup"></div>
 <script type="module">
-    Cesium.Ion.defaultAccessToken = '{{ION_TOKEN}}';
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5ZWY0NjAyOC02MTBkLTQ0YTAtOTA0MS0yYzc5ZDQ4Yjk3YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMTc5MDJ9.v7o2lZsQ9Lq9mIZwdO3ub-UjWboNXvYADOi_rlHMrLM';
 
-    const extraGeojsons = {{OVERLAY_GEOJSON_LIST}};
-    const customColors = {{CUSTOM_COLOR_MAP}};
+    const extraGeojsons = [
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson",
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson",
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson",
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson",
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson",
+  "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson",
+  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson",
+  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson"
+];
+    const customColors = {
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
+  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98),
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson": Cesium.Color.WHITE,
+  "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
+  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
+  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140)
+};
 
     async function init() {
       const viewer = new Cesium.Viewer('cesiumContainer', {
@@ -119,7 +157,7 @@
       });
       viewer.scene.morphTo2D(0);
 
-      const geojsonUrl = '{{CAMERA_POINTS_GEOJSON}}';
+      const geojsonUrl = 'camera_points_final.geojson';
       const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
         clampToGround: false,
         markerSize: 0,
@@ -169,7 +207,7 @@
             return resp.json();
           })
           .then(data => {
-            autoReprojectIfNeeded(data);
+            reprojectGeojsonUTM23SToWGS84(data);
             const base = filename.split('/').pop();
             let color = customColors[base];
             if (!color) color = Cesium.Color.WHITE;
@@ -394,31 +432,10 @@
         }
       }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-      // --- AUTO-DETECT UTM AND REPROJECT IF NEEDED ---
-      function isLikelyUTM(coord) {
-        // UTM Easting typically >100,000, Northing >1,000,000 (Brazil)
-        return Math.abs(coord[0]) > 1000 && Math.abs(coord[1]) > 1000000;
-      }
-
-      function autoReprojectIfNeeded(geojson) {
-        let sample;
-        if (geojson.type === "FeatureCollection" && geojson.features.length) {
-          const geom = geojson.features[0].geometry;
-          if (geom.type === "Point") sample = geom.coordinates;
-          else if (geom.type === "LineString" || geom.type === "MultiPoint") sample = geom.coordinates[0];
-          else if (geom.type === "Polygon" || geom.type === "MultiLineString") sample = geom.coordinates[0][0];
-          else if (geom.type === "MultiPolygon") sample = geom.coordinates[0][0][0];
-        }
-        if (sample && isLikelyUTM(sample)) {
-          reprojectGeojsonUTM23SToWGS84(geojson);
-        }
-        // else, do nothing (assume WGS84)
-      }
-
       // -- UTM Zone 23S Reprojection Functions --
       function utm23sToWgs84(coords) {
         let [lon, lat] = proj4(
-          "+proj=utm +zone=23 +south +datum=SAD69 +units=m +no_defs",
+          "+proj=utm +zone=23 +south +datum=SIRGAS2000 +units=m +no_defs",
           "WGS84",
           [coords[0], coords[1]]
         );
