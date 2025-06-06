@@ -108,6 +108,7 @@
       "almar_layer_LineStringZ.geojson",
       "almar_layer_PointZ.geojson",
       "almar_layer_PolygonZ.geojson"
+      // add as many as you want
     ];
 
     // Returns style for overlay by filename (case sensitive)
@@ -169,7 +170,6 @@
       for (let i = 0; i < entities.length; i++) {
         const entity = entities[i];
         const labelText = entity.properties?.['#Label'];
-        const heading = entity.properties?.['Yaw_est'];
         const imageURL = `images/${labelText}`;
 
         entity.point = new Cesium.PointGraphics({
@@ -203,7 +203,6 @@
             return resp.json();
           })
           .then(data => {
-            reprojectGeojsonUTM23SToWGS84(data);
             const base = filename.split('/').pop();
             const style = getOverlayColorStyle(base);
 
@@ -258,7 +257,7 @@
         if (picked && picked.id) {
           // CAMERA POINT: Show Marzipano popup
           if (picked.id.popupImageURL) {
-            // ... (unchanged, all your Marzipano popup logic) ...
+            // ... (your Marzipano popup logic here)
           }
           // NON-CAMERA FEATURE: Show label at centroid/midpoint/point
           if (picked.id.properties && !picked.id.popupImageURL && picked.id.properties.layer) {
@@ -321,43 +320,8 @@
         }
       }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-      // -- UTM Zone 23S Reprojection Functions --
-      function utm23sToWgs84(coords) {
-        let [lon, lat] = proj4(
-          "+proj=utm +zone=23 +south +datum=SIRGAS2000 +units=m +no_defs",
-          "WGS84",
-          [coords[0], coords[1]]
-        );
-        return [lon, lat, 0];
-      }
-      function reprojectGeometry(geometry) {
-        if (geometry.type === "Point") {
-          geometry.coordinates = utm23sToWgs84(geometry.coordinates);
-        } else if (geometry.type === "LineString" || geometry.type === "MultiPoint") {
-          geometry.coordinates = geometry.coordinates.map(utm23sToWgs84);
-        } else if (geometry.type === "Polygon" || geometry.type === "MultiLineString") {
-          geometry.coordinates = geometry.coordinates.map(
-            ring => ring.map(utm23sToWgs84)
-          );
-        } else if (geometry.type === "MultiPolygon") {
-          geometry.coordinates = geometry.coordinates.map(
-            polygon => polygon.map(
-              ring => ring.map(utm23sToWgs84)
-            )
-          );
-        }
-      }
-      function reprojectGeojsonUTM23SToWGS84(geojson) {
-        if (geojson.type === "FeatureCollection") {
-          geojson.features.forEach(f => reprojectGeometry(f.geometry));
-        } else if (geojson.type === "Feature") {
-          reprojectGeometry(geojson.geometry);
-        } else if (geojson.type === "GeometryCollection") {
-          geojson.geometries.forEach(g => reprojectGeometry(g));
-        }
-        return geojson;
-      }
-
+      // -- UTM Zone 23S Reprojection Functions are present but not called --
+      // (You can delete them if you like, but not necessary as they're unused)
     }
 
     init();
