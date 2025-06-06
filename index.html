@@ -41,7 +41,7 @@ const extraGeojsons = [
 function getOverlayStyle(name) {
   if (name.includes("LineStringZ")) return {stroke: Cesium.Color.fromCssColorString("#4B2E05"), fill: Cesium.Color.fromCssColorString("#4B2E05").withAlpha(0.1), strokeWidth:2};
   if (name.includes("PolygonZ"))   return {stroke: Cesium.Color.LIME, fill: Cesium.Color.LIME.withAlpha(0.25), strokeWidth:2};
-  if (name.includes("PointZ"))     return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2, pointSize:12};
+  if (name.includes("PointZ"))     return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2, pointSize:10};
   return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2};
 }
 
@@ -81,28 +81,16 @@ async function init() {
           for (let i = 0; i < ents.length; i++) {
             if (ents[i].billboard) delete ents[i].billboard;
           }
-          // Custom point style for PointZ overlays:
+          // Custom point style for PointZ overlays (no labels, size 10)
           if (filename.includes("PointZ")) {
             for (let i = 0; i < ents.length; i++) {
               ents[i].point = new Cesium.PointGraphics({
-                pixelSize: style.pointSize || 10,
+                pixelSize: 10,
                 color: Cesium.Color.WHITE,
                 outlineColor: Cesium.Color.BLACK,
                 outlineWidth: 1
               });
-              // LABEL ELEVATION FOR POINTZ:
-              const elev = ents[i].properties?.ELEVATION?.getValue?.() ?? "";
-              if (elev !== "") {
-                ents[i].label = new Cesium.LabelGraphics({
-                  text: String(elev),
-                  font: '13px sans-serif',
-                  fillColor: Cesium.Color.BLACK,
-                  showBackground: true,
-                  backgroundColor: Cesium.Color.WHITE.withAlpha(0.8),
-                  verticalOrigin: Cesium.VerticalOrigin.TOP,
-                  pixelOffset: new Cesium.Cartesian2(0, -16)
-                });
-              }
+              // NO LABELS FOR PointZ
             }
           }
           viewer.dataSources.add(ds);
