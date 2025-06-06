@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Cesium 360 + View Cone Working Example (Cleaned)</title>
+<title>Cesium 360 + View Cone — Robust Fix</title>
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marzipano@0.10.1/dist/marzipano.js"></script>
 <link href="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Widgets/widgets.css" rel="stylesheet"/>
@@ -14,7 +14,7 @@ html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; ove
   border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 999; padding:0; margin:0; overflow: hidden;
   pointer-events: none;
 }
-#imagePopupContent { width: 100%; height: 100%; display: flex; flex-direction: column; pointer-events: auto;}
+#popupContent { width: 100%; height: 100%; display: flex; flex-direction: column; pointer-events:auto;}
 #pano { flex: 1 1 0; width:100%; height:100%; }
 .close-btn { position: absolute; top: 5px; right: 10px; cursor: pointer; font-weight: bold; font-size: 18px; color: #888; pointer-events:auto;}
 #popupLabel { font-size: 14px; padding: 5px 0 0 8px; background:white;}
@@ -23,8 +23,8 @@ html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; ove
 <body>
 <div id="cesiumContainer"></div>
 <div id="imagePopup">
-  <div id="imagePopupContent">
-    <span class="close-btn" onclick="closeImagePopup()">✖</span>
+  <div id="popupContent">
+    <span class="close-btn" onclick="window.closeImagePopup()">✖</span>
     <div id="pano"></div>
     <div id="popupLabel"></div>
   </div>
@@ -32,14 +32,21 @@ html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; ove
 <script type="module">
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxOTFmZDVlMi03YjgxLTQ1YWUtOWQwZS0xZjljNDM0NjA4YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMjg1MTN9.Dwyd_sG1jlBEjibzMEzejMEBzkO9M7W43h-ivarmdK8';
 
-// Layer list (adjust filenames as needed)
 const overlays = [
   "almar_layer_LineStringZ.geojson",
   "almar_layer_PointZ.geojson",
   "almar_layer_PolygonZ.geojson"
 ];
-let coneEntities = [];
-function clearCones(viewer) { for(const e of coneEntities) viewer.entities.remove(e); coneEntities = []; }
+let coneEntity = null;
+let panoViewer = null;
+let lastPicked = null;
+
+function clearCone(viewer) {
+  if (coneEntity) {
+    viewer.entities.remove(coneEntity);
+    coneEntity = null;
+  }
+}
 
 function getOverlayStyle(name) {
   if (name.includes("LineStringZ")) return {stroke: Cesium.Color.BROWN, fill: Cesium.Color.BROWN.withAlpha(0.1), strokeWidth:2};
@@ -63,7 +70,6 @@ async function loadOverlays(viewer) {
       markerSymbol:'',
       markerColor:style.fill
     });
-    // Remove billboard icons
     for(const ent of ds.entities.values) if(ent.billboard) delete ent.billboard;
     if(file.includes('PointZ')) {
       for(const ent of ds.entities.values) {
@@ -97,14 +103,15 @@ async function loadCameraPoints(viewer) {
   }
 }
 
-function closeImagePopup() {
+window.closeImagePopup = function() {
   document.getElementById('imagePopup').style.display = 'none';
-  if(window.panoViewer) { window.panoViewer.destroy(); window.panoViewer = null; }
-  if(window.cesiumViewer) clearCones(window.cesiumViewer);
-}
+  if(panoViewer) { panoViewer.destroy(); panoViewer = null; }
+  if(window.cesiumViewer) clearCone(window.cesiumViewer);
+  lastPicked = null;
+};
 
 function drawViewCone(viewer, picked, marzipanoView) {
-  clearCones(viewer);
+  clearCone(viewer);
   const pos = picked.id.position.getValue(Cesium.JulianDate.now());
   if(!pos) return;
   const carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(pos);
@@ -122,17 +129,16 @@ function drawViewCone(viewer, picked, marzipanoView) {
     const lon2 = lon1 + Math.atan2(Math.sin(brng)*Math.sin(d)*Math.cos(lat1),Math.cos(d)-Math.sin(lat1)*Math.sin(lat2));
     return [Cesium.Math.toDegrees(lon2), Cesium.Math.toDegrees(lat2)];
   }
-  // Only draw ONE cone (not three)
   const [lonA,latA] = dest(lon,lat,yaw-halfFov,len);
   const [lonB,latB] = dest(lon,lat,yaw+halfFov,len);
-  coneEntities.push(viewer.entities.add({
+  coneEntity = viewer.entities.add({
     polygon: {
       hierarchy: Cesium.Cartesian3.fromDegreesArrayHeights([
         lon,lat,height, lonA,latA,height, lonB,latB,height
       ]),
       material: Cesium.Color.LIME.withAlpha(0.4), outline:true, outlineColor: Cesium.Color.LIME
     }
-  }));
+  });
 }
 
 async function main() {
@@ -149,18 +155,19 @@ async function main() {
   // Click handler
   const clickHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
   clickHandler.setInputAction(async function(click) {
-    closeImagePopup();
+    window.closeImagePopup();
     const picked = viewer.scene.pick(click.position);
     if (picked && picked.id && picked.id.popupImageURL) {
+      lastPicked = picked;
       document.getElementById('imagePopup').style.display='flex';
       document.getElementById('popupLabel').innerText = picked.id.popupLabel||"";
       document.getElementById('pano').innerHTML = "";
-      window.panoViewer = new Marzipano.Viewer(document.getElementById('pano'), {stageType:'webgl'});
+      panoViewer = new Marzipano.Viewer(document.getElementById('pano'), {stageType:'webgl'});
       const src = Marzipano.ImageUrlSource.fromString(picked.id.popupImageURL);
       const geom = new Marzipano.EquirectGeometry([{ width: 4000 }]);
       const limiter = Marzipano.RectilinearView.limit.traditional(1024, 100*Math.PI/180);
       const view = new Marzipano.RectilinearView(null, limiter);
-      const scene = window.panoViewer.createScene({ source:src, geometry:geom, view, pinFirstLevel:true });
+      const scene = panoViewer.createScene({ source:src, geometry:geom, view, pinFirstLevel:true });
       scene.switchTo();
       drawViewCone(viewer, picked, view);
       view.addEventListener('change',()=>drawViewCone(viewer, picked, view));
@@ -168,7 +175,6 @@ async function main() {
   }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 }
 main();
-window.closeImagePopup = closeImagePopup;
 </script>
 </body>
 </html>
