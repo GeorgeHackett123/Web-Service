@@ -104,44 +104,14 @@
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxOTFmZDVlMi03YjgxLTQ1YWUtOWQwZS0xZjljNDM0NjA4YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMjg1MTN9.Dwyd_sG1jlBEjibzMEzejMEBzkO9M7W43h-ivarmdK8';
 
     const extraGeojsons = [
-  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson",
-  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson",
-  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson",
-  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson",
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson",
-  "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson",
-  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson",
-  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson"
+  "almar_layer_LineStringZ.geojson",
+  "almar_layer_PointZ.geojson",
+  "almar_layer_PolygonZ.geojson"
 ];
     const customColors = {
-  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
-  "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
-  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
-  "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
-  "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98),
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson": Cesium.Color.WHITE,
-  "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
-  "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
-  "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140)
+  "almar_layer_LineStringZ.geojson": Cesium.Color.WHITE,
+  "almar_layer_PointZ.geojson": Cesium.Color.WHITE,
+  "almar_layer_PolygonZ.geojson": Cesium.Color.WHITE
 };
 
     async function init() {
