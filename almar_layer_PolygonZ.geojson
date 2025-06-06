@@ -1,7 +1,6 @@
 {
 "type": "FeatureCollection",
 "name": "almar_layer_PolygonZ",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "ELEVATION": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -46.773586498050228, -23.145438629275525, 0.0 ], [ -46.773667874479685, -23.145437713330814, 0.0 ], [ -46.773585905200349, -23.145419055136138, 0.0 ], [ -46.773586498050228, -23.145438629275525, 0.0 ] ] ] } },
 { "type": "Feature", "properties": { "ELEVATION": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -46.77358604497514, -23.145526079938332, 0.0 ], [ -46.773589228451108, -23.145528778827071, 0.0 ], [ -46.773585977307235, -23.145523845750731, 0.0 ], [ -46.77358604497514, -23.145526079938332, 0.0 ] ] ] } },
