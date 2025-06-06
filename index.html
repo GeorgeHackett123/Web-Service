@@ -2,94 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>CesiumJS Viewer 2D — Labels on Selected GeoJSON</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CesiumJS Viewer — Easy Overlays</title>
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marzipano@0.10.1/dist/marzipano.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
 <link href="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Widgets/widgets.css" rel="stylesheet"/>
 <style>
-    html, body, #cesiumContainer {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      font-family: sans-serif;
-    }
-    #imagePopup {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 50vw;
-      height: 50vh;
-      display: none;
-      flex-direction: column;
-      background: white;
-      border: 2px solid #888;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      z-index: 999;
-    }
-    #pano {
-      flex-grow: 1;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      display: block;
-      overflow: hidden;
-    }
-    .marzipano-canvas {
-      width: 100% !important;
-      height: 100% !important;
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-    .close-btn {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 18px;
-      color: #888;
-    }
-    #popupLabel {
-      font-size: 14px;
-      padding-top: 5px;
-    }
-    #geojsonPopup {
-      display: none;
-      position: fixed;
-      left: 50px;
-      bottom: 50px;
-      background: white;
-      border: 2px solid #333;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      padding: 14px 20px;
-      z-index: 1002;
-      max-width: 400px;
-      font-family: sans-serif;
-    }
-    #geojsonPopup table {
-      border-collapse: collapse;
-      margin-top: 7px;
-    }
-    #geojsonPopup td {
-      padding: 2px 8px;
-    }
-    #geojsonPopup tr:nth-child(odd) {
-      background: #f7f7f7;
-    }
-    #geojsonPopup tr:nth-child(even) {
-      background: #eaeaea;
-    }
+html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; overflow:hidden; font-family:sans-serif;}
+#imagePopup { position:fixed; bottom:20px; right:20px; width:50vw; height:50vh; display:none; flex-direction:column; background:white; border:2px solid #888; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.3); margin:0; padding:0; overflow:hidden; z-index:999; }
+#pano { flex-grow:1; width:100%; height:100%; margin:0; padding:0; display:block; overflow:hidden; }
+.close-btn { position:absolute; top:5px; right:10px; cursor:pointer; font-weight:bold; font-size:18px; color:#888;}
+#popupLabel { font-size:14px; padding-top:5px;}
+#geojsonPopup { display:none; position:fixed; left:50px; bottom:50px; background:white; border:2px solid #333; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.3); padding:14px 20px; z-index:1002; max-width:400px; font-family:sans-serif;}
+#geojsonPopup table { border-collapse:collapse; margin-top:7px;}
+#geojsonPopup td { padding:2px 8px;}
+#geojsonPopup tr:nth-child(odd) { background:#f7f7f7;}
+#geojsonPopup tr:nth-child(even) { background:#eaeaea;}
 </style>
 </head>
 <body>
@@ -101,378 +28,314 @@
 </div>
 <div id="geojsonPopup"></div>
 <script type="module">
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxOTFmZDVlMi03YjgxLTQ1YWUtOWQwZS0xZjljNDM0NjA4YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMjg1MTN9.Dwyd_sG1jlBEjibzMEzejMEBzkO9M7W43h-ivarmdK8';
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxOTFmZDVlMi03YjgxLTQ1YWUtOWQwZS0xZjljNDM0NjA4YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMjg1MTN9.Dwyd_sG1jlBEjibzMEzejMEBzkO9M7W43h-ivarmdK8';
 
-    // ---- DYNAMIC GEOJSON OVERLAY LOADING ----
-    const extraGeojsons = [
-      "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson",
-      "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson",
-      "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson",
-      "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson",
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson",
-      "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson",
-      "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson",
-      "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson"
-    ];
+// 1. EDIT THIS LIST to add/remove overlays as needed:
+const extraGeojsons = [
+  "almar_layer_PointZ.geojson",
+  "almar_layer_PolygonZ.geojson",
+  "almar_layer_LineStringZ.geojson"
+];
 
-    const customColors = {
-      "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
-      "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
-      "ACAD-CURVAS-E5_texts_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
-      "ACAD-CURVAS-E5_texts_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
-      "ACAD-GEOMETRIAS-E5_polylines_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-MATA.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOP-VEGETACAO.geojson": Cesium.Color.fromBytes(0,255,0,255),
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-ALVENARIA.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BANCO.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-BORDO.geojson": Cesium.Color.fromBytes(0,0,0,98),
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-EIXO.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-MURO-MURETA.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PAISAGISMO.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PISO.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_polylines_layer_TOPO-PROJEA_A_O.geojson": Cesium.Color.WHITE,
-      "ACAD-GEOMETRIAS-E5_texts_layer_MATRA_CULA.geojson": Cesium.Color.WHITE,
-      "ACAD-TALUDES-E5_lines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140),
-      "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson": Cesium.Color.fromBytes(204,178,102,140)
-    };
+// 2. This function applies style by overlay type:
+function getOverlayStyle(name) {
+  if (name.includes("LineStringZ")) return {stroke: Cesium.Color.BROWN, fill: Cesium.Color.BROWN.withAlpha(0.1), strokeWidth:2};
+  if (name.includes("PolygonZ"))   return {stroke: Cesium.Color.LIME, fill: Cesium.Color.LIME.withAlpha(0.25), strokeWidth:2};
+  if (name.includes("PointZ"))     return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2, pointSize:12};
+  return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2};
+}
 
-    async function init() {
-      const viewer = new Cesium.Viewer('cesiumContainer', {
-        baseLayerPicker: false,
-        timeline: false,
-        animation: false,
-        infoBox: false,
-        selectionIndicator: false,
-        shouldAnimate: false,
-        sceneMode: Cesium.SceneMode.SCENE2D,
-        terrainProvider: new Cesium.EllipsoidTerrainProvider()
-      });
-      viewer.scene.morphTo2D(0);
+async function init() {
+  const viewer = new Cesium.Viewer('cesiumContainer', {
+    baseLayerPicker: false,
+    timeline: false,
+    animation: false,
+    infoBox: false,
+    selectionIndicator: false,
+    shouldAnimate: false,
+    sceneMode: Cesium.SceneMode.SCENE2D,
+    terrainProvider: new Cesium.EllipsoidTerrainProvider()
+  });
+  viewer.scene.morphTo2D(0);
 
-      // DYNAMICALLY LOAD ALL OVERLAYS
-      const loadPromises = extraGeojsons.map((filename, idx) =>
-        fetch(filename)
-          .then(resp => {
-            if (!resp.ok) throw new Error(filename + ": " + resp.statusText);
-            return resp.json();
-          })
-          .then(data => {
-            // reprojectGeojsonUTM23SToWGS84(data); // <--- THIS IS NOW COMMENTED OUT!
-            const base = filename.split('/').pop();
-            let color = customColors[base];
-            if (!color) color = Cesium.Color.WHITE;
-            return Cesium.GeoJsonDataSource.load(data, { 
-              clampToGround: false,
-              stroke: color,
-              fill: color.withAlpha ? color.withAlpha(0.4) : color,
-              strokeWidth: 2,
-              markerSize: 0,
-              markerSymbol: '',
-              markerColor: Cesium.Color.TRANSPARENT
-            }).then(ds => {
-                // REMOVE BILLBOARDS FROM OVERLAY ENTITIES
-                const ents = ds.entities.values;
-                for (let i = 0; i < ents.length; i++) {
-                  if (ents[i].billboard) delete ents[i].billboard;
-                }
-                viewer.dataSources.add(ds);
-            });
-          })
-          .catch(err => {
-            console.warn("Overlay not found (ok to ignore if you deleted/renamed):", filename);
-          })
-      );
-
-      await Promise.all(loadPromises);
-
-      // -- THEN LOAD CAMERA POINTS, SO THEY ARE ALWAYS ON TOP --
-      const geojsonUrl = 'camera_points_final.geojson';
-      const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
-        clampToGround: false,
-        markerSize: 0,
-        markerSymbol: '',
-        markerColor: Cesium.Color.TRANSPARENT
-      });
-      viewer.dataSources.add(dataSource);
-      viewer.flyTo(dataSource);
-
-      const entities = dataSource.entities.values;
-      for (let i = 0; i < entities.length; i++) {
-        const entity = entities[i];
-        const labelText = entity.properties?.['#Label'];
-        const heading = entity.properties?.['Yaw_est'];
-        const imageURL = `images/${labelText}`;
-
-        entity.point = new Cesium.PointGraphics({
-          pixelSize: 7,
-          color: Cesium.Color.RED,
-          outlineColor: Cesium.Color.BLACK,
-          outlineWidth: 1
-        });
-
-        entity.label = new Cesium.LabelGraphics({
-          text: labelText || "Camera",
-          show: false,
-          font: '14px sans-serif',
-          fillColor: Cesium.Color.WHITE,
-          showBackground: true,
-          backgroundColor: Cesium.Color.BLACK,
-          verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-          pixelOffset: new Cesium.Cartesian2(0, 18),
-          eyeOffset: new Cesium.Cartesian3(0, 0, -100)
-        });
-
-        entity.popupImageURL = imageURL;
-        entity.popupLabel = labelText;
-      }
-
-      // --- Label management for GeoJSON overlays ---
-      let selectedGeoJsonLabel = null;
-
-      // Unified Click Handler
-      const clickHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
-      clickHandler.setInputAction(function(click) {
-        // Hide all popups
-        document.getElementById('geojsonPopup').style.display = 'none';
-        document.getElementById('imagePopup').style.display = 'none';
-
-        // Remove the currently selected geojson label, if any
-        if (selectedGeoJsonLabel) {
-          viewer.entities.remove(selectedGeoJsonLabel);
-          selectedGeoJsonLabel = null;
-        }
-
-        // Remove old cones if any
-        ['viewCone1','viewCone2','viewCone3'].forEach(id=>{
-          if(viewer.entities.getById(id)) viewer.entities.removeById(id);
-        });
-
-        // Get what was picked
-        const picked = viewer.scene.pick(click.position);
-
-        if (picked && picked.id) {
-          // CAMERA POINT: Show Marzipano popup
-          if (picked.id.popupImageURL) {
-            const popup = document.getElementById('imagePopup');
-            popup.style.display = 'flex';
-
-            const panoElement = document.getElementById('pano');
-            const label = document.getElementById('popupLabel');
-            panoElement.innerHTML = '';
-
-            try {
-              if (window.panoViewer && typeof window.panoViewer.destroy === "function") {
-                try { window.panoViewer.destroy(); } catch(e) {}
-              }
-              window.panoViewer = new Marzipano.Viewer(panoElement, { stageType: 'webgl' });
-              const source = Marzipano.ImageUrlSource.fromString(picked.id.popupImageURL);
-              const geometry = new Marzipano.EquirectGeometry([{ width: 1536 }]);
-              const limiter = Marzipano.RectilinearView.limit.traditional(1024, 100 * Math.PI / 180);
-              const view = new Marzipano.RectilinearView(null, limiter);
-              const scene = window.panoViewer.createScene({ source, geometry, view });
-
-              setTimeout(() => { 
-                scene.switchTo();
-                panoElement.style.display = 'block';
-                panoElement.style.width = '100%';
-                panoElement.style.height = '100%';
-                panoElement.querySelector('canvas').style.width = '100%';
-                panoElement.querySelector('canvas').style.height = '100%';
-
-                const position = picked.id.position.getValue(Cesium.JulianDate.now());
-
-                function updateFrustumCone() {
-                  ['viewCone1','viewCone2','viewCone3'].forEach(id=>{
-                    if(viewer.entities.getById(id)) viewer.entities.removeById(id);
-                  });
-
-                  const rawYaw = parseFloat(picked.id.properties['Yaw_est'].getValue());
-                  const viewerYaw = Cesium.Math.toDegrees(view.yaw());
-                  // 180° FLIP
-                  const yaw = Cesium.Math.toRadians((rawYaw + viewerYaw + 75) % 360);
-                  const length = 10.0;
-                  const halfFov = Cesium.Math.toRadians(22.5);
-                  const heightOffset = 2.0;
-
-                  const carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
-                  const lat = carto.latitude;
-                  const lon = carto.longitude;
-                  const alt = carto.height;
-
-                  function offsetPoint(angleOffset) {
-                    const angle = yaw + angleOffset;
-                    const endLat = lat + (length * Math.cos(angle)) / 6378137.0;
-                    const endLon = lon + (length * Math.sin(angle)) / (6378137.0 * Math.cos(lat));
-                    return Cesium.Cartesian3.fromRadians(endLon, endLat, alt + heightOffset);
-                  }
-
-                  const left = offsetPoint(-halfFov);
-                  const right = offsetPoint(halfFov);
-                  const center = offsetPoint(0);
-                  const apex = Cesium.Cartesian3.fromRadians(lon, lat, alt);
-
-                  viewer.entities.add({
-                    id: 'viewCone1',
-                    name: 'Frustum Triangle 1',
-                    polygon: {
-                      hierarchy: new Cesium.PolygonHierarchy([apex, left, center]),
-                      material: Cesium.Color.LIME.withAlpha(0.4),
-                      perPositionHeight: true
-                    }
-                  });
-                  viewer.entities.add({
-                    id: 'viewCone2',
-                    name: 'Frustum Triangle 2',
-                    polygon: {
-                      hierarchy: new Cesium.PolygonHierarchy([apex, center, right]),
-                      material: Cesium.Color.LIME.withAlpha(0.4),
-                      perPositionHeight: true
-                    }
-                  });
-                  viewer.entities.add({
-                    id: 'viewCone3',
-                    name: 'Frustum Triangle 3',
-                    polygon: {
-                      hierarchy: new Cesium.PolygonHierarchy([apex, right, left]),
-                      material: Cesium.Color.LIME.withAlpha(0.2),
-                      perPositionHeight: true
-                    }
-                  });
-                }
-
-                updateFrustumCone();
-                view.addEventListener('change', updateFrustumCone);
-              }, 100);
-              label.innerHTML = `<strong>${picked.id.popupLabel}</strong>`;
-              for (const ent of dataSource.entities.values) {
-                if (ent.label) {
-                  ent.label.show = false;
-                }
-              }
-              picked.id.label.show = true;
-            } catch (err) {
-              console.error("❌ Marzipano failed to initialize:", err);
-              panoElement.innerHTML = `<p style="color:red;">360 viewer failed to load.</p>`;
-            }
-            return;
+  // DYNAMICALLY LOAD ALL OVERLAYS
+  const loadPromises = extraGeojsons.map(filename =>
+    fetch(filename)
+      .then(resp => {
+        if (!resp.ok) throw new Error(filename + ": " + resp.statusText);
+        return resp.json();
+      })
+      .then(data => {
+        const style = getOverlayStyle(filename);
+        return Cesium.GeoJsonDataSource.load(data, { 
+          clampToGround: false,
+          stroke: style.stroke,
+          fill: style.fill,
+          strokeWidth: style.strokeWidth,
+          markerSize: style.pointSize || 0,
+          markerSymbol: '',
+          markerColor: style.fill
+        }).then(ds => {
+          // REMOVE BILLBOARDS FROM OVERLAY ENTITIES
+          const ents = ds.entities.values;
+          for (let i = 0; i < ents.length; i++) {
+            if (ents[i].billboard) delete ents[i].billboard;
           }
-
-          // NON-CAMERA FEATURE: Show label at centroid/midpoint/point
-          if (picked.id.properties && !picked.id.popupImageURL && picked.id.properties.layer) {
-            let position = null;
-            if (picked.id.position) {
-              position = picked.id.position.getValue(Cesium.JulianDate.now());
-            } else if (picked.id.polyline && picked.id.polyline.positions) {
-              const positions = picked.id.polyline.positions.getValue(Cesium.JulianDate.now());
-              if (positions.length > 0) {
-                position = positions[Math.floor(positions.length / 2)];
-              }
-            } else if (picked.id.polygon && picked.id.polygon.hierarchy) {
-              const hierarchy = picked.id.polygon.hierarchy.getValue(Cesium.JulianDate.now());
-              if (hierarchy.positions && hierarchy.positions.length > 0) {
-                let x = 0, y = 0, z = 0;
-                for (const pos of hierarchy.positions) {
-                  x += pos.x; y += pos.y; z += pos.z;
-                }
-                const n = hierarchy.positions.length;
-                position = new Cesium.Cartesian3(x / n, y / n, z / n);
-              }
+          // Custom point style for PointZ overlays:
+          if (filename.includes("PointZ")) {
+            for (let i = 0; i < ents.length; i++) {
+              ents[i].point = new Cesium.PointGraphics({
+                pixelSize: style.pointSize || 10,
+                color: Cesium.Color.WHITE,
+                outlineColor: Cesium.Color.BLACK,
+                outlineWidth: 1
+              });
             }
-            if (position) {
-              selectedGeoJsonLabel = viewer.entities.add({
-                position: position,
-                label: {
-                  text: picked.id.properties.layer.getValue(),
-                  font: '13px sans-serif',
-                  fillColor: Cesium.Color.BLACK,
-                  showBackground: true,
-                  backgroundColor: Cesium.Color.WHITE.withAlpha(0.8),
-                  verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-                  pixelOffset: new Cesium.Cartesian2(0, 18)
+          }
+          viewer.dataSources.add(ds);
+        });
+      })
+      .catch(err => {
+        console.warn("Overlay not found or failed:", filename);
+      })
+  );
+  await Promise.all(loadPromises);
+
+  // -- THEN LOAD CAMERA POINTS, SO THEY ARE ALWAYS ON TOP --
+  const geojsonUrl = 'camera_points_final.geojson';
+  const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
+    clampToGround: false,
+    markerSize: 0,
+    markerSymbol: '',
+    markerColor: Cesium.Color.TRANSPARENT
+  });
+  viewer.dataSources.add(dataSource);
+  viewer.flyTo(dataSource);
+
+  // --- rest of your camera, Marzipano, cone, and click logic follows, UNCHANGED ---
+  const entities = dataSource.entities.values;
+  for (let i = 0; i < entities.length; i++) {
+    const entity = entities[i];
+    const labelText = entity.properties?.['#Label'];
+    const heading = entity.properties?.['Yaw_est'];
+    const imageURL = `images/${labelText}`;
+
+    entity.point = new Cesium.PointGraphics({
+      pixelSize: 7,
+      color: Cesium.Color.RED,
+      outlineColor: Cesium.Color.BLACK,
+      outlineWidth: 1
+    });
+
+    entity.label = new Cesium.LabelGraphics({
+      text: labelText || "Camera",
+      show: false,
+      font: '14px sans-serif',
+      fillColor: Cesium.Color.WHITE,
+      showBackground: true,
+      backgroundColor: Cesium.Color.BLACK,
+      verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+      pixelOffset: new Cesium.Cartesian2(0, 18),
+      eyeOffset: new Cesium.Cartesian3(0, 0, -100)
+    });
+
+    entity.popupImageURL = imageURL;
+    entity.popupLabel = labelText;
+  }
+
+  // --- Label management for GeoJSON overlays ---
+  let selectedGeoJsonLabel = null;
+
+  // Unified Click Handler
+  const clickHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+  clickHandler.setInputAction(function(click) {
+    document.getElementById('geojsonPopup').style.display = 'none';
+    document.getElementById('imagePopup').style.display = 'none';
+
+    if (selectedGeoJsonLabel) {
+      viewer.entities.remove(selectedGeoJsonLabel);
+      selectedGeoJsonLabel = null;
+    }
+    ['viewCone1','viewCone2','viewCone3'].forEach(id=>{
+      if(viewer.entities.getById(id)) viewer.entities.removeById(id);
+    });
+
+    const picked = viewer.scene.pick(click.position);
+
+    if (picked && picked.id) {
+      // CAMERA POINT: Show Marzipano popup
+      if (picked.id.popupImageURL) {
+        const popup = document.getElementById('imagePopup');
+        popup.style.display = 'flex';
+
+        const panoElement = document.getElementById('pano');
+        const label = document.getElementById('popupLabel');
+        panoElement.innerHTML = '';
+
+        try {
+          if (window.panoViewer && typeof window.panoViewer.destroy === "function") {
+            try { window.panoViewer.destroy(); } catch(e) {}
+          }
+          window.panoViewer = new Marzipano.Viewer(panoElement, { stageType: 'webgl' });
+          const source = Marzipano.ImageUrlSource.fromString(picked.id.popupImageURL);
+          const geometry = new Marzipano.EquirectGeometry([{ width: 1536 }]);
+          const limiter = Marzipano.RectilinearView.limit.traditional(1024, 100 * Math.PI / 180);
+          const view = new Marzipano.RectilinearView(null, limiter);
+          const scene = window.panoViewer.createScene({ source, geometry, view });
+
+          setTimeout(() => { 
+            scene.switchTo();
+            panoElement.style.display = 'block';
+            panoElement.style.width = '100%';
+            panoElement.style.height = '100%';
+            panoElement.querySelector('canvas').style.width = '100%';
+            panoElement.querySelector('canvas').style.height = '100%';
+
+            const position = picked.id.position.getValue(Cesium.JulianDate.now());
+
+            function updateFrustumCone() {
+              ['viewCone1','viewCone2','viewCone3'].forEach(id=>{
+                if(viewer.entities.getById(id)) viewer.entities.removeById(id);
+              });
+
+              const rawYaw = parseFloat(picked.id.properties['Yaw_est'].getValue());
+              const viewerYaw = Cesium.Math.toDegrees(view.yaw());
+              // 180° FLIP
+              const yaw = Cesium.Math.toRadians((rawYaw + viewerYaw + 75) % 360);
+              const length = 10.0;
+              const halfFov = Cesium.Math.toRadians(22.5);
+              const heightOffset = 2.0;
+
+              const carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(position);
+              const lat = carto.latitude;
+              const lon = carto.longitude;
+              const alt = carto.height;
+
+              function offsetPoint(angleOffset) {
+                const angle = yaw + angleOffset;
+                const endLat = lat + (length * Math.cos(angle)) / 6378137.0;
+                const endLon = lon + (length * Math.sin(angle)) / (6378137.0 * Math.cos(lat));
+                return Cesium.Cartesian3.fromRadians(endLon, endLat, alt + heightOffset);
+              }
+
+              const left = offsetPoint(-halfFov);
+              const right = offsetPoint(halfFov);
+              const center = offsetPoint(0);
+              const apex = Cesium.Cartesian3.fromRadians(lon, lat, alt);
+
+              viewer.entities.add({
+                id: 'viewCone1',
+                name: 'Frustum Triangle 1',
+                polygon: {
+                  hierarchy: new Cesium.PolygonHierarchy([apex, left, center]),
+                  material: Cesium.Color.LIME.withAlpha(0.4),
+                  perPositionHeight: true
+                }
+              });
+              viewer.entities.add({
+                id: 'viewCone2',
+                name: 'Frustum Triangle 2',
+                polygon: {
+                  hierarchy: new Cesium.PolygonHierarchy([apex, center, right]),
+                  material: Cesium.Color.LIME.withAlpha(0.4),
+                  perPositionHeight: true
+                }
+              });
+              viewer.entities.add({
+                id: 'viewCone3',
+                name: 'Frustum Triangle 3',
+                polygon: {
+                  hierarchy: new Cesium.PolygonHierarchy([apex, right, left]),
+                  material: Cesium.Color.LIME.withAlpha(0.2),
+                  perPositionHeight: true
                 }
               });
             }
-            // Show properties popup as before
-            let html = `<b>Properties</b><table style="border-collapse:collapse;margin-top:7px;">`;
-            const props = picked.id.properties;
-            for (let propName of props.propertyNames) {
-              let val = props[propName].getValue();
-              html += `<tr>
-                <td style="padding:2px 8px;font-weight:bold;text-align:right;">${propName}</td>
-                <td style="padding:2px 8px;">${val}</td>
-              </tr>`;
+
+            updateFrustumCone();
+            view.addEventListener('change', updateFrustumCone);
+          }, 100);
+          label.innerHTML = `<strong>${picked.id.popupLabel}</strong>`;
+          for (const ent of dataSource.entities.values) {
+            if (ent.label) {
+              ent.label.show = false;
             }
-            html += `</table><br>
-              <button onclick="document.getElementById('geojsonPopup').style.display='none';">Close</button>`;
-            const popup = document.getElementById('geojsonPopup');
-            popup.innerHTML = html;
-            popup.style.display = 'block';
-            return;
+          }
+          picked.id.label.show = true;
+        } catch (err) {
+          console.error("❌ Marzipano failed to initialize:", err);
+          panoElement.innerHTML = `<p style="color:red;">360 viewer failed to load.</p>`;
+        }
+        return;
+      }
+
+      // NON-CAMERA FEATURE: Show label at centroid/midpoint/point
+      if (picked.id.properties && !picked.id.popupImageURL && picked.id.properties.layer) {
+        let position = null;
+        if (picked.id.position) {
+          position = picked.id.position.getValue(Cesium.JulianDate.now());
+        } else if (picked.id.polyline && picked.id.polyline.positions) {
+          const positions = picked.id.polyline.positions.getValue(Cesium.JulianDate.now());
+          if (positions.length > 0) {
+            position = positions[Math.floor(positions.length / 2)];
+          }
+        } else if (picked.id.polygon && picked.id.polygon.hierarchy) {
+          const hierarchy = picked.id.polygon.hierarchy.getValue(Cesium.JulianDate.now());
+          if (hierarchy.positions && hierarchy.positions.length > 0) {
+            let x = 0, y = 0, z = 0;
+            for (const pos of hierarchy.positions) {
+              x += pos.x; y += pos.y; z += pos.z;
+            }
+            const n = hierarchy.positions.length;
+            position = new Cesium.Cartesian3(x / n, y / n, z / n);
           }
         }
-        // Clicked nothing: close all
-        document.getElementById('geojsonPopup').style.display = 'none';
-        document.getElementById('imagePopup').style.display = 'none';
-        if (selectedGeoJsonLabel) {
-          viewer.entities.remove(selectedGeoJsonLabel);
-          selectedGeoJsonLabel = null;
+        if (position) {
+          selectedGeoJsonLabel = viewer.entities.add({
+            position: position,
+            label: {
+              text: picked.id.properties.layer.getValue(),
+              font: '13px sans-serif',
+              fillColor: Cesium.Color.BLACK,
+              showBackground: true,
+              backgroundColor: Cesium.Color.WHITE.withAlpha(0.8),
+              verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+              pixelOffset: new Cesium.Cartesian2(0, 18)
+            }
+          });
         }
-        // Remove cones if any
-        ['viewCone1','viewCone2','viewCone3'].forEach(id=>{
-          if(viewer.entities.getById(id)) viewer.entities.removeById(id);
-        });
-      }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
-
-      // -- UTM Zone 23S Reprojection Functions (not used) --
-      function utm23sToWgs84(coords) {
-        let [lon, lat] = proj4(
-          "+proj=utm +zone=23 +south +datum=SIRGAS2000 +units=m +no_defs",
-          "WGS84",
-          [coords[0], coords[1]]
-        );
-        return [lon, lat, 0];
-      }
-      function reprojectGeometry(geometry) {
-        if (geometry.type === "Point") {
-          geometry.coordinates = utm23sToWgs84(geometry.coordinates);
-        } else if (geometry.type === "LineString" || geometry.type === "MultiPoint") {
-          geometry.coordinates = geometry.coordinates.map(utm23sToWgs84);
-        } else if (geometry.type === "Polygon" || geometry.type === "MultiLineString") {
-          geometry.coordinates = geometry.coordinates.map(
-            ring => ring.map(utm23sToWgs84)
-          );
-        } else if (geometry.type === "MultiPolygon") {
-          geometry.coordinates = geometry.coordinates.map(
-            polygon => polygon.map(
-              ring => ring.map(utm23sToWgs84)
-            )
-          );
+        // Show properties popup as before
+        let html = `<b>Properties</b><table style="border-collapse:collapse;margin-top:7px;">`;
+        const props = picked.id.properties;
+        for (let propName of props.propertyNames) {
+          let val = props[propName].getValue();
+          html += `<tr>
+            <td style="padding:2px 8px;font-weight:bold;text-align:right;">${propName}</td>
+            <td style="padding:2px 8px;">${val}</td>
+          </tr>`;
         }
+        html += `</table><br>
+          <button onclick="document.getElementById('geojsonPopup').style.display='none';">Close</button>`;
+        const popup = document.getElementById('geojsonPopup');
+        popup.innerHTML = html;
+        popup.style.display = 'block';
+        return;
       }
-      function reprojectGeojsonUTM23SToWGS84(geojson) {
-        if (geojson.type === "FeatureCollection") {
-          geojson.features.forEach(f => reprojectGeometry(f.geometry));
-        } else if (geojson.type === "Feature") {
-          reprojectGeometry(geojson.geometry);
-        } else if (geojson.type === "GeometryCollection") {
-          geojson.geometries.forEach(g => reprojectGeometry(g));
-        }
-        return geojson;
-      }
-
     }
+    // Clicked nothing: close all
+    document.getElementById('geojsonPopup').style.display = 'none';
+    document.getElementById('imagePopup').style.display = 'none';
+    if (selectedGeoJsonLabel) {
+      viewer.entities.remove(selectedGeoJsonLabel);
+      selectedGeoJsonLabel = null;
+    }
+    ['viewCone1','viewCone2','viewCone3'].forEach(id=>{
+      if(viewer.entities.getById(id)) viewer.entities.removeById(id);
+    });
+  }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-    init();
+}
+init();
 </script>
 </body>
 </html>
