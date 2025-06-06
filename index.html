@@ -39,7 +39,7 @@ const extraGeojsons = [
 
 // 2. This function applies style by overlay type:
 function getOverlayStyle(name) {
-  if (name.includes("LineStringZ")) return {stroke: Cesium.Color.BROWN, fill: Cesium.Color.BROWN.withAlpha(0.1), strokeWidth:2};
+  if (name.includes("LineStringZ")) return {stroke: Cesium.Color.fromCssColorString("#4B2E05"), fill: Cesium.Color.fromCssColorString("#4B2E05").withAlpha(0.1), strokeWidth:2};
   if (name.includes("PolygonZ"))   return {stroke: Cesium.Color.LIME, fill: Cesium.Color.LIME.withAlpha(0.25), strokeWidth:2};
   if (name.includes("PointZ"))     return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2, pointSize:12};
   return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2};
