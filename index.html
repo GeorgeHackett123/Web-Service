@@ -2,427 +2,171 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>CesiumJS Viewer 2D — 360 Viewer and View Cones</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cesium 360 + View Cone Working Example</title>
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marzipano@0.10.1/dist/marzipano.js"></script>
 <link href="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Widgets/widgets.css" rel="stylesheet"/>
 <style>
-    html, body, #cesiumContainer {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      font-family: sans-serif;
-    }
-    #imagePopup {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 50vw;
-      height: 50vh;
-      display: none;
-      flex-direction: column;
-      background: white;
-      border: 2px solid #888;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      z-index: 999;
-    }
-    #pano {
-      flex-grow: 1;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      display: block;
-      overflow: hidden;
-    }
-    .marzipano-canvas {
-      width: 100% !important;
-      height: 100% !important;
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-    .close-btn {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 18px;
-      color: #888;
-    }
-    #popupLabel {
-      font-size: 14px;
-      padding-top: 5px;
-    }
-    #geojsonPopup {
-      display: none;
-      position: fixed;
-      left: 50px;
-      bottom: 50px;
-      background: white;
-      border: 2px solid #333;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      padding: 14px 20px;
-      z-index: 1002;
-      max-width: 400px;
-      font-family: sans-serif;
-    }
-    #geojsonPopup table {
-      border-collapse: collapse;
-      margin-top: 7px;
-    }
-    #geojsonPopup td {
-      padding: 2px 8px;
-    }
-    #geojsonPopup tr:nth-child(odd) {
-      background: #f7f7f7;
-    }
-    #geojsonPopup tr:nth-child(even) {
-      background: #eaeaea;
-    }
+html, body, #cesiumContainer { width:100%; height:100%; margin:0; padding:0; overflow:hidden; }
+#imagePopup {
+  position: fixed; bottom: 20px; right: 20px; width: 45vw; height: 45vh;
+  display: none; flex-direction: column; background: white; border: 2px solid #888;
+  border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 999; padding:0; margin:0; overflow: hidden;
+}
+#pano { flex: 1 1 0; width:100%; height:100%; }
+.close-btn { position: absolute; top: 5px; right: 10px; cursor: pointer; font-weight: bold; font-size: 18px; color: #888; }
+#popupLabel { font-size: 14px; padding: 5px 0 0 8px; }
 </style>
 </head>
 <body>
 <div id="cesiumContainer"></div>
 <div id="imagePopup">
-  <span class="close-btn" onclick="closeImagePopup();">✖</span>
+  <span class="close-btn" onclick="closeImagePopup()">✖</span>
   <div id="pano"></div>
-  <div id="popupLabel"><strong>Label</strong></div>
+  <div id="popupLabel"></div>
 </div>
-<div id="geojsonPopup"></div>
 <script type="module">
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxOTFmZDVlMi03YjgxLTQ1YWUtOWQwZS0xZjljNDM0NjA4YjkiLCJpZCI6MzA0NTQyLCJpYXQiOjE3NDkxMjg1MTN9.Dwyd_sG1jlBEjibzMEzejMEBzkO9M7W43h-ivarmdK8';
 
-const extraGeojsons = [
+// Layer list (adjust filenames as needed)
+const overlays = [
   "almar_layer_LineStringZ.geojson",
   "almar_layer_PointZ.geojson",
   "almar_layer_PolygonZ.geojson"
 ];
+let coneEntities = [];
+function clearCones(viewer) { for(const e of coneEntities) viewer.entities.remove(e); coneEntities = []; }
 
-// Returns style for overlay by filename (case sensitive)
-function getOverlayColorStyle(filename) {
-  if (filename.includes("LineStringZ")) {
-    return {
-      stroke: Cesium.Color.BROWN,
-      fill: Cesium.Color.BROWN.withAlpha ? Cesium.Color.BROWN.withAlpha(0.15) : Cesium.Color.BROWN,
-      strokeWidth: 2
-    };
-  } else if (filename.includes("PolygonZ")) {
-    return {
-      stroke: Cesium.Color.LIME,
-      fill: Cesium.Color.LIME.withAlpha ? Cesium.Color.LIME.withAlpha(0.3) : Cesium.Color.LIME,
-      strokeWidth: 2
-    };
-  } else if (filename.includes("PointZ")) {
-    return {
-      stroke: Cesium.Color.WHITE,
-      fill: Cesium.Color.WHITE,
-      strokeWidth: 2,
-      pointSize: 12
-    };
+function getOverlayStyle(name) {
+  if (name.includes("LineStringZ")) return {stroke: Cesium.Color.BROWN, fill: Cesium.Color.BROWN.withAlpha(0.1), strokeWidth:2};
+  if (name.includes("PolygonZ")) return {stroke: Cesium.Color.LIME, fill: Cesium.Color.LIME.withAlpha(0.25), strokeWidth:2};
+  if (name.includes("PointZ"))   return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2, pointSize:12};
+  return {stroke: Cesium.Color.WHITE, fill: Cesium.Color.WHITE, strokeWidth:2};
+}
+
+async function loadOverlays(viewer) {
+  for (const file of overlays) {
+    const resp = await fetch(file);
+    if (!resp.ok) continue;
+    const data = await resp.json();
+    const style = getOverlayStyle(file);
+    const ds = await Cesium.GeoJsonDataSource.load(data, {
+      clampToGround:false,
+      stroke:style.stroke,
+      fill:style.fill,
+      strokeWidth:style.strokeWidth,
+      markerSize:style.pointSize||0,
+      markerSymbol:'',
+      markerColor:style.fill
+    });
+    // Remove billboard icons
+    for(const ent of ds.entities.values) if(ent.billboard) delete ent.billboard;
+    if(file.includes('PointZ')) {
+      for(const ent of ds.entities.values) {
+        ent.point = new Cesium.PointGraphics({
+          pixelSize: style.pointSize||10,
+          color: Cesium.Color.WHITE,
+          outlineColor: Cesium.Color.BLACK,
+          outlineWidth: 1
+        });
+      }
+    }
+    viewer.dataSources.add(ds);
   }
-  return {
-    stroke: Cesium.Color.WHITE,
-    fill: Cesium.Color.WHITE,
-    strokeWidth: 2
-  };
 }
 
-// --- Oriented view cone utilities ---
-let currentCones = [];
-
-function clearCones(viewer) {
-  for (const cone of currentCones) viewer.entities.remove(cone);
-  currentCones = [];
+async function loadCameraPoints(viewer) {
+  const ds = await Cesium.GeoJsonDataSource.load('camera_points_final.geojson', {
+    clampToGround:false,
+    markerSize:0, markerSymbol:'', markerColor:Cesium.Color.TRANSPARENT
+  });
+  viewer.dataSources.add(ds);
+  viewer.flyTo(ds);
+  for(const ent of ds.entities.values) {
+    const label = ent.properties?.['#Label'];
+    ent.point = new Cesium.PointGraphics({
+      pixelSize: 10, color: Cesium.Color.RED,
+      outlineColor: Cesium.Color.BLACK, outlineWidth: 2
+    });
+    ent.popupImageURL = label ? `images/${label}` : null;
+    ent.popupLabel = label;
+  }
 }
 
-function updateFrustumCone(viewer, picked, view) {
+function closeImagePopup() {
+  document.getElementById('imagePopup').style.display = 'none';
+  if(window.panoViewer) { window.panoViewer.destroy(); window.panoViewer = null; }
+  if(window.cesiumViewer) clearCones(window.cesiumViewer);
+}
+
+// View cone for 360
+function drawViewCone(viewer, picked, marzipanoView) {
   clearCones(viewer);
   const pos = picked.id.position.getValue(Cesium.JulianDate.now());
-  if (!pos) return;
+  if(!pos) return;
   const carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(pos);
   const lon = Cesium.Math.toDegrees(carto.longitude);
   const lat = Cesium.Math.toDegrees(carto.latitude);
-  const height = carto.height + 2.0; // add offset if needed
-
+  const height = carto.height + 2.0;
   const rawYaw = parseFloat(picked.id.properties['Yaw_est'].getValue());
-  const viewerYaw = Cesium.Math.toDegrees(view.yaw());
-  const yaw = Cesium.Math.toRadians((rawYaw + viewerYaw + 75) % 360);
-  const length = 10.0; // meters (adjust as needed)
-  const halfFov = Cesium.Math.toRadians(22.5); // ~45 deg total
-
-  // Calculate cone edges in ENU
-  function dest(lon, lat, azimuth, dist) {
-    // Approximate destination point from lon/lat, azimuth, distance (meters)
-    const R = 6378137;
-    const brng = azimuth;
-    const d = dist / R;
-    const lat1 = Cesium.Math.toRadians(lat), lon1 = Cesium.Math.toRadians(lon);
-    const lat2 = Math.asin(Math.sin(lat1)*Math.cos(d) + Math.cos(lat1)*Math.sin(d)*Math.cos(brng));
-    const lon2 = lon1 + Math.atan2(Math.sin(brng)*Math.sin(d)*Math.cos(lat1),
-                                   Math.cos(d)-Math.sin(lat1)*Math.sin(lat2));
+  const viewerYaw = Cesium.Math.toDegrees(marzipanoView.yaw());
+  const yaw = Cesium.Math.toRadians((rawYaw + viewerYaw + 75)%360);
+  const len = 10.0, halfFov = Cesium.Math.toRadians(22.5);
+  function dest(lon,lat,az,dist) {
+    const R=6378137, brng=az, d=dist/R;
+    const lat1=Cesium.Math.toRadians(lat), lon1=Cesium.Math.toRadians(lon);
+    const lat2 = Math.asin(Math.sin(lat1)*Math.cos(d)+Math.cos(lat1)*Math.sin(d)*Math.cos(brng));
+    const lon2 = lon1 + Math.atan2(Math.sin(brng)*Math.sin(d)*Math.cos(lat1),Math.cos(d)-Math.sin(lat1)*Math.sin(lat2));
     return [Cesium.Math.toDegrees(lon2), Cesium.Math.toDegrees(lat2)];
   }
-
-  const [lonA, latA] = dest(lon, lat, yaw - halfFov, length);
-  const [lonB, latB] = dest(lon, lat, yaw + halfFov, length);
-
-  // Draw cone as three polygons (frustum effect)
-  for (let off = -0.5; off <= 0.5; off += 0.5) {
-    const [lonA2, latA2] = dest(lon, lat, yaw - halfFov + off*0.05, length);
-    const [lonB2, latB2] = dest(lon, lat, yaw + halfFov - off*0.05, length);
-    currentCones.push(viewer.entities.add({
+  for(let off=-0.5; off<=0.5; off+=0.5) {
+    const [lonA,latA] = dest(lon,lat,yaw-halfFov+off*0.05,len);
+    const [lonB,latB] = dest(lon,lat,yaw+halfFov-off*0.05,len);
+    coneEntities.push(viewer.entities.add({
       polygon: {
         hierarchy: Cesium.Cartesian3.fromDegreesArrayHeights([
-          lon, lat, height,
-          lonA2, latA2, height,
-          lonB2, latB2, height
+          lon,lat,height, lonA,latA,height, lonB,latB,height
         ]),
-        material: Cesium.Color.LIME.withAlpha(0.4),
-        outline: true,
-        outlineColor: Cesium.Color.LIME,
-        heightReference: Cesium.HeightReference.NONE
+        material: Cesium.Color.LIME.withAlpha(0.4), outline:true, outlineColor: Cesium.Color.LIME
       }
     }));
   }
 }
 
-// --- Marzipano 360 viewer globals ---
-let panoViewer = null, scene = null, view = null;
-let lastPicked = null;
-
-function closeImagePopup() {
-  document.getElementById('imagePopup').style.display = 'none';
-  if (panoViewer) {
-    panoViewer.destroy();
-    panoViewer = null;
-    scene = null;
-    view = null;
-  }
-  // Also clear cones
-  if (window.cesiumViewer) clearCones(window.cesiumViewer);
-}
-
-async function init() {
+// Main
+async function main() {
   const viewer = new Cesium.Viewer('cesiumContainer', {
-    baseLayerPicker: false,
-    timeline: false,
-    animation: false,
-    infoBox: false,
-    selectionIndicator: false,
-    shouldAnimate: false,
-    sceneMode: Cesium.SceneMode.SCENE2D,
+    baseLayerPicker:false, timeline:false, animation:false, infoBox:false,
+    selectionIndicator:false, shouldAnimate:false, sceneMode: Cesium.SceneMode.SCENE2D,
     terrainProvider: new Cesium.EllipsoidTerrainProvider()
   });
   window.cesiumViewer = viewer;
   viewer.scene.morphTo2D(0);
-
-  // 1. Load and style overlay geojsons (lines, polys, etc)
-  const loadPromises = extraGeojsons.map((filename, idx) =>
-    fetch(filename)
-      .then(resp => {
-        if (!resp.ok) throw new Error(filename + ": " + resp.statusText);
-        return resp.json();
-      })
-      .then(data => {
-        const base = filename.split('/').pop();
-        const style = getOverlayColorStyle(base);
-
-        return Cesium.GeoJsonDataSource.load(data, {
-          clampToGround: false,
-          stroke: style.stroke,
-          fill: style.fill,
-          strokeWidth: style.strokeWidth,
-          markerSize: style.pointSize || 0,
-          markerSymbol: '',
-          markerColor: style.fill
-        }).then(ds => {
-            // Remove billboards for lines/polys, style PointZ as dot
-            const ents = ds.entities.values;
-            for (let i = 0; i < ents.length; i++) {
-              if (ents[i].billboard) delete ents[i].billboard;
-            }
-            if (base.includes('PointZ')) {
-              for (let ent of ents) {
-                ent.point = new Cesium.PointGraphics({
-                  pixelSize: style.pointSize || 10,
-                  color: Cesium.Color.WHITE,
-                  outlineColor: Cesium.Color.BLACK,
-                  outlineWidth: 1
-                });
-              }
-            }
-            viewer.dataSources.add(ds);
-        });
-      })
-      .catch(err => {
-        console.warn("Overlay not found (ok to ignore if you deleted/renamed):", filename);
-      })
-  );
-  await Promise.all(loadPromises);
-
-  // 2. NOW load and add camera points so they're on top!
-  const geojsonUrl = 'camera_points_final.geojson';
-  const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
-    clampToGround: false,
-    markerSize: 0,
-    markerSymbol: '',
-    markerColor: Cesium.Color.TRANSPARENT
-  });
-  viewer.dataSources.add(dataSource);
-  viewer.flyTo(dataSource);
-
-  const entities = dataSource.entities.values;
-  for (let i = 0; i < entities.length; i++) {
-    const entity = entities[i];
-    const labelText = entity.properties?.['#Label'];
-    const imageURL = `images/${labelText}`;
-
-    entity.point = new Cesium.PointGraphics({
-      pixelSize: 10,
-      color: Cesium.Color.RED,
-      outlineColor: Cesium.Color.BLACK,
-      outlineWidth: 2
-    });
-
-    entity.label = new Cesium.LabelGraphics({
-      text: labelText || "Camera",
-      show: false,
-      font: '14px sans-serif',
-      fillColor: Cesium.Color.WHITE,
-      showBackground: true,
-      backgroundColor: Cesium.Color.BLACK,
-      verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-      pixelOffset: new Cesium.Cartesian2(0, 18),
-      eyeOffset: new Cesium.Cartesian3(0, 0, -100)
-    });
-
-    entity.popupImageURL = imageURL;
-    entity.popupLabel = labelText;
-  }
-
-  // --- Click handler ---
-  let selectedGeoJsonLabel = null;
+  await loadOverlays(viewer);       // overlays FIRST
+  await loadCameraPoints(viewer);   // camera points ON TOP
+  // Click handler
   const clickHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
   clickHandler.setInputAction(async function(click) {
-    document.getElementById('geojsonPopup').style.display = 'none';
-    document.getElementById('imagePopup').style.display = 'none';
-    if (selectedGeoJsonLabel) {
-      viewer.entities.remove(selectedGeoJsonLabel);
-      selectedGeoJsonLabel = null;
-    }
-    clearCones(viewer);
-    if (panoViewer) {
-      panoViewer.destroy();
-      panoViewer = null;
-      scene = null;
-      view = null;
-    }
+    closeImagePopup();
     const picked = viewer.scene.pick(click.position);
-
-    if (picked && picked.id) {
-      // CAMERA POINT: Show Marzipano popup and view cone
-      if (picked.id.popupImageURL) {
-        lastPicked = picked; // for view cone updates
-        document.getElementById('imagePopup').style.display = 'flex';
-        document.getElementById('popupLabel').innerText = picked.id.popupLabel || '';
-        document.getElementById('pano').innerHTML = "";
-        panoViewer = new Marzipano.Viewer(document.getElementById('pano'), { stageType: 'webgl' });
-        const source = Marzipano.ImageUrlSource.fromString(picked.id.popupImageURL);
-        const geometry = new Marzipano.EquirectGeometry([{ width: 4000 }]);
-        const limiter = Marzipano.RectilinearView.limit.traditional(1024, 100*Math.PI/180);
-        view = new Marzipano.RectilinearView(null, limiter);
-        scene = panoViewer.createScene({ source, geometry, view, pinFirstLevel: true });
-        scene.switchTo();
-
-        // Draw cone initially
-        updateFrustumCone(viewer, picked, view);
-
-        // Update cone when Marzipano is panned
-        view.addEventListener('change', () => {
-          updateFrustumCone(viewer, picked, view);
-        });
-        return;
-      }
-      // NON-CAMERA FEATURE: Show label at centroid/midpoint/point
-      if (picked.id.properties && !picked.id.popupImageURL && picked.id.properties.layer) {
-        let position = null;
-        if (picked.id.position) {
-          position = picked.id.position.getValue(Cesium.JulianDate.now());
-        } else if (picked.id.polyline && picked.id.polyline.positions) {
-          const positions = picked.id.polyline.positions.getValue(Cesium.JulianDate.now());
-          if (positions.length > 0) {
-            position = positions[Math.floor(positions.length / 2)];
-          }
-        } else if (picked.id.polygon && picked.id.polygon.hierarchy) {
-          const hierarchy = picked.id.polygon.hierarchy.getValue(Cesium.JulianDate.now());
-          if (hierarchy.positions && hierarchy.positions.length > 0) {
-            let x = 0, y = 0, z = 0;
-            for (const pos of hierarchy.positions) {
-              x += pos.x; y += pos.y; z += pos.z;
-            }
-            const n = hierarchy.positions.length;
-            position = new Cesium.Cartesian3(x / n, y / n, z / n);
-          }
-        }
-        if (position) {
-          selectedGeoJsonLabel = viewer.entities.add({
-            position: position,
-            label: {
-              text: picked.id.properties.layer.getValue(),
-              font: '13px sans-serif',
-              fillColor: Cesium.Color.BLACK,
-              showBackground: true,
-              backgroundColor: Cesium.Color.WHITE.withAlpha(0.8),
-              verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-              pixelOffset: new Cesium.Cartesian2(0, 18)
-            }
-          });
-        }
-        // Show properties popup as before
-        let html = `<b>Properties</b><table style="border-collapse:collapse;margin-top:7px;">`;
-        const props = picked.id.properties;
-        for (let propName of props.propertyNames) {
-          let val = props[propName].getValue();
-          html += `<tr>
-            <td style="padding:2px 8px;font-weight:bold;text-align:right;">${propName}</td>
-            <td style="padding:2px 8px;">${val}</td>
-          </tr>`;
-        }
-        html += `</table><br>
-          <button onclick="document.getElementById('geojsonPopup').style.display='none';">Close</button>`;
-        const popup = document.getElementById('geojsonPopup');
-        popup.innerHTML = html;
-        popup.style.display = 'block';
-        return;
-      }
-    }
-    document.getElementById('geojsonPopup').style.display = 'none';
-    document.getElementById('imagePopup').style.display = 'none';
-    if (selectedGeoJsonLabel) {
-      viewer.entities.remove(selectedGeoJsonLabel);
-      selectedGeoJsonLabel = null;
-    }
-    clearCones(viewer);
-    if (panoViewer) {
-      panoViewer.destroy();
-      panoViewer = null;
-      scene = null;
-      view = null;
+    if (picked && picked.id && picked.id.popupImageURL) {
+      document.getElementById('imagePopup').style.display='flex';
+      document.getElementById('popupLabel').innerText = picked.id.popupLabel||"";
+      document.getElementById('pano').innerHTML = "";
+      window.panoViewer = new Marzipano.Viewer(document.getElementById('pano'), {stageType:'webgl'});
+      const src = Marzipano.ImageUrlSource.fromString(picked.id.popupImageURL);
+      const geom = new Marzipano.EquirectGeometry([{ width: 4000 }]);
+      const limiter = Marzipano.RectilinearView.limit.traditional(1024, 100*Math.PI/180);
+      const view = new Marzipano.RectilinearView(null, limiter);
+      const scene = window.panoViewer.createScene({ source:src, geometry:geom, view, pinFirstLevel:true });
+      scene.switchTo();
+      drawViewCone(viewer, picked, view);
+      view.addEventListener('change',()=>drawViewCone(viewer, picked, view));
     }
   }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
-
 }
-init();
+main();
+window.closeImagePopup = closeImagePopup;
 </script>
 </body>
 </html>
