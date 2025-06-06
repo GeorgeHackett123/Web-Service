@@ -125,7 +125,6 @@
       "ACAD-TALUDES-E5_polylines_layer_TALUDE.geojson"
     ];
 
-    // These colors are as in your original file, but add new overlays as needed
     const customColors = {
       "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MAJR.geojson": Cesium.Color.fromBytes(255,0,0,255),
       "ACAD-CURVAS-E5_polylines_layer_C-TOPO-MINR.geojson": Cesium.Color.fromBytes(76,0,0,255),
@@ -168,7 +167,7 @@
             return resp.json();
           })
           .then(data => {
-            reprojectGeojsonUTM23SToWGS84(data);
+            // reprojectGeojsonUTM23SToWGS84(data); // <--- THIS IS NOW COMMENTED OUT!
             const base = filename.split('/').pop();
             let color = customColors[base];
             if (!color) color = Cesium.Color.WHITE;
@@ -236,9 +235,6 @@
         entity.popupImageURL = imageURL;
         entity.popupLabel = labelText;
       }
-
-      // The rest of your Marzipano, cone, popup, and click logic remains unchanged...
-      // [Rest of your click handler, popup, Marzipano, view cone code is below...]
 
       // --- Label management for GeoJSON overlays ---
       let selectedGeoJsonLabel = null;
@@ -437,7 +433,7 @@
         });
       }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-      // -- UTM Zone 23S Reprojection Functions --
+      // -- UTM Zone 23S Reprojection Functions (not used) --
       function utm23sToWgs84(coords) {
         let [lon, lat] = proj4(
           "+proj=utm +zone=23 +south +datum=SIRGAS2000 +units=m +no_defs",
