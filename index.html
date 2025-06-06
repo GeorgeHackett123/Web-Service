@@ -90,6 +90,19 @@ async function init() {
                 outlineColor: Cesium.Color.BLACK,
                 outlineWidth: 1
               });
+              // LABEL ELEVATION FOR POINTZ:
+              const elev = ents[i].properties?.ELEVATION?.getValue?.() ?? "";
+              if (elev !== "") {
+                ents[i].label = new Cesium.LabelGraphics({
+                  text: String(elev),
+                  font: '13px sans-serif',
+                  fillColor: Cesium.Color.BLACK,
+                  showBackground: true,
+                  backgroundColor: Cesium.Color.WHITE.withAlpha(0.8),
+                  verticalOrigin: Cesium.VerticalOrigin.TOP,
+                  pixelOffset: new Cesium.Cartesian2(0, -16)
+                });
+              }
             }
           }
           viewer.dataSources.add(ds);
