@@ -154,48 +154,7 @@
       });
       viewer.scene.morphTo2D(0);
 
-      // --- Camera Points Data Source ---
-      const geojsonUrl = 'camera_points_final.geojson';
-      const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
-        clampToGround: false,
-        markerSize: 0,
-        markerSymbol: '',
-        markerColor: Cesium.Color.TRANSPARENT
-      });
-
-      viewer.dataSources.add(dataSource);
-      viewer.flyTo(dataSource);
-
-      const entities = dataSource.entities.values;
-      for (let i = 0; i < entities.length; i++) {
-        const entity = entities[i];
-        const labelText = entity.properties?.['#Label'];
-        const imageURL = `images/${labelText}`;
-
-        entity.point = new Cesium.PointGraphics({
-          pixelSize: 7,
-          color: Cesium.Color.RED,
-          outlineColor: Cesium.Color.BLACK,
-          outlineWidth: 1
-        });
-
-        entity.label = new Cesium.LabelGraphics({
-          text: labelText || "Camera",
-          show: false,
-          font: '14px sans-serif',
-          fillColor: Cesium.Color.WHITE,
-          showBackground: true,
-          backgroundColor: Cesium.Color.BLACK,
-          verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-          pixelOffset: new Cesium.Cartesian2(0, 18),
-          eyeOffset: new Cesium.Cartesian3(0, 0, -100)
-        });
-
-        entity.popupImageURL = imageURL;
-        entity.popupLabel = labelText;
-      }
-
-      // --- Load and style overlay geojsons ---
+      // 1. Load and style overlay geojsons (lines, polys, etc)
       const loadPromises = extraGeojsons.map((filename, idx) =>
         fetch(filename)
           .then(resp => {
@@ -237,10 +196,47 @@
             console.warn("Overlay not found (ok to ignore if you deleted/renamed):", filename);
           })
       );
-
       await Promise.all(loadPromises);
 
-      // (All your click handler and popup code stays the same...)
+      // 2. NOW load and add camera points so they're on top!
+      const geojsonUrl = 'camera_points_final.geojson';
+      const dataSource = await Cesium.GeoJsonDataSource.load(geojsonUrl, {
+        clampToGround: false,
+        markerSize: 0,
+        markerSymbol: '',
+        markerColor: Cesium.Color.TRANSPARENT
+      });
+      viewer.dataSources.add(dataSource);
+      viewer.flyTo(dataSource);
+
+      const entities = dataSource.entities.values;
+      for (let i = 0; i < entities.length; i++) {
+        const entity = entities[i];
+        const labelText = entity.properties?.['#Label'];
+        const imageURL = `images/${labelText}`;
+
+        entity.point = new Cesium.PointGraphics({
+          pixelSize: 10,
+          color: Cesium.Color.RED,
+          outlineColor: Cesium.Color.BLACK,
+          outlineWidth: 2
+        });
+
+        entity.label = new Cesium.LabelGraphics({
+          text: labelText || "Camera",
+          show: false,
+          font: '14px sans-serif',
+          fillColor: Cesium.Color.WHITE,
+          showBackground: true,
+          backgroundColor: Cesium.Color.BLACK,
+          verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+          pixelOffset: new Cesium.Cartesian2(0, 18),
+          eyeOffset: new Cesium.Cartesian3(0, 0, -100)
+        });
+
+        entity.popupImageURL = imageURL;
+        entity.popupLabel = labelText;
+      }
 
       // --- Click handler code unchanged ---
       let selectedGeoJsonLabel = null;
@@ -257,7 +253,10 @@
         if (picked && picked.id) {
           // CAMERA POINT: Show Marzipano popup
           if (picked.id.popupImageURL) {
-            // ... (your Marzipano popup logic here)
+            // (Your Marzipano popup logic should go here)
+            // For example:
+            // document.getElementById('imagePopup').style.display = 'flex';
+            // Load the 360 image from picked.id.popupImageURL
           }
           // NON-CAMERA FEATURE: Show label at centroid/midpoint/point
           if (picked.id.properties && !picked.id.popupImageURL && picked.id.properties.layer) {
